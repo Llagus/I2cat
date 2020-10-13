@@ -1,0 +1,22 @@
+Modified files:
+src/artery/application/CaService.cc
+src/artery/application/CaService.h
+src/artery/nic/RadioDriverBase.h
+extern/vanetza/vanetza/net/mac_address.cpp
+extern/vanetza/vanetza/net/mac_address.hpp
+src/artery/CMakeLists.txt
+src/traci/sumo/utils/traci/TraCIAPI.cpp
+src/traci/sumo/utils/traci/TraCIAPI.h
+src/artery/traci/VehicleController.cc
+src/artery/traci/VehicleController.h
+extern/vanetza/vanetza/geonet/data_request.hpp
+extern/vanetza/vanetza/btp/data_request.hpp
+
+New files:
+src/artery/application/GlobalListener.cc
+src/artery/application/GlobalListener.h
+src/artery/application/SystemMonitor.cc
+src/artery/application/SystemMonito.h
+extern/vanetza/vanetza/security/profile.hpp
+
+To see the difference between files just run the command "diff" with the modified file and the original file located in /home/aniol/artery
