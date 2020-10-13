@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scave:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:scave="http://www.omnetpp.org/omnetpp/scave">
+  <inputs>
+    <inputs name="/artery/scenarios/artery/results/grid-traffic_fluid-error/*.sca"/>
+    <inputs name="/artery/scenarios/artery/results/grid-traffic_fluid-error/*.vec"/>
+  </inputs>
+  <datasets>
+    <datasets name="LOST IN A ROW">
+      <items xsi:type="scave:Add" filterPattern="name(node[13]_cam_lost_in_a_row:histogram) AND file(*100-0.sca) " type="HISTOGRAM"/>
+      <items xsi:type="scave:HistogramChart" name="">
+        <properties name="X.Axis.Title" value="consecutive errors"/>
+        <properties name="Y.Axis.Title" value="count"/>
+        <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+        <properties name="Label.Font" value="Sans-regular-10"/>
+        <properties name="Hist.Data" value="Count"/>
+      </items>
+    </datasets>
+  </datasets>
+  <chartSheets>
+    <chartSheets name="default" charts="//@datasets/@datasets.0/@items.1"/>
+    <chartSheets name="CHANNEL"/>
+    <chartSheets name="PER"/>
+    <chartSheets name="LATENCY"/>
+    <chartSheets name="LOSTINAROW"/>
+  </chartSheets>
+</scave:Analysis>

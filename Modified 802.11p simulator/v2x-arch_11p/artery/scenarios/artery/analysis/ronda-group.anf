@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scave:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:scave="http://www.omnetpp.org/omnetpp/scave">
+  <inputs>
+    <inputs name="/artery/scenarios/artery/results/ronda-group/*.sca"/>
+    <inputs name="/artery/scenarios/artery/results/ronda-group/*.vec"/>
+  </inputs>
+  <datasets>
+    <datasets name="CHANNEL">
+      <items xsi:type="scave:Group" name="channelBusyRatio:mean, &quot;n&quot; nodes, barchart">
+        <items xsi:type="scave:Group" name="all speeds, one RSU, one car">
+          <items xsi:type="scave:Add" filterPattern="(module(*.node[10].*) OR module(*.node[50].*)) AND name(channelBusyRatio:mean)"/>
+          <items xsi:type="scave:BarChart" name="">
+            <properties name="X.Axis.Title" value="nodes"/>
+            <properties name="Y.Axis.Title" value="channel busy ratio"/>
+            <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+            <properties name="Label.Font" value="Sans-regular-10"/>
+            <properties name="Legend.Display" value="true"/>
+            <properties name="Legend.Border" value="true"/>
+            <properties name="Legend.Font" value="Sans-regular-10"/>
+            <properties name="Legend.Position" value="Below"/>
+          </items>
+        </items>
+      </items>
+      <items xsi:type="scave:Group" name="channelLoad, node 50, linechart, all speeds">
+        <items xsi:type="scave:Add" filterPattern="module(*.node[50].*) AND name(vec_channel_load) AND run(ronda-group-*)" type="VECTOR"/>
+        <items xsi:type="scave:Apply" operation="winavg">
+          <params name="windowSize" value="10"/>
+        </items>
+        <items xsi:type="scave:LineChart" name="" lineNameFormat="${iterationvars}">
+          <properties name="Graph.Title" value=" "/>
+          <properties name="X.Axis.Title" value="simulation time (s)"/>
+          <properties name="Y.Axis.Title" value="channel load"/>
+          <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+          <properties name="Label.Font" value="Sans-regular-10"/>
+          <properties name="Legend.Display" value="true"/>
+          <properties name="Legend.Border" value="true"/>
+          <properties name="Legend.Position" value="Below"/>
+          <properties name="X.Axis.Min" value="100.0"/>
+          <properties name="X.Axis.Max" value="380.0"/>
+          <properties name="Line.Name/grid_traffic_all-1-20171010-15:04:47-15783 1 $0=&quot;my_roads/grid_traffic_dense/my_grid.sumo.cfg&quot;" value="dense"/>
+          <properties name="Line.Name/grid_traffic_all-0-20171010-15:01:28-15783 0 $0=&quot;my_roads/grid_traffic_fluid/my_grid.sumo.cfg&quot;" value="fluid"/>
+          <properties name="Line.Name/grid_traffic_all-0-20171011-10:53:28-8168 0 $0=&quot;my_roads/grid_traffic_fluid/my_grid.sumo.cfg&quot;" value="fluid traffic"/>
+          <properties name="Line.Name/grid_traffic_all-1-20171011-10:56:25-8168 1 $0=&quot;my_roads/grid_traffic_dense/my_grid.sumo.cfg&quot;" value="dense traffic"/>
+          <properties name="Line.Name/grid_traffic_dense-0-20171028-20:54:38-8494 dense" value="dense"/>
+          <properties name="Line.Name/grid_traffic_fluid-0-20171028-20:50:08-8217 fluid" value="fluid"/>
+          <properties name="Line.Name/$period=1" value="100 ms"/>
+          <properties name="Line.Name/$period=3" value="300 ms"/>
+          <properties name="Line.Name/$period=5" value="500 ms"/>
+          <properties name="Line.Name/$period=10" value="1000 ms"/>
+          <properties name="Line.Name/$speed=&quot;my_roads/ronda-speed-10/ronda.sumo.cfg&quot;" value="10 m/s"/>
+          <properties name="Line.Name/$speed=&quot;my_roads/ronda-speed-20/ronda.sumo.cfg&quot;" value="20 m/s"/>
+          <properties name="Line.Name/$speed=&quot;my_roads/ronda-speed-30/ronda.sumo.cfg&quot;" value="30 m/s"/>
+          <properties name="Line.Name/$speed=&quot;my_roads/ronda-speed-40/ronda.sumo.cfg&quot;" value="40 m/s"/>
+          <properties name="Line.Name/$speed=&quot;my_roads/ronda-speed-50/ronda.sumo.cfg&quot;" value="50 m/s"/>
+          <properties name="Line.Display/$speed=&quot;my_roads/ronda-speed-30/ronda.sumo.cfg&quot;" value="false"/>
+          <properties name="Line.Display/$speed=&quot;my_roads/ronda-speed-50/ronda.sumo.cfg&quot;" value="false"/>
+          <properties name="Line.Color/$speed=&quot;my_roads/ronda-group-10/ronda.sumo.cfg&quot;" value="blue"/>
+          <properties name="Line.Name/$speed=&quot;my_roads/ronda-group-10/ronda.sumo.cfg&quot;" value="10 m/s"/>
+          <properties name="Line.Name/$speed=&quot;my_roads/ronda-group-20/ronda.sumo.cfg&quot;" value="20 m/s"/>
+          <properties name="Line.Name/$speed=&quot;my_roads/ronda-group-30/ronda.sumo.cfg&quot;" value="30 m/s"/>
+          <properties name="Line.Name/$speed=&quot;my_roads/ronda-group-40/ronda.sumo.cfg&quot;" value="40 m/s"/>
+          <properties name="Line.Color/$speed=&quot;my_roads/ronda-group-20/ronda.sumo.cfg&quot;" value="red"/>
+          <properties name="Line.Color/$speed=&quot;my_roads/ronda-group-30/ronda.sumo.cfg&quot;" value="#008000"/>
+          <properties name="Line.Color/$speed=&quot;my_roads/ronda-group-40/ronda.sumo.cfg&quot;" value="orange"/>
+        </items>
+      </items>
+      <items xsi:type="scave:Group" name="channelLoad, node 10, linechart, all speeds">
+        <items xsi:type="scave:Add" filterPattern="module(*.node[10].*) AND name(vec_channel_load) AND run(ronda-group-*)" type="VECTOR"/>
+        <items xsi:type="scave:Apply" operation="winavg">
+          <params name="windowSize" value="10"/>
+        </items>
+        <items xsi:type="scave:LineChart" name="" lineNameFormat="${iterationvars}">
+          <properties name="Graph.Title" value=" "/>
+          <properties name="X.Axis.Title" value="simulation time (s)"/>
+          <properties name="Y.Axis.Title" value="channel load"/>
+          <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+          <properties name="Label.Font" value="Sans-regular-10"/>
+          <properties name="Legend.Display" value="true"/>
+          <properties name="Legend.Border" value="true"/>
+          <properties name="Legend.Position" value="Below"/>
+          <properties name="Line.Name/grid_traffic_all-1-20171010-15:04:47-15783 1 $0=&quot;my_roads/grid_traffic_dense/my_grid.sumo.cfg&quot;" value="dense"/>
+          <properties name="Line.Name/grid_traffic_all-0-20171010-15:01:28-15783 0 $0=&quot;my_roads/grid_traffic_fluid/my_grid.sumo.cfg&quot;" value="fluid"/>
+          <properties name="Line.Name/grid_traffic_all-0-20171011-10:53:28-8168 0 $0=&quot;my_roads/grid_traffic_fluid/my_grid.sumo.cfg&quot;" value="fluid traffic"/>
+          <properties name="Line.Name/grid_traffic_all-1-20171011-10:56:25-8168 1 $0=&quot;my_roads/grid_traffic_dense/my_grid.sumo.cfg&quot;" value="dense traffic"/>
+          <properties name="Line.Name/grid_traffic_dense-0-20171028-20:54:38-8494 dense" value="dense"/>
+          <properties name="Line.Name/grid_traffic_fluid-0-20171028-20:50:08-8217 fluid" value="fluid"/>
+          <properties name="Line.Name/$period=1" value="100 ms"/>
+          <properties name="Line.Name/$period=3" value="300 ms"/>
+          <properties name="Line.Name/$period=5" value="500 ms"/>
+          <properties name="Line.Name/$period=10" value="1000 ms"/>
+          <properties name="Line.Name/$speed=&quot;my_roads/ronda-speed-10/ronda.sumo.cfg&quot;" value="10 m/s"/>
+          <properties name="Line.Name/$speed=&quot;my_roads/ronda-speed-20/ronda.sumo.cfg&quot;" value="20 m/s"/>
+          <properties name="Line.Name/$speed=&quot;my_roads/ronda-speed-30/ronda.sumo.cfg&quot;" value="30 m/s"/>
+          <properties name="Line.Name/$speed=&quot;my_roads/ronda-speed-40/ronda.sumo.cfg&quot;" value="40 m/s"/>
+          <properties name="Line.Name/$speed=&quot;my_roads/ronda-speed-50/ronda.sumo.cfg&quot;" value="50 m/s"/>
+          <properties name="Line.Display/$speed=&quot;my_roads/ronda-speed-30/ronda.sumo.cfg&quot;" value="false"/>
+          <properties name="Line.Display/$speed=&quot;my_roads/ronda-speed-50/ronda.sumo.cfg&quot;" value="false"/>
+          <properties name="Line.Color/$speed=&quot;my_roads/ronda-group-10/ronda.sumo.cfg&quot;" value="blue"/>
+          <properties name="Line.Name/$speed=&quot;my_roads/ronda-group-10/ronda.sumo.cfg&quot;" value="10 m/s"/>
+          <properties name="Line.Color/$speed=&quot;my_roads/ronda-group-20/ronda.sumo.cfg&quot;" value="red"/>
+          <properties name="Line.Name/$speed=&quot;my_roads/ronda-group-20/ronda.sumo.cfg&quot;" value="20 m/s"/>
+          <properties name="Line.Name/$speed=&quot;my_roads/ronda-group-30/ronda.sumo.cfg&quot;" value="30 m/s"/>
+          <properties name="Line.Name/$speed=&quot;my_roads/ronda-group-40/ronda.sumo.cfg&quot;" value="40 m/s"/>
+          <properties name="Line.Color/$speed=&quot;my_roads/ronda-group-30/ronda.sumo.cfg&quot;" value="#008000"/>
+          <properties name="Line.Color/$speed=&quot;my_roads/ronda-group-40/ronda.sumo.cfg&quot;" value="orange"/>
+        </items>
+      </items>
+    </datasets>
+    <datasets name="PER">
+      <items xsi:type="scave:Group">
+        <items xsi:type="scave:Add" filterPattern="name(packetErrorRate:histogram:mean) AND (module(*.node[5].*) OR module(*.node[10].*) OR module(*.node[15].*) )"/>
+        <items xsi:type="scave:BarChart" name="">
+          <properties name="Plot.BackgroundColor" value="white"/>
+          <properties name="X.Axis.Title" value="RSU"/>
+          <properties name="Y.Axis.Title" value="PER"/>
+          <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+          <properties name="Label.Font" value="Sans-regular-10"/>
+          <properties name="Legend.Display" value="true"/>
+          <properties name="Legend.Border" value="true"/>
+          <properties name="Legend.Position" value="Below"/>
+        </items>
+      </items>
+      <items xsi:type="scave:Group" name="vs distance, node 10, histogram &amp; CDF, &quot;n&quot; speeds">
+        <items xsi:type="scave:Add" filterPattern="module(*.node[10].*) AND name(errors_per_distance:histogram)" type="HISTOGRAM"/>
+        <items xsi:type="scave:HistogramChart" name="">
+          <properties name="X.Axis.Title" value="distance (m)"/>
+          <properties name="Y.Axis.Title" value="error PDF"/>
+          <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+          <properties name="Label.Font" value="Sans-regular-10"/>
+          <properties name="Legend.Display" value="true"/>
+          <properties name="Legend.Border" value="true"/>
+          <properties name="Legend.Position" value="Below"/>
+          <properties name="Hist.Bar" value="Outline"/>
+          <properties name="Hist.Data" value="Pdf"/>
+          <properties name="Hist.Color//artery/scenarios/artery/results/ronda-group/group-0-0.sca ronda-group-0-20171205-00:09:01-19197 0 group-0" value="blue"/>
+          <properties name="Hist.Color//artery/scenarios/artery/results/ronda-group/group-1-0.sca ronda-group-1-20171205-01:37:51-19197 1 group-1" value="red"/>
+          <properties name="Hist.Color//artery/scenarios/artery/results/ronda-group/group-2-0.sca ronda-group-2-20171205-02:20:01-19197 2 group-2" value="#008000"/>
+          <properties name="Hist.Color//artery/scenarios/artery/results/ronda-group/group-3-0.sca ronda-group-3-20171205-02:48:31-19197 3 group-3" value="orange"/>
+        </items>
+        <items xsi:type="scave:HistogramChart" name="CDF">
+          <properties name="X.Axis.Title" value="distance (m)"/>
+          <properties name="Y.Axis.Title" value="error CDF"/>
+          <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+          <properties name="Label.Font" value="Sans-regular-10"/>
+          <properties name="Legend.Border" value="true"/>
+          <properties name="Legend.Position" value="Below"/>
+          <properties name="Hist.Bar" value="Outline"/>
+          <properties name="Hist.Data" value="Cdf"/>
+        </items>
+      </items>
+    </datasets>
+    <datasets name="LATENCY">
+      <items xsi:type="scave:Group" name="all cars, speed 0">
+        <items xsi:type="scave:Add" filterPattern="module(World.globalListener) AND name(node[26..]_cam_latency:vector) AND run(ronda-group-0*)" type="VECTOR"/>
+        <items xsi:type="scave:Apply" operation="multiply-by">
+          <params name="a" value="1000000"/>
+        </items>
+        <items xsi:type="scave:LineChart" name="" lineNameFormat="">
+          <properties name="Graph.Title" value=" "/>
+          <properties name="X.Axis.Title" value="simulation time (s)"/>
+          <properties name="Y.Axis.Title" value="latency (µs)"/>
+          <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+          <properties name="Label.Font" value="Sans-regular-10"/>
+          <properties name="Legend.Border" value="true"/>
+          <properties name="Legend.Position" value="Below"/>
+          <properties name="Line.Name/grid_traffic_dense-0-20171028-20:54:38-8494 dense" value="dense"/>
+          <properties name="Line.Name/grid_traffic_fluid-0-20171028-20:50:08-8217 fluid" value="fluid"/>
+          <properties name="Line.Name/ronda-speed-0-20171121-09:20:17-2722 0 speed-0" value="10 m/s"/>
+          <properties name="Line.Name/ronda-speed-1-20171121-12:07:34-2722 1 speed-1" value="20 m/s"/>
+          <properties name="Line.Name/ronda-speed-2-20171121-14:38:34-2722 2 speed-2" value="30 m/s"/>
+          <properties name="Line.Name/ronda-speed-3-20171121-16:23:38-2722 3 speed-3" value="40 m/s"/>
+          <properties name="Line.Name/ronda-speed-4-20171121-19:29:27-2722 4 speed-4" value="50 m/s"/>
+          <properties name="Symbols.Type" value="Dot"/>
+          <properties name="Line.Type" value="Dots"/>
+        </items>
+      </items>
+      <items xsi:type="scave:Group" name="all cars, speed 3">
+        <items xsi:type="scave:Add" filterPattern="module(World.globalListener) AND name(node[26..]_cam_latency:vector) AND run(ronda-group-3*)" type="VECTOR"/>
+        <items xsi:type="scave:Apply" operation="multiply-by">
+          <params name="a" value="1000000"/>
+        </items>
+        <items xsi:type="scave:LineChart" name="" lineNameFormat="">
+          <properties name="Graph.Title" value=" "/>
+          <properties name="X.Axis.Title" value="simulation time (s)"/>
+          <properties name="Y.Axis.Title" value="latency (µs)"/>
+          <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+          <properties name="Label.Font" value="Sans-regular-10"/>
+          <properties name="Y.Axis.Max" value="3500.0"/>
+          <properties name="Legend.Border" value="true"/>
+          <properties name="Legend.Position" value="Below"/>
+          <properties name="X.Axis.Max" value="1350.0"/>
+          <properties name="Line.Name/grid_traffic_dense-0-20171028-20:54:38-8494 dense" value="dense"/>
+          <properties name="Line.Name/grid_traffic_fluid-0-20171028-20:50:08-8217 fluid" value="fluid"/>
+          <properties name="Line.Name/ronda-speed-0-20171121-09:20:17-2722 0 speed-0" value="10 m/s"/>
+          <properties name="Line.Name/ronda-speed-1-20171121-12:07:34-2722 1 speed-1" value="20 m/s"/>
+          <properties name="Line.Name/ronda-speed-2-20171121-14:38:34-2722 2 speed-2" value="30 m/s"/>
+          <properties name="Line.Name/ronda-speed-3-20171121-16:23:38-2722 3 speed-3" value="40 m/s"/>
+          <properties name="Line.Name/ronda-speed-4-20171121-19:29:27-2722 4 speed-4" value="50 m/s"/>
+          <properties name="Symbols.Type" value="Dot"/>
+          <properties name="Line.Type" value="Dots"/>
+        </items>
+      </items>
+    </datasets>
+    <datasets name="LOSTINAROW">
+      <items xsi:type="scave:Group" name="vehicle 150, speed 1, linechart">
+        <items xsi:type="scave:Add" filterPattern="name(node[92]_cam_lostinarow:vector)" type="VECTOR"/>
+        <items xsi:type="scave:LineChart" name="" lineNameFormat="">
+          <properties name="X.Axis.Title" value="simulation time (s)"/>
+          <properties name="Y.Axis.Title" value="number of packets lost consecutively"/>
+          <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+          <properties name="Label.Font" value="Sans-regular-10"/>
+          <properties name="Line.Color" value="red"/>
+          <properties name="Line.Color//artery/scenarios/artery/results/ronda-group/group-0-0.vec ronda-group-0-20171205-00:09:01-19197 0 group-0" value="blue"/>
+          <properties name="Line.Color//artery/scenarios/artery/results/ronda-group/group-1-0.vec ronda-group-1-20171205-01:37:51-19197 1 group-1" value="red"/>
+          <properties name="Line.Color//artery/scenarios/artery/results/ronda-group/group-2-0.vec ronda-group-2-20171205-02:20:01-19197 2 group-2" value="#008000"/>
+          <properties name="Line.Color//artery/scenarios/artery/results/ronda-group/group-3-0.vec ronda-group-3-20171205-02:48:31-19197 3 group-3" value="orange"/>
+          <properties name="Line.Type" value="Dots"/>
+        </items>
+      </items>
+    </datasets>
+  </datasets>
+  <chartSheets>
+    <chartSheets name="default" charts="//@datasets/@datasets.0/@items.1/@items.2 //@datasets/@datasets.2/@items.0/@items.2 //@datasets/@datasets.0/@items.0/@items.0/@items.1 //@datasets/@datasets.1/@items.1/@items.1 //@datasets/@datasets.0/@items.2/@items.2 //@datasets/@datasets.3/@items.0/@items.1 //@datasets/@datasets.1/@items.0/@items.1 //@datasets/@datasets.2/@items.1/@items.2 //@datasets/@datasets.1/@items.1/@items.2"/>
+    <chartSheets name="CHANNEL" charts="//@datasets/@datasets.0/@items.1/@items.2"/>
+    <chartSheets name="PER"/>
+    <chartSheets name="LATENCY" charts="//@datasets/@datasets.2/@items.0/@items.2"/>
+    <chartSheets name="LOSTINAROW"/>
+  </chartSheets>
+</scave:Analysis>

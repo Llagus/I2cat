@@ -1,0 +1,208 @@
+<routes>
+	
+	<!-- generated with: 
+		$ netgenerate grid 				grid.number=5 			grid.attach-length=25 		grid.length=115 
+					  flip-y-axis true  default.lanenumber 3 	output-file=my_grid.net.xml 
+	-->
+	
+	<!--...............-->
+	<!-- VEHICLE TYPES -->
+	<!--...............-->
+	<vType	id="type1" 		color="green"		guiShape="passenger/sedan" 		maxSpeed="15"	speedDev="0.5" />  
+	<vType	id="type2" 		color="yellow"		guiShape="passenger/sedan" 		maxSpeed="15"	speedDev="0.5" />  
+	<vType	id="type3" 		color="blue"		guiShape="passenger/sedan" 		maxSpeed="15"	speedDev="0.5" />  
+	<vType	id="type4" 		color="grey"		guiShape="passenger/sedan" 		maxSpeed="15"	speedDev="0.5" /> 
+	<vType	id="type5" 		color="red"			guiShape="passenger/sedan" 		maxSpeed="15"	speedDev="0.5" />
+	<vType	id="type6" 		color="white"		guiShape="passenger/sedan" 		maxSpeed="15"	speedDev="0.5" />
+
+	<vType  id="rsu"      color="orange" 
+			accel="0"     decel="0"   
+			sigma="0.0"   length="9" 
+			maxSpeed="0"  guiShape="passenger/van" />
+	<vType  id="rsu_aux"  color="black" 
+			accel="0"     decel="0"   
+			sigma="0.0"   length="9" 
+			maxSpeed="0"  guiShape="passenger/van" />
+	
+	
+	<!--................-->
+	<!-- ROUTES for RSU -->
+	<!--................-->
+	<route id="route-rsu3h0"  edges="0/3to1/3" />
+	<route id="route-rsu3h1"  edges="1/3to2/3" />
+	<route id="route-rsu3h2"  edges="2/3to3/3" />
+	<route id="route-rsu2h0"  edges="0/2to1/2" />
+	<route id="route-rsu2h1"  edges="1/2to2/2" />
+	<route id="route-rsu2h2"  edges="2/2to3/2" />
+	<route id="route-rsu1h0"  edges="0/1to1/1" />
+	<route id="route-rsu1h1"  edges="1/1to2/1" />
+	<route id="route-rsu1h2"  edges="2/1to3/1" />
+	<route id="route-rsu0h0"  edges="0/0to1/0" />
+	<route id="route-rsu0h1"  edges="1/0to2/0" />
+	<route id="route-rsu0h2"  edges="2/0to3/0" />
+	
+	
+	<!--............................-->
+	<!-- RSU VEHICLES nodes[1..16]..-->
+	<!--............................-->	
+	<vehicle id="rsu3h0"  type="rsu"     	 route="route-rsu3h0"  depart="0"  		departPos ="50">
+             <stop   	  lane="0/3to1/3_0"  endPos="50"           triggered="true" />
+    </vehicle>
+	<vehicle id="rsu3h1"  type="rsu"     	 route="route-rsu3h1"  depart="0"  		departPos ="50">
+             <stop   	  lane="1/3to2/3_0"  endPos="50"           triggered="true" />
+    </vehicle>
+    <vehicle id="rsu3h2"  type="rsu"     	 route="route-rsu3h2"  depart="0"  		departPos ="50">
+             <stop   	  lane="2/3to3/3_0"  endPos="50"           triggered="true" />
+    </vehicle>
+    <vehicle id="rsu2h0"  type="rsu"     	 route="route-rsu2h0"  depart="0"  		departPos ="50">
+             <stop   	  lane="0/2to1/2_0"  endPos="50"           triggered="true" />
+    </vehicle>
+    <vehicle id="rsu2h1"  type="rsu"     	 route="route-rsu2h1"  depart="0"  		departPos ="50">
+             <stop   	  lane="1/2to2/2_0"  endPos="50"           triggered="true" />
+    </vehicle>	
+    <vehicle id="rsu2h2"  type="rsu"     	 route="route-rsu2h2"  depart="0"  		departPos ="50">
+             <stop   	  lane="2/2to3/2_0"  endPos="50"           triggered="true" />
+    </vehicle>	
+    <vehicle id="rsu1h0"  type="rsu"     	 route="route-rsu1h0"  depart="0"  		departPos ="50">
+             <stop   	  lane="0/1to1/1_0"  endPos="50"           triggered="true" />
+    </vehicle>
+    <vehicle id="rsu1h1"  type="rsu"     	 route="route-rsu1h1"  depart="0"  		departPos ="50">
+             <stop   	  lane="1/1to2/1_0"  endPos="50"           triggered="true" />
+    </vehicle>
+    <vehicle id="rsu1h2"  type="rsu"     	 route="route-rsu1h2"  depart="0"  		departPos ="50">
+             <stop   	  lane="2/1to3/1_0"  endPos="50"           triggered="true" />
+    </vehicle>
+    <vehicle id="rsu0h0"  type="rsu"     	 route="route-rsu0h0"  depart="0"  		departPos ="50">
+             <stop   	  lane="0/0to1/0_0"  endPos="50"           triggered="true" />
+    </vehicle>
+    <vehicle id="rsu0h1"  type="rsu"     	 route="route-rsu0h1"  depart="0"  		departPos ="50">
+             <stop   	  lane="1/0to2/0_0"  endPos="50"           triggered="true" />
+    </vehicle>
+    <vehicle id="rsu0h2"  type="rsu"     	 route="route-rsu0h2"  depart="0"  		departPos ="50">
+             <stop   	  lane="2/0to3/0_0"  endPos="50"           triggered="true" />
+    </vehicle>
+    <!-- RSU AUX 13 a 16 -->
+	<vehicle id="rsu2h0_"  type="rsu_aux"    route="route-rsu2h0"  depart="0"  		departPos ="90">
+             <stop   	  lane="0/2to1/2_0"  endPos="90"           triggered="true" />
+    </vehicle>
+    <vehicle id="rsu2h2_"  type="rsu_aux"    route="route-rsu2h2"  depart="0"  		departPos ="10">
+             <stop   	  lane="2/2to3/2_0"  endPos="10"           triggered="true" />
+    </vehicle>	
+    <vehicle id="rsu1h0_"  type="rsu_aux"  	 route="route-rsu1h0"  depart="0"  		departPos ="90">
+             <stop   	  lane="0/1to1/1_0"  endPos="90"           triggered="true" />
+    </vehicle>
+    <vehicle id="rsu1h2_"  type="rsu_aux"    route="route-rsu1h2"  depart="0"  		departPos ="10">
+             <stop   	  lane="2/1to3/1_0"  endPos="10"           triggered="true" />
+    </vehicle>
+
+
+
+
+	<!--................-->
+	<!-- ROUTES for CAR -->
+	<!--................-->
+	<!-- example horizontal route: "3hr" == edge 3 horitzontal to right -->
+	<route id="route3hr" edges="left3to0/3 	0/3to1/3  1/3to2/3  2/3to3/3  3/3toright3"	/>
+	<route id="route3hl" edges="right3to3/3 3/3to2/3  2/3to1/3  1/3to0/3  0/3toleft3" 	/>
+	<route id="route2hr" edges="left2to0/2 	0/2to1/2  1/2to2/2  2/2to3/2  3/2toright2"	/>
+	<route id="route2hl" edges="right2to3/2 3/2to2/2  2/2to1/2	1/2to0/2  0/2toleft2"	/>
+	<route id="route1hr" edges="left1to0/1 	0/1to1/1  1/1to2/1  2/1to3/1  3/1toright1"	/>
+	<route id="route1hl" edges="right1to3/1 3/1to2/1  2/1to1/1  1/1to0/1  0/1toleft1"	/>
+	<route id="route0hr" edges="left0to0/0 	0/0to1/0  1/0to2/0  2/0to3/0  3/0toright0"	/>
+	<route id="route0hl" edges="right0to3/0 3/0to2/0  2/0to1/0  1/0to0/0  0/0toleft0"	/>
+	
+	<!-- example vertical route: "0vd" == edge 0 vertical to down -->
+	<route id="route0vd" edges="top0to0/3 	  0/3to0/2  0/2to0/1  0/1to0/0  0/0tobottom0"	/>
+	<route id="route0vt" edges="bottom0to0/0  0/0to0/1  0/1to0/2  0/2to0/3  0/3totop0"		/>
+	<route id="route1vd" edges="top1to1/3	  1/3to1/2	1/2to1/1  1/1to1/0  1/0tobottom1" 	/>
+	<route id="route1vt" edges="bottom1to1/0  1/0to1/1  1/1to1/2  1/2to1/3  1/3totop1" 		/>
+	<route id="route2vd" edges="top2to2/3	  2/3to2/2	2/2to2/1  2/1to2/0  2/0tobottom2" 	/>
+	<route id="route2vt" edges="bottom2to2/0  2/0to2/1  2/1to2/2  2/2to2/3  2/3totop2" 		/>
+	<route id="route3vd" edges="top3to3/3     3/3to3/2  3/2to3/1  3/1to3/0  3/0tobottom3" 	/>
+	<route id="route3vt" edges="bottom3to3/0  3/0to3/1  3/1to3/2  3/2to3/3  3/3totop3" 		/>
+	
+	
+
+	<!--............................-->
+	<!-- CAR VEHICLES nodes[16..x]..-->
+	<!--............................-->		
+	<!-- for perpetual flow, "end=" > simulation time in .cfg file-->
+	<flow	id="flow3hr"			type="type1"
+		  	begin="0" 				end= "7200"		period="9"
+			departLane="random"						departSpeed="random"
+			route="route3hr"						/>
+	<flow	id="flow3hl"			type="type2"
+		  	begin="0" 				end= "7200"		period="9"
+			departLane="random"						departSpeed="random"
+			route="route3hl"						/>
+	<flow	id="flow2hr"			type="type3"
+		  	begin="0" 				end= "7200"		period="9"
+			departLane="random"						departSpeed="random"
+			route="route2hr"						/>
+	<flow	id="flow2hl"			type="type4"
+		  	begin="0" 				end= "7200"		period="9"
+			departLane="random"						departSpeed="random"
+			route="route2hl"						/>
+	<flow	id="flow1hr"			type="type1"
+		  	begin="0" 				end= "7200"		period="9"
+			departLane="random"						departSpeed="random"
+			route="route1hr"						/>
+	<flow	id="flow1hl"			type="type2"
+		  	begin="0" 				end= "7200"		period="9"
+			departLane="random"						departSpeed="random"
+			route="route1hl"						/>
+	<flow	id="flow0hr"  			type="type3"
+		  	begin="0" 				end= "7200"		period="9"
+			departLane="random"						departSpeed="random"
+			route="route0hr"						/>
+	<flow	id="flow0hl"  			type="type4"
+		  	begin="0" 				end= "7200"		period="9"
+			departLane="random"						departSpeed="random"
+			route="route0hl"						/>	
+	
+	
+	<flow	id="flow0vd"  			type="type1"
+		  	begin="0" 				end= "7200"		period="9"
+			departLane="random"						departSpeed="random"
+			route="route0vd"						/>
+	<flow	id="flow0vt"  			type="type2"
+		  	begin="0" 				end= "7200"		period="9"
+			departLane="random"						departSpeed="random"
+			route="route0vt"						/>
+	<flow	id="flow1vd"  			type="type3"
+		  	begin="0" 				end= "7200"		period="9"
+			departLane="random"						departSpeed="random"
+			route="route1vd"						/>
+	<flow	id="flow1vt"  			type="type4"
+		  	begin="0" 				end= "7200"		period="9"
+			departLane="random"						departSpeed="random"
+			route="route1vt"						/>
+	<flow	id="flow2vd"  			type="type1"
+		  	begin="0" 				end= "7200"		period="9"
+			departLane="random"						departSpeed="random"
+			route="route2vd"						/>
+	<flow	id="flow2vt"  			type="type2"
+		  	begin="0" 				end= "7200"		period="9"
+			departLane="random"						departSpeed="random"
+			route="route2vt"						/>
+	<flow	id="flow3vd"  			type="type3"
+		  	begin="0" 				end= "7200"		period="9"
+			departLane="random"						departSpeed="random"
+			route="route3vd"						/>
+	<flow	id="flow3vt"  			type="type4"
+		  	begin="0" 				end= "7200"		period="9"
+			departLane="random"						departSpeed="random"
+			route="route3vt"						/>
+<!--
+	<flow 	id="diagonal_1" 		type="type5"
+			begin="0" 				end="7200" 		period="9"
+			departLane="random"		departSpeed="random"
+			from="left3to0/3" 		to="3/0toright0"
+													/>
+	<flow 	id="diagonal_2" 		type="type6"
+			begin="0" 				end="7200" 		period="9"
+			departLane="random"		departSpeed="random"
+			from="right3to3/3" 		to="0/0toleft0"
+													/>
+-->
+</routes>

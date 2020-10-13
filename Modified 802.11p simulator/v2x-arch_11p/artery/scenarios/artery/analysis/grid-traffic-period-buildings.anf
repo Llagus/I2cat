@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scave:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:scave="http://www.omnetpp.org/omnetpp/scave">
+  <inputs>
+    <inputs name="/artery/scenarios/artery/results/grid-traffic_dense-period-buildings-limited/*.sca"/>
+    <inputs name="/artery/scenarios/artery/results/grid-traffic_dense-period-buildings-limited/*.vec"/>
+    <inputs name="/artery/scenarios/artery/results/grid-traffic_fluid-period-buildings-limited/*.sca"/>
+    <inputs name="/artery/scenarios/artery/results/grid-traffic_fluid-period-buildings-limited/*.vec"/>
+  </inputs>
+  <datasets>
+    <datasets name="CHANNEL">
+      <items xsi:type="scave:Group" name="channelBusyRatio:mean, all nodes, barchart">
+        <items xsi:type="scave:Group" name="dense traffic">
+          <items xsi:type="scave:Add" filterPattern="(module(*.node[13..16].*) OR module(*.node[5].*) OR module(*.node[8].*))  AND name(channelBusyRatio:mean) AND run(grid-traffic_dense-period*)"/>
+          <items xsi:type="scave:BarChart" name="">
+            <properties name="X.Axis.Title" value="nodes"/>
+            <properties name="Y.Axis.Title" value="channel busy ratio"/>
+            <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+            <properties name="Label.Font" value="Sans-regular-10"/>
+            <properties name="Legend.Display" value="true"/>
+            <properties name="Legend.Border" value="true"/>
+            <properties name="Legend.Font" value="Sans-regular-10"/>
+            <properties name="Legend.Position" value="Below"/>
+            <properties name="Bar.Color/dense-$period=500" value="#008000"/>
+            <properties name="Bar.Color/dense-$period=1000" value="orange"/>
+          </items>
+        </items>
+        <items xsi:type="scave:Group" name="fluid traffic">
+          <items xsi:type="scave:Add" filterPattern="(module(*.node[13..16].*) OR module(*.node[5].*) OR module(*.node[8].*))  AND name(channelBusyRatio:mean) AND run(grid-traffic_fluid-period*)"/>
+          <items xsi:type="scave:BarChart" name="">
+            <properties name="X.Axis.Title" value="nodes"/>
+            <properties name="Y.Axis.Title" value="channel busy ratio"/>
+            <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+            <properties name="Label.Font" value="Sans-regular-10"/>
+            <properties name="Legend.Display" value="true"/>
+            <properties name="Legend.Border" value="true"/>
+            <properties name="Legend.Font" value="Sans-regular-10"/>
+            <properties name="Legend.Position" value="Below"/>
+          </items>
+        </items>
+      </items>
+      <items xsi:type="scave:Group" name="channelBusyRatio, node 5, histogram">
+        <items xsi:type="scave:Group" name="period 100 ms">
+          <items xsi:type="scave:Add" filterPattern="module(*.node[5].*) AND name(channelBusyRatio) AND run(grid-traffic_dense-period-buildings-0-*) " type="HISTOGRAM"/>
+          <items xsi:type="scave:HistogramChart" name="">
+            <properties name="Legend.Display" value="true"/>
+            <properties name="Legend.Position" value="Below"/>
+            <properties name="Hist.Bar" value="Outline"/>
+            <properties name="Hist.Data" value="Count"/>
+          </items>
+        </items>
+      </items>
+      <items xsi:type="scave:Group" name="channelLoad, node 9, linechart">
+        <items xsi:type="scave:Group" name="dense traffic, winavg">
+          <items xsi:type="scave:Add" filterPattern="module(*.node[9].*) AND name(vec_channel_load) AND run(grid-traffic_dense-period-*)" type="VECTOR"/>
+          <items xsi:type="scave:Apply" operation="winavg">
+            <params name="windowSize" value="10"/>
+          </items>
+          <items xsi:type="scave:LineChart" name="" lineNameFormat="${iterationvars}">
+            <properties name="Graph.Title" value=" "/>
+            <properties name="X.Axis.Title" value="simulation time (s)"/>
+            <properties name="Y.Axis.Title" value="channel load"/>
+            <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+            <properties name="Label.Font" value="Sans-regular-10"/>
+            <properties name="Legend.Display" value="true"/>
+            <properties name="Legend.Border" value="true"/>
+            <properties name="Legend.Position" value="Below"/>
+            <properties name="Line.Name/grid_traffic_all-1-20171010-15:04:47-15783 1 $0=&quot;my_roads/grid_traffic_dense/my_grid.sumo.cfg&quot;" value="dense"/>
+            <properties name="Line.Name/grid_traffic_all-0-20171010-15:01:28-15783 0 $0=&quot;my_roads/grid_traffic_fluid/my_grid.sumo.cfg&quot;" value="fluid"/>
+            <properties name="Line.Name/grid_traffic_all-0-20171011-10:53:28-8168 0 $0=&quot;my_roads/grid_traffic_fluid/my_grid.sumo.cfg&quot;" value="fluid traffic"/>
+            <properties name="Line.Name/grid_traffic_all-1-20171011-10:56:25-8168 1 $0=&quot;my_roads/grid_traffic_dense/my_grid.sumo.cfg&quot;" value="dense traffic"/>
+            <properties name="Line.Name/grid_traffic_dense-0-20171028-20:54:38-8494 dense" value="dense"/>
+            <properties name="Line.Name/grid_traffic_fluid-0-20171028-20:50:08-8217 fluid" value="fluid"/>
+            <properties name="Line.Name/$period=1" value="100 ms"/>
+            <properties name="Line.Name/$period=3" value="300 ms"/>
+            <properties name="Line.Name/$period=5" value="500 ms"/>
+            <properties name="Line.Name/$period=10" value="1000 ms"/>
+          </items>
+        </items>
+        <items xsi:type="scave:Group" name="fluid traffic, winavg">
+          <items xsi:type="scave:Add" filterPattern="module(*.node[9].*) AND name(vec_channel_load) AND run(grid-traffic_fluid-period-*)" type="VECTOR"/>
+          <items xsi:type="scave:Apply" operation="winavg">
+            <params name="windowSize" value="10"/>
+          </items>
+          <items xsi:type="scave:LineChart" name="" lineNameFormat="${iterationvars}">
+            <properties name="Graph.Title" value=" "/>
+            <properties name="X.Axis.Title" value="simulation time (s)"/>
+            <properties name="Y.Axis.Title" value="channel load"/>
+            <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+            <properties name="Label.Font" value="Sans-regular-10"/>
+            <properties name="Legend.Display" value="true"/>
+            <properties name="Legend.Border" value="true"/>
+            <properties name="Legend.Position" value="Below"/>
+            <properties name="Line.Name/grid_traffic_all-1-20171010-15:04:47-15783 1 $0=&quot;my_roads/grid_traffic_dense/my_grid.sumo.cfg&quot;" value="dense"/>
+            <properties name="Line.Name/grid_traffic_all-0-20171010-15:01:28-15783 0 $0=&quot;my_roads/grid_traffic_fluid/my_grid.sumo.cfg&quot;" value="fluid"/>
+            <properties name="Line.Name/grid_traffic_all-0-20171011-10:53:28-8168 0 $0=&quot;my_roads/grid_traffic_fluid/my_grid.sumo.cfg&quot;" value="fluid traffic"/>
+            <properties name="Line.Name/grid_traffic_all-1-20171011-10:56:25-8168 1 $0=&quot;my_roads/grid_traffic_dense/my_grid.sumo.cfg&quot;" value="dense traffic"/>
+            <properties name="Line.Name/grid_traffic_dense-0-20171028-20:54:38-8494 dense" value="dense"/>
+            <properties name="Line.Name/grid_traffic_fluid-0-20171028-20:50:08-8217 fluid" value="fluid"/>
+            <properties name="Line.Name/$period=1" value="100 ms"/>
+            <properties name="Line.Name/$period=3" value="300 ms"/>
+            <properties name="Line.Name/$period=5" value="500 ms"/>
+            <properties name="Line.Name/$period=10" value="1000 ms"/>
+          </items>
+        </items>
+      </items>
+      <items xsi:type="scave:Group" name="channelLoad, node 13, linechart">
+        <items xsi:type="scave:Group" name="raw">
+          <items xsi:type="scave:Add" filterPattern="module(*.node[13].*) AND name(vec_channel_load)" type="VECTOR"/>
+          <items xsi:type="scave:LineChart" name="" lineNameFormat="">
+            <properties name="Plot.BackgroundColor" value="white"/>
+            <properties name="Graph.Title" value=" "/>
+            <properties name="X.Axis.Title" value="simulation time (s)"/>
+            <properties name="Y.Axis.Title" value="channel load"/>
+            <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+            <properties name="Label.Font" value="Sans-regular-10"/>
+            <properties name="Axes.Grid" value="None"/>
+            <properties name="Legend.Display" value="true"/>
+            <properties name="Legend.Border" value="true"/>
+            <properties name="Legend.Font" value="Sans-regular-10"/>
+            <properties name="Legend.Position" value="Below"/>
+          </items>
+        </items>
+        <items xsi:type="scave:Group" name="dense traffic, winavg">
+          <items xsi:type="scave:Add" filterPattern="module(*.node[13].*) AND name(vec_channel_load) AND run(grid-traffic_dense-period-*)" type="VECTOR"/>
+          <items xsi:type="scave:Apply" operation="winavg">
+            <params name="windowSize" value="10"/>
+          </items>
+          <items xsi:type="scave:LineChart" name="" lineNameFormat="${iterationvars}">
+            <properties name="Graph.Title" value=" "/>
+            <properties name="X.Axis.Title" value="simulation time (s)"/>
+            <properties name="Y.Axis.Title" value="channel load"/>
+            <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+            <properties name="Label.Font" value="Sans-regular-10"/>
+            <properties name="Legend.Display" value="true"/>
+            <properties name="Legend.Border" value="true"/>
+            <properties name="Legend.Position" value="Below"/>
+            <properties name="X.Axis.Min" value="300.0"/>
+            <properties name="X.Axis.Max" value="500.0"/>
+            <properties name="Line.Name/grid_traffic_all-1-20171010-15:04:47-15783 1 $0=&quot;my_roads/grid_traffic_dense/my_grid.sumo.cfg&quot;" value="dense"/>
+            <properties name="Line.Name/grid_traffic_all-0-20171010-15:01:28-15783 0 $0=&quot;my_roads/grid_traffic_fluid/my_grid.sumo.cfg&quot;" value="fluid"/>
+            <properties name="Line.Name/grid_traffic_all-0-20171011-10:53:28-8168 0 $0=&quot;my_roads/grid_traffic_fluid/my_grid.sumo.cfg&quot;" value="fluid traffic"/>
+            <properties name="Line.Name/grid_traffic_all-1-20171011-10:56:25-8168 1 $0=&quot;my_roads/grid_traffic_dense/my_grid.sumo.cfg&quot;" value="dense traffic"/>
+            <properties name="Line.Name/grid_traffic_dense-0-20171028-20:54:38-8494 dense" value="dense"/>
+            <properties name="Line.Name/grid_traffic_fluid-0-20171028-20:50:08-8217 fluid" value="fluid"/>
+            <properties name="Line.Name/$period=1" value="100 ms"/>
+            <properties name="Line.Name/$period=3" value="300 ms"/>
+            <properties name="Line.Name/$period=5" value="500 ms"/>
+            <properties name="Line.Name/$period=10" value="1000 ms"/>
+            <properties name="Line.Name/$period=500" value="500 ms"/>
+            <properties name="Line.Name/$period=1000" value="1000 ms"/>
+            <properties name="Line.Color/$period=500" value="#008000"/>
+            <properties name="Line.Color/$period=1000" value="orange"/>
+            <properties name="Line.Color/$period=100" value="blue"/>
+            <properties name="Line.Name/$period=100" value="100 ms"/>
+            <properties name="Line.Name/$period=200" value="200 ms"/>
+          </items>
+        </items>
+        <items xsi:type="scave:Group" name="fluid traffic, winavg">
+          <items xsi:type="scave:Add" filterPattern="module(*.node[13].*) AND name(vec_channel_load) AND run(grid-traffic_fluid-period-*)" type="VECTOR"/>
+          <items xsi:type="scave:Apply" operation="winavg">
+            <params name="windowSize" value="10"/>
+          </items>
+          <items xsi:type="scave:LineChart" name="" lineNameFormat="${iterationvars}">
+            <properties name="Graph.Title" value=" "/>
+            <properties name="X.Axis.Title" value="simulation time (s)"/>
+            <properties name="Y.Axis.Title" value="channel load"/>
+            <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+            <properties name="Label.Font" value="Sans-regular-10"/>
+            <properties name="Legend.Display" value="true"/>
+            <properties name="Legend.Border" value="true"/>
+            <properties name="Legend.Position" value="Below"/>
+            <properties name="X.Axis.Min" value="300.0"/>
+            <properties name="X.Axis.Max" value="500.0"/>
+            <properties name="Line.Name/grid_traffic_all-1-20171010-15:04:47-15783 1 $0=&quot;my_roads/grid_traffic_dense/my_grid.sumo.cfg&quot;" value="dense"/>
+            <properties name="Line.Name/grid_traffic_all-0-20171010-15:01:28-15783 0 $0=&quot;my_roads/grid_traffic_fluid/my_grid.sumo.cfg&quot;" value="fluid"/>
+            <properties name="Line.Name/grid_traffic_all-0-20171011-10:53:28-8168 0 $0=&quot;my_roads/grid_traffic_fluid/my_grid.sumo.cfg&quot;" value="fluid traffic"/>
+            <properties name="Line.Name/grid_traffic_all-1-20171011-10:56:25-8168 1 $0=&quot;my_roads/grid_traffic_dense/my_grid.sumo.cfg&quot;" value="dense traffic"/>
+            <properties name="Line.Name/grid_traffic_dense-0-20171028-20:54:38-8494 dense" value="dense"/>
+            <properties name="Line.Name/grid_traffic_fluid-0-20171028-20:50:08-8217 fluid" value="fluid"/>
+            <properties name="Line.Name/$period=1" value="100 ms"/>
+            <properties name="Line.Name/$period=3" value="300 ms"/>
+            <properties name="Line.Name/$period=5" value="500 ms"/>
+            <properties name="Line.Name/$period=10" value="1000 ms"/>
+            <properties name="Line.Name/$period=100" value="100 ms"/>
+            <properties name="Line.Name/$period=200" value="200 ms"/>
+            <properties name="Line.Name/$period=500" value="500 ms"/>
+            <properties name="Line.Name/$period=1000" value="1000 ms"/>
+            <properties name="Line.Color/$period=100" value="blue"/>
+            <properties name="Line.Color/$period=1000" value="orange"/>
+            <properties name="Line.Color/$period=500" value="#008000"/>
+            <properties name="Line.Color/$period=200" value="red"/>
+          </items>
+        </items>
+      </items>
+      <items xsi:type="scave:Group" name="channelBusyRatio, node 13, histogram">
+        <items xsi:type="scave:Group" name="period 100 ms">
+          <items xsi:type="scave:Add" filterPattern="module(*.node[13].*) AND name(channelBusyRatio) AND file(*500*.sca)" type="HISTOGRAM"/>
+          <items xsi:type="scave:HistogramChart" name="">
+            <properties name="X.Axis.Title" value="channel load"/>
+            <properties name="Y.Axis.Title" value="count"/>
+            <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+            <properties name="Label.Font" value="Sans-regular-10"/>
+            <properties name="Legend.Display" value="true"/>
+            <properties name="Legend.Border" value="true"/>
+            <properties name="Legend.Position" value="Below"/>
+            <properties name="Hist.Data" value="Count"/>
+          </items>
+        </items>
+      </items>
+      <items xsi:type="scave:Group" name="channelLoad, node 5, linechart">
+        <items xsi:type="scave:Group" name="fluid traffic, winavg">
+          <items xsi:type="scave:Add" filterPattern="module(*.node[5].*) AND name(vec_channel_load) AND file(/artery/scenarios/artery/results/*fluid-*100-0.vec) " type="VECTOR"/>
+          <items xsi:type="scave:Apply" operation="winavg">
+            <params name="windowSize" value="10"/>
+          </items>
+          <items xsi:type="scave:LineChart" name="" lineNameFormat="${iterationvars}">
+            <properties name="Graph.Title" value=" "/>
+            <properties name="X.Axis.Title" value="simulation time (s)"/>
+            <properties name="Y.Axis.Title" value="channel load"/>
+            <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+            <properties name="Label.Font" value="Sans-regular-10"/>
+            <properties name="Legend.Display" value="true"/>
+            <properties name="Legend.Border" value="true"/>
+            <properties name="Legend.Position" value="Below"/>
+            <properties name="X.Axis.Min" value="300.0"/>
+            <properties name="X.Axis.Max" value="900.0"/>
+            <properties name="Line.Name/grid_traffic_all-1-20171010-15:04:47-15783 1 $0=&quot;my_roads/grid_traffic_dense/my_grid.sumo.cfg&quot;" value="dense"/>
+            <properties name="Line.Name/grid_traffic_all-0-20171010-15:01:28-15783 0 $0=&quot;my_roads/grid_traffic_fluid/my_grid.sumo.cfg&quot;" value="fluid"/>
+            <properties name="Line.Name/grid_traffic_all-0-20171011-10:53:28-8168 0 $0=&quot;my_roads/grid_traffic_fluid/my_grid.sumo.cfg&quot;" value="fluid traffic"/>
+            <properties name="Line.Name/grid_traffic_all-1-20171011-10:56:25-8168 1 $0=&quot;my_roads/grid_traffic_dense/my_grid.sumo.cfg&quot;" value="dense traffic"/>
+            <properties name="Line.Name/grid_traffic_dense-0-20171028-20:54:38-8494 dense" value="dense"/>
+            <properties name="Line.Name/grid_traffic_fluid-0-20171028-20:50:08-8217 fluid" value="fluid"/>
+            <properties name="Line.Name/$period=1" value="100 ms"/>
+            <properties name="Line.Name/$period=3" value="300 ms"/>
+            <properties name="Line.Name/$period=5" value="500 ms"/>
+            <properties name="Line.Name/$period=10" value="1000 ms"/>
+            <properties name="Line.Color/$period=100" value="blue"/>
+            <properties name="Line.Name/$period=100" value="100 ms"/>
+            <properties name="Line.Color/$period=200" value="red"/>
+            <properties name="Line.Name/$period=200" value="200 ms"/>
+            <properties name="Line.Color/$period=500" value="#008000"/>
+            <properties name="Line.Name/$period=500" value="500 ms"/>
+            <properties name="Line.Color/$period=1000" value="orange"/>
+            <properties name="Line.Name/$period=1000" value="1000 ms"/>
+          </items>
+        </items>
+      </items>
+    </datasets>
+    <datasets name="PER">
+      <items xsi:type="scave:Group" name="&quot;n&quot; nodes, barchart, fluid">
+        <items xsi:type="scave:Add" filterPattern="name(packetErrorRate:histogram:mean) AND (module(*.node[13..16].*) OR module(*.node[5].*) OR module(*.node[8].*)) AND file(*fluid-*) "/>
+        <items xsi:type="scave:BarChart" name="">
+          <properties name="Graph.Title" value=" "/>
+          <properties name="X.Axis.Title" value="nodes"/>
+          <properties name="Y.Axis.Title" value="PER"/>
+          <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+          <properties name="Label.Font" value="Sans-regular-10"/>
+          <properties name="Legend.Display" value="true"/>
+          <properties name="Legend.Border" value="true"/>
+          <properties name="Legend.Position" value="Below"/>
+        </items>
+      </items>
+      <items xsi:type="scave:Group" name="&quot;n&quot; nodes, barchart, dense">
+        <items xsi:type="scave:Add" filterPattern="name(packetErrorRate:histogram:mean) AND (module(*.node[13..16].*) OR module(*.node[5].*) OR module(*.node[8].*)) AND file(*dense-*) "/>
+        <items xsi:type="scave:BarChart" name="">
+          <properties name="Graph.Title" value=" "/>
+          <properties name="X.Axis.Title" value="nodes"/>
+          <properties name="Y.Axis.Title" value="PER"/>
+          <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+          <properties name="Label.Font" value="Sans-regular-10"/>
+          <properties name="Legend.Display" value="true"/>
+          <properties name="Legend.Border" value="true"/>
+          <properties name="Legend.Position" value="Below"/>
+          <properties name="Bar.Color/dense-$period=1000" value="orange"/>
+          <properties name="Bar.Color/dense-$period=500" value="#008000"/>
+        </items>
+      </items>
+      <items xsi:type="scave:Group" name="vs distance, nodes 8 &amp; 13, PDF">
+        <items xsi:type="scave:Group" name="fluid traffic, 100 ms">
+          <items xsi:type="scave:Add" filterPattern="(module(World.node[13].wlan[*].mac.rx) OR module(World.node[8].wlan[*].mac.rx)) AND name(errors_per_distance:histogram) AND file(*fluid*100-0.sca) " type="HISTOGRAM"/>
+          <items xsi:type="scave:HistogramChart" name="PDF">
+            <properties name="X.Axis.Title" value="distance (m)"/>
+            <properties name="Y.Axis.Title" value="error PDF"/>
+            <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+            <properties name="Label.Font" value="Sans-regular-10"/>
+            <properties name="Legend.Display" value="true"/>
+            <properties name="Legend.Border" value="true"/>
+            <properties name="Legend.Position" value="Below"/>
+            <properties name="Hist.Bar" value="Outline"/>
+            <properties name="Hist.Data" value="Pdf"/>
+          </items>
+          <items xsi:type="scave:HistogramChart" name="CDF">
+            <properties name="X.Axis.Title" value="distance (m)"/>
+            <properties name="Y.Axis.Title" value="error CDF"/>
+            <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+            <properties name="Label.Font" value="Sans-regular-10"/>
+            <properties name="Legend.Display" value="true"/>
+            <properties name="Legend.Border" value="true"/>
+            <properties name="Legend.Position" value="Below"/>
+            <properties name="Hist.Bar" value="Outline"/>
+            <properties name="Hist.Data" value="Cdf"/>
+            <properties name="Hist.Color/World.node[13].wlan[0].mac.rx" value="blue"/>
+            <properties name="Hist.Color/World.node[8].wlan[0].mac.rx" value="black"/>
+          </items>
+        </items>
+        <items xsi:type="scave:Group" name="dense traffic, 100 ms">
+          <items xsi:type="scave:Add" filterPattern="(module(World.node[13].wlan[*].mac.rx) OR module(World.node[8].wlan[*].mac.rx)) AND name(errors_per_distance:histogram) AND file(*dense*100-0.sca) " type="HISTOGRAM"/>
+          <items xsi:type="scave:HistogramChart" name="PDF">
+            <properties name="X.Axis.Title" value="distance (m)"/>
+            <properties name="Y.Axis.Title" value="error PDF"/>
+            <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+            <properties name="Label.Font" value="Sans-regular-10"/>
+            <properties name="Legend.Display" value="true"/>
+            <properties name="Legend.Border" value="true"/>
+            <properties name="Legend.Position" value="Below"/>
+            <properties name="Hist.Bar" value="Outline"/>
+            <properties name="Hist.Data" value="Pdf"/>
+          </items>
+          <items xsi:type="scave:HistogramChart" name="CDF">
+            <properties name="X.Axis.Title" value="distance (m)"/>
+            <properties name="Y.Axis.Title" value="error CDF"/>
+            <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+            <properties name="Label.Font" value="Sans-regular-10"/>
+            <properties name="Legend.Display" value="true"/>
+            <properties name="Legend.Border" value="true"/>
+            <properties name="Legend.Position" value="Below"/>
+            <properties name="Hist.Bar" value="Outline"/>
+            <properties name="Hist.Data" value="Cdf"/>
+            <properties name="Hist.Color/World.node[13].wlan[0].mac.rx" value="blue"/>
+            <properties name="Hist.Color/World.node[8].wlan[0].mac.rx" value="black"/>
+          </items>
+        </items>
+        <items xsi:type="scave:Group" name="fluid traffic, 500 ms">
+          <items xsi:type="scave:Add" filterPattern="(module(World.node[13].wlan[*].mac.rx) OR module(World.node[8].wlan[*].mac.rx)) AND name(errors_per_distance:histogram) AND file(*fluid*500-0.sca) " type="HISTOGRAM"/>
+          <items xsi:type="scave:HistogramChart" name="PDF">
+            <properties name="X.Axis.Title" value="distance (m)"/>
+            <properties name="Y.Axis.Title" value="error PDF"/>
+            <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+            <properties name="Label.Font" value="Sans-regular-10"/>
+            <properties name="Legend.Display" value="true"/>
+            <properties name="Legend.Border" value="true"/>
+            <properties name="Legend.Position" value="Below"/>
+            <properties name="Hist.Bar" value="Outline"/>
+            <properties name="Hist.Data" value="Pdf"/>
+          </items>
+          <items xsi:type="scave:HistogramChart" name="CDF">
+            <properties name="X.Axis.Title" value="distance (m)"/>
+            <properties name="Y.Axis.Title" value="error CDF"/>
+            <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+            <properties name="Label.Font" value="Sans-regular-10"/>
+            <properties name="Legend.Display" value="true"/>
+            <properties name="Legend.Border" value="true"/>
+            <properties name="Legend.Position" value="Below"/>
+            <properties name="Hist.Bar" value="Outline"/>
+            <properties name="Hist.Data" value="Cdf"/>
+          </items>
+        </items>
+        <items xsi:type="scave:Group" name="dense traffic, 500 ms">
+          <items xsi:type="scave:Add" filterPattern="(module(World.node[13].wlan[*].mac.rx) OR module(World.node[8].wlan[*].mac.rx)) AND name(errors_per_distance:histogram) AND file(*dense*500-0.sca) " type="HISTOGRAM"/>
+          <items xsi:type="scave:HistogramChart" name="PDF">
+            <properties name="X.Axis.Title" value="distance (m)"/>
+            <properties name="Y.Axis.Title" value="error PDF"/>
+            <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+            <properties name="Label.Font" value="Sans-regular-10"/>
+            <properties name="Legend.Display" value="true"/>
+            <properties name="Legend.Border" value="true"/>
+            <properties name="Legend.Position" value="Below"/>
+            <properties name="Hist.Bar" value="Outline"/>
+            <properties name="Hist.Data" value="Pdf"/>
+          </items>
+          <items xsi:type="scave:HistogramChart" name="CDF">
+            <properties name="X.Axis.Title" value="distance (m)"/>
+            <properties name="Y.Axis.Title" value="error CDF"/>
+            <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+            <properties name="Label.Font" value="Sans-regular-10"/>
+            <properties name="Legend.Display" value="true"/>
+            <properties name="Legend.Border" value="true"/>
+            <properties name="Legend.Position" value="Below"/>
+            <properties name="Hist.Bar" value="Outline"/>
+            <properties name="Hist.Data" value="Cdf"/>
+            <properties name="Hist.Color/World.node[8].wlan[0].mac.rx" value="black"/>
+            <properties name="Hist.Color/World.node[13].wlan[0].mac.rx" value="#008000"/>
+          </items>
+        </items>
+      </items>
+      <items xsi:type="scave:Group" name="minSNIR"/>
+    </datasets>
+    <datasets name="LATENCY">
+      <items xsi:type="scave:Group" name="fluid traffic">
+        <items xsi:type="scave:Add" filterPattern="module(World.globalListener) AND name(node[13]_cam_latency:vector) AND run(grid-traffic_fluid*)" type="VECTOR"/>
+        <items xsi:type="scave:Compute" operation="multiply-by">
+          <params name="a" value="1000000"/>
+        </items>
+        <items xsi:type="scave:Discard" filterPattern="module(World.globalListener) AND name(node[13]_cam_latency:vector)" type="VECTOR"/>
+        <items xsi:type="scave:LineChart" name="" lineNameFormat="">
+          <properties name="Graph.Title" value=" "/>
+          <properties name="X.Axis.Title" value="simulation time (s)"/>
+          <properties name="Y.Axis.Title" value="latency (µs)"/>
+          <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+          <properties name="Label.Font" value="Sans-regular-10"/>
+          <properties name="Legend.Display" value="true"/>
+          <properties name="Legend.Border" value="true"/>
+          <properties name="Legend.Position" value="Below"/>
+          <properties name="Line.Name/grid_traffic_dense-0-20171028-20:54:38-8494 dense" value="dense"/>
+          <properties name="Line.Name/grid_traffic_fluid-0-20171028-20:50:08-8217 fluid" value="fluid"/>
+          <properties name="Symbols.Type" value="Dot"/>
+          <properties name="Line.Type" value="Dots"/>
+        </items>
+        <items xsi:type="scave:Add" filterPattern="module(World.globalListener) AND name(node[13]_cam_latencies:histogram)  AND run(grid-traffic_fluid-*)" type="HISTOGRAM"/>
+        <items xsi:type="scave:HistogramChart" name="">
+          <properties name="X.Axis.Title" value="latency (µs)"/>
+          <properties name="Y.Axis.Title" value="count"/>
+          <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+          <properties name="Label.Font" value="Sans-regular-10"/>
+        </items>
+      </items>
+      <items xsi:type="scave:Group" name="fluid traffic, aggregated">
+        <items xsi:type="scave:Add" filterPattern="name(node[*]_cam_latency:vector) AND file(*fluid*100-0.vec) " type="VECTOR"/>
+        <items xsi:type="scave:Apply" operation="multiply-by">
+          <params name="a" value="1000000"/>
+        </items>
+        <items xsi:type="scave:Apply" operation="winavg">
+          <params name="windowSize" value="5"/>
+        </items>
+        <items xsi:type="scave:Discard" filterPattern="NOT file(*computed*)" type="VECTOR"/>
+        <items xsi:type="scave:LineChart" name="" lineNameFormat="">
+          <properties name="X.Axis.Title" value="simulation time (s)"/>
+          <properties name="Y.Axis.Title" value="latency (µs)"/>
+          <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+          <properties name="Label.Font" value="Sans-regular-10"/>
+          <properties name="X.Axis.Min" value="300.0"/>
+          <properties name="X.Axis.Max" value="500.0"/>
+          <properties name="Symbols.Type" value="None"/>
+        </items>
+      </items>
+      <items xsi:type="scave:Group" name="dense traffic, aggregated">
+        <items xsi:type="scave:Add" filterPattern="name(node[*]_cam_latency:vector) AND file(*dense*100-0.vec) " type="VECTOR"/>
+        <items xsi:type="scave:Apply" operation="multiply-by">
+          <params name="a" value="1000000"/>
+        </items>
+        <items xsi:type="scave:Apply" operation="winavg">
+          <params name="windowSize" value="5"/>
+        </items>
+        <items xsi:type="scave:Discard" filterPattern="NOT file(*computed*)" type="VECTOR"/>
+        <items xsi:type="scave:LineChart" name="" lineNameFormat="">
+          <properties name="X.Axis.Title" value="simulation time (s)"/>
+          <properties name="Y.Axis.Title" value="latency (µs)"/>
+          <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+          <properties name="Label.Font" value="Sans-regular-10"/>
+          <properties name="X.Axis.Min" value="300.0"/>
+          <properties name="X.Axis.Max" value="500.0"/>
+          <properties name="Symbols.Type" value="None"/>
+        </items>
+      </items>
+    </datasets>
+    <datasets name="LOSTINAROW">
+      <items xsi:type="scave:Group" name="all nodes, traffic fluid, 100ms">
+        <items xsi:type="scave:Add" filterPattern="name(node[*]_cam_lostinarow:vector) AND file(*fluid-*100-0.vec) " type="VECTOR"/>
+        <items xsi:type="scave:LineChart" name="" lineNameFormat="">
+          <properties name="X.Axis.Title" value="simulation time (s)"/>
+          <properties name="Y.Axis.Title" value="# packets lost consecutively"/>
+          <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+          <properties name="Label.Font" value="Sans-regular-10"/>
+          <properties name="X.Axis.Min" value="300.0"/>
+          <properties name="X.Axis.Max" value="500.0"/>
+        </items>
+      </items>
+      <items xsi:type="scave:Group" name="all nodes, traffic fluid, 500ms">
+        <items xsi:type="scave:Add" filterPattern="name(node[*]_cam_lostinarow:vector) AND file(*fluid-*500-0.vec) " type="VECTOR"/>
+        <items xsi:type="scave:LineChart" name="" lineNameFormat="">
+          <properties name="X.Axis.Title" value="simulation time (s)"/>
+          <properties name="Y.Axis.Title" value="# packets lost consecutively"/>
+          <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+          <properties name="Label.Font" value="Sans-regular-10"/>
+          <properties name="X.Axis.Min" value="300.0"/>
+          <properties name="X.Axis.Max" value="500.0"/>
+        </items>
+      </items>
+      <items xsi:type="scave:Group" name="all nodes, traffic dense, 500ms">
+        <items xsi:type="scave:Add" filterPattern="name(node[*]_cam_lostinarow:vector) AND file(*dense-*500-0.vec) " type="VECTOR"/>
+        <items xsi:type="scave:LineChart" name="" lineNameFormat="">
+          <properties name="X.Axis.Title" value="simulation time (s)"/>
+          <properties name="Y.Axis.Title" value="# packets lost consecutively"/>
+          <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+          <properties name="Label.Font" value="Sans-regular-10"/>
+          <properties name="X.Axis.Min" value="300.0"/>
+          <properties name="X.Axis.Max" value="500.0"/>
+        </items>
+      </items>
+    </datasets>
+    <datasets name="NUMBER OF VEHICLES">
+      <items xsi:type="scave:Add" filterPattern="module(World.globalMapper) AND name(num_nodes_vector) AND file(*1000-0.vec) " type="VECTOR"/>
+      <items xsi:type="scave:LineChart" name="" lineNameFormat="">
+        <properties name="X.Axis.Title" value="simulation time (s)"/>
+        <properties name="Y.Axis.Title" value="number of cars"/>
+        <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+        <properties name="Label.Font" value="Sans-regular-10"/>
+        <properties name="Legend.Display" value="true"/>
+        <properties name="Legend.Border" value="true"/>
+        <properties name="Legend.Position" value="Below"/>
+        <properties name="X.Axis.Min" value="300.0"/>
+        <properties name="X.Axis.Max" value="600.0"/>
+        <properties name="Line.Color//artery/scenarios/artery/results/grid-traffic_dense-period-buildings-limited/dense-$period=1000-0.vec grid-traffic_dense-period-buildings-limited-0-20171203-05:05:30-29267 grid-traffic_dense-period-buildings-limited dense-$period=1000" value="red"/>
+        <properties name="Line.Name//artery/scenarios/artery/results/grid-traffic_dense-period-buildings-limited/dense-$period=1000-0.vec grid-traffic_dense-period-buildings-limited-0-20171203-05:05:30-29267 grid-traffic_dense-period-buildings-limited dense-$period=1000" value="dense traffic"/>
+        <properties name="Line.Color//artery/scenarios/artery/results/grid-traffic_fluid-period-buildings-limited/fluid-$period=1000-0.vec grid-traffic_fluid-period-buildings-limited-0-20171202-08:10:13-27924 grid-traffic_fluid-period-buildings-limited fluid-$period=1000" value="blue"/>
+        <properties name="Line.Name//artery/scenarios/artery/results/grid-traffic_fluid-period-buildings-limited/fluid-$period=1000-0.vec grid-traffic_fluid-period-buildings-limited-0-20171202-08:10:13-27924 grid-traffic_fluid-period-buildings-limited fluid-$period=1000" value="fluid traffic"/>
+      </items>
+    </datasets>
+    <datasets name="PER test">
+      <items xsi:type="scave:Group" name="nodes 13 a 16, barchart, fluid">
+        <items xsi:type="scave:Add" filterPattern="name(packetErrorRate:histogram:mean) AND module(*.node[13..16].*) AND file(*fluid-*) "/>
+        <items xsi:type="scave:BarChart"/>
+        <items xsi:type="scave:ComputeScalar" scalarName="nosequefaig" valueExpr="mean('packetErrorRate:histogram:mean') " moduleExpr="group" groupByExpr="name"/>
+        <items xsi:type="scave:Discard" filterPattern="name(packetErrorRate:histogram:mean) AND module(*.node[13..16].*) AND file(*fluid-*) "/>
+        <items xsi:type="scave:BarChart" name="">
+          <properties name="Graph.Title" value=" "/>
+          <properties name="X.Axis.Title" value="nodes"/>
+          <properties name="Y.Axis.Title" value="PER"/>
+          <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+          <properties name="Label.Font" value="Sans-regular-10"/>
+          <properties name="Legend.Display" value="true"/>
+          <properties name="Legend.Border" value="true"/>
+          <properties name="Legend.Position" value="Below"/>
+        </items>
+      </items>
+      <items xsi:type="scave:Group" name="nodes 5 &amp; 8, barchart, fluid">
+        <items xsi:type="scave:Add" filterPattern="name(packetErrorRate:histogram:mean) AND (module(*.node[5].*) OR module(*.node[8].*)) AND file(*fluid-*) "/>
+        <items xsi:type="scave:BarChart"/>
+        <items xsi:type="scave:ComputeScalar" scalarName="nosequefaig" valueExpr="mean('packetErrorRate:histogram:mean') " moduleExpr="group" groupByExpr="name"/>
+        <items xsi:type="scave:Discard" filterPattern="name(packetErrorRate:histogram:mean) AND (module(*.node[5].*) OR module(*.node[8].*)) AND file(*fluid-*) "/>
+        <items xsi:type="scave:BarChart" name="">
+          <properties name="Graph.Title" value=" "/>
+          <properties name="X.Axis.Title" value="nodes"/>
+          <properties name="Y.Axis.Title" value="PER"/>
+          <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+          <properties name="Label.Font" value="Sans-regular-10"/>
+          <properties name="Legend.Display" value="true"/>
+          <properties name="Legend.Border" value="true"/>
+          <properties name="Legend.Position" value="Below"/>
+        </items>
+      </items>
+    </datasets>
+  </datasets>
+  <chartSheets>
+    <chartSheets name="default" charts="//@datasets/@datasets.0/@items.0/@items.0/@items.1 //@datasets/@datasets.1/@items.0/@items.1 //@datasets/@datasets.2/@items.0/@items.3 //@datasets/@datasets.0/@items.0/@items.1/@items.1 //@datasets/@datasets.1/@items.2/@items.0/@items.1 //@datasets/@datasets.2/@items.0/@items.5 //@datasets/@datasets.0/@items.2/@items.0/@items.2 //@datasets/@datasets.0/@items.2/@items.1/@items.2 //@datasets/@datasets.0/@items.1/@items.0/@items.1 //@datasets/@datasets.4/@items.1 //@datasets/@datasets.0/@items.3/@items.0/@items.1 //@datasets/@datasets.0/@items.3/@items.1/@items.2 //@datasets/@datasets.0/@items.3/@items.2/@items.2 //@datasets/@datasets.0/@items.4/@items.0/@items.1 //@datasets/@datasets.1/@items.1/@items.1 //@datasets/@datasets.5/@items.0/@items.4 //@datasets/@datasets.5/@items.0/@items.1 //@datasets/@datasets.0/@items.5/@items.0/@items.2 //@datasets/@datasets.5/@items.1/@items.1 //@datasets/@datasets.5/@items.1/@items.4 //@datasets/@datasets.2/@items.1/@items.4 //@datasets/@datasets.1/@items.2/@items.1/@items.1 //@datasets/@datasets.1/@items.2/@items.3/@items.1 //@datasets/@datasets.1/@items.2/@items.2/@items.1 //@datasets/@datasets.3/@items.0/@items.1 //@datasets/@datasets.3/@items.1/@items.1 //@datasets/@datasets.3/@items.2/@items.1 //@datasets/@datasets.1/@items.2/@items.1/@items.2 //@datasets/@datasets.1/@items.2/@items.0/@items.2 //@datasets/@datasets.1/@items.2/@items.2/@items.2 //@datasets/@datasets.1/@items.2/@items.3/@items.2 //@datasets/@datasets.2/@items.2/@items.4"/>
+    <chartSheets charts="//@datasets/@datasets.1/@items.2/@items.0/@items.1">
+      <properties name="DisplayChartDetails" value="true"/>
+    </chartSheets>
+  </chartSheets>
+</scave:Analysis>

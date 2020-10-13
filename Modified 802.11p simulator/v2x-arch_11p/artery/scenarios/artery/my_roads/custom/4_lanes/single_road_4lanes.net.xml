@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on vie 30 nov 2018 15:54:43 CET by Netedit Version 0.29.0
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netedit.exeConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="/home/wng/v2x-arch_11p/artery/scenarios/artery/my_roads/custom/single_road.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/home/wng/v2x-arch_11p/artery/scenarios/artery/my_roads/custom/single_road.net.xml"/>
+    </output>
+
+    <processing>
+        <no-internal-links value="true"/>
+        <no-turnarounds value="true"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+        <junctions.corner-detail value="0"/>
+    </processing>
+
+</configuration>
+-->
+
+<net version="0.27" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="0.00,0.00,1000.00,0.00" origBoundary="2.852656,41.882297,2.898048,41.899504" projParameter="+proj=utm +zone=31 +ellps=WGS84 +datum=WGS84 +units=m +no_defs"/>
+
+    <edge id="E0" from="J0" to="J1" priority="1">
+        <lane id="E0_0" index="0" allow="passenger" speed="33.33" length="1000.00" shape="0.00,-11.55 1000.00,-11.55"/>
+        <lane id="E0_1" index="1" allow="passenger" speed="33.33" length="1000.00" shape="0.00,-8.25 1000.00,-8.25"/>
+        <lane id="E0_2" index="2" allow="passenger" speed="33.33" length="1000.00" shape="0.00,-4.95 1000.00,-4.95"/>
+        <lane id="E0_3" index="3" allow="passenger" speed="33.33" length="1000.00" shape="0.00,-1.65 1000.00,-1.65"/>
+    </edge>
+
+    <junction id="J0" type="unregulated" x="0.00" y="0.00" incLanes="" intLanes="" shape="0.00,-0.05 0.00,-13.15"/>
+    <junction id="J1" type="unregulated" x="1000.00" y="0.00" incLanes="E0_0 E0_1 E0_2 E0_3" intLanes="" shape="1000.00,-13.15 1000.00,-0.05"/>
+
+</net>

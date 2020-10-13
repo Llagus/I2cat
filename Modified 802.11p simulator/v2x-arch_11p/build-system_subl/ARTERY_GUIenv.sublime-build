@@ -1,0 +1,4 @@
+{
+    "shell_cmd": "cd ~/v2x-arch_11p/artery && cmake --build build && cd ~/v2x-arch_11p/artery/scenarios/artery && ./run_ARTERY_guienv_from_sublime.cmd"
+}
+

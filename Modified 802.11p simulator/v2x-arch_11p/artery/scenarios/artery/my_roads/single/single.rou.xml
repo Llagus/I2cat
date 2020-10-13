@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+
+<routes>
+	
+	
+	<!--...............-->
+	<!-- VEHICLE TYPES -->
+	<!--...............-->
+	<vType	id="type1" 		color="green"		guiShape="passenger/sedan" 		maxSpeed="15"	speedDev="0.5" />  
+	<vType	id="typ_2" 		color="yellow"		guiShape="passenger/sedan" 		maxSpeed="15"	speedDev="0.5" />   
+	<vType	id="type3" 		color="blue"		guiShape="passenger/sedan" 		maxSpeed="15"	speedDev="0.5" />   
+	<vType	id="type4" 		color="grey"		guiShape="passenger/sedan" 		maxSpeed="15"	speedDev="0.5" />
+	<vType	id="test" 		color="green"		guiShape="passenger/sedan" 		maxSpeed="15"	departSpeed="15"/>   
+ 
+
+
+	<vType 	id="rsu"	  		color="orange"
+		   	accel="0"    		decel="0"    
+		   	sigma="0.0" 		length="9" 
+		   	maxSpeed="0"  		guiShape="passenger/van"			/>
+
+	<vType 	id="ambu"  			color="white"     
+			accel="5"  			decel="6"  
+			length="7"			
+			maxSpeed="30" 		speedFactor="5" 		
+		   	vClass="emergency"  
+		   	guiShape="emergency"
+		   	lcSpeedGain="1000"
+		   	lcKeepRight="0.1"
+		   	impatience="1000"
+	/>
+
+	
+
+	
+	<!--................-->
+	<!-- ROUTES for RSU -->
+	<!--................-->
+	<route id="route-rsu"  edges="gneE1" />
+	
+
+	<!--............................-->
+	<!-- RSU VEHICLES nodes 	  ..-->
+	<!--............................-->		
+	<vehicle id="rsu1" type="rsu" route="route-rsu"  depart="0" departPos ="200">
+             <stop lane="gneE1_0"  endPos="200"       triggered="true" />
+    </vehicle>
+  	<vehicle id="rsu2" type="rsu" route="route-rsu"  depart="0" departPos ="500">
+             <stop lane="gneE1_0"  endPos="500"       triggered="true" />
+    </vehicle>
+	<vehicle id="rsu3" type="rsu" route="route-rsu"  depart="0" departPos ="800">
+             <stop lane="gneE1_0"  endPos="800"       triggered="true" />
+    </vehicle>
+
+
+    <!--................-->
+	<!-- ROUTES for CAR -->
+	<!--................-->
+	<route id="route_ambu" edges="gneE1 gneE2 gneE3"/>
+    
+    
+    
+
+    <!--............................-->
+	<!-- CAR VEHICLES nodes		  ..-->
+	<!--............................-->	
+    <vehicle id="4" type="test" route = "route_ambu" depart="3" />
+    <vehicle id="5" type="ambu" route = "route_ambu" depart="10" />
+    
+
+    
+	<!--............................-->
+	<!-- ALPHA notes     		  ..-->
+	<!--...............................	
+		for sensitivity = -88 dBm, 
+			for a = 5: comm ~ 10  m, interf = 50  m
+			for a = 4: comm ~ 25  m, interf = 150 m
+			for a = 3: comm ~ 150 m, interf > 400 m
+		for sensitivity = -110 dBm,
+			for a = 3, comm > 400 m
+	-->
+
+</routes>
+

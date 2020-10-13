@@ -1,0 +1,31 @@
+<routes>
+
+	<!--...............-->
+	<!-- VEHICLE TYPES -->
+	<!--...............-->
+	<vType	id="type1" 		color="green"		guiShape="passenger/sedan" 		maxSpeed="33.33"		minGap="2"/>  
+	<vType	id="type2" 		color="yellow"		guiShape="passenger/sedan" 		maxSpeed="33.33"		minGap="2"/>  
+	<vType	id="type3" 		color="blue"		guiShape="passenger/sedan" 		maxSpeed="33.33"		minGap="2"/>  
+	<vType	id="type4" 		color="grey"		guiShape="passenger/sedan" 		maxSpeed="33.33"		minGap="2"/> 
+	<vType	id="type5" 		color="red"		guiShape="passenger/sedan" 		maxSpeed="33.33"		minGap="2"/>
+	<vType	id="type6" 		color="white"		guiShape="passenger/sedan" 		maxSpeed="33.33"		minGap="2"/>
+
+	<!--................-->
+	<!-- ROUTES for CAR -->
+	<!--................-->
+	<!-- example horizontal route: "3hr" == edge 3 horitzontal to right -->
+	<route id="route0hr" edges="E0"	/>
+
+
+
+	<!--............................-->
+	<!-- CAR VEHICLES nodes[16..x]..-->
+	<!--............................-->		
+	<!-- for perpetual flow, "end=" > simulation time in .cfg file-->
+	<flow	id="flow0hr"			type="type2"
+		  	begin="0" 				end= "7200"		period="0.001"
+			departLane="random"						departSpeed="random"
+			departPos="random"
+			route="route0hr"						/>
+
+</routes>

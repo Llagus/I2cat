@@ -1,0 +1,269 @@
+<routes>
+	
+
+
+
+
+
+	<!--...............-->
+	<!-- VEHICLE TYPES -->
+	<!--...............-->
+	<vType id="speedy1"    color="blue"   guiShape="passenger/sedan" 
+		   speedFactor="5" 
+    />
+
+
+<!-- NOTES: maxSpeed = 70, speedFactor * speedLane (changed in .net) is realism -->
+	
+	<vType 	id="rsu"	  	color="orange"
+		   	accel="0"    	decel="0"    
+		   	sigma="0.0" 	length="9" 
+		   	maxSpeed="0"  	
+		   	guiShape="passenger/van"	/>
+
+	
+
+
+	
+	<!--................-->
+	<!-- ROUTES for RSU -->
+	<!--................-->
+	<route id="route-rsu1"  edges="237657752#1" 					/>
+	<route id="route-rsu2"  edges="31267167"    					/>
+	<route id="route-rsu3"  edges="310929483#1-AddedOnRampEdge"  	/>
+	<route id="route-rsu4"  edges="310929483#1"  					/>
+	<route id="route-rsu5"  edges="310929483#1-AddedOffRampEdge" 	/>
+	<route id="route-rsu6"	edges="18524608#1.0" 					/>
+	<route id="route-rsu7"	edges="18524630#1" 						/>
+
+	
+	
+
+	<!--............................-->
+	<!-- RSU VEHICLES nodes 1 to 26 -->
+	<!--............................-->	
+	<vehicle id="rsu1"  			type="rsu"	 route="route-rsu1"  depart="0" 	departPos ="70">
+    		<stop lane="237657752#1_0"  		 endPos="70"  		 triggered="true" 					/>
+    </vehicle>
+
+    <vehicle id="rsu2"  			type="rsu"	 route="route-rsu2"  depart="0" 	departPos ="70">
+            <stop lane="31267167_0" 			 endPos="70"           triggered="true" 				/>
+    </vehicle>
+
+	<vehicle id="rsu3"  			type="rsu" 	 route="route-rsu2"  depart="0"  	departPos ="170">
+            <stop lane="31267167_0"  			 endPos="170"        triggered="true" 					/>
+    </vehicle>
+
+	<vehicle id="rsu4"  			type="rsu" 	 route="route-rsu3"  depart="0"		departPos ="50">
+            <stop lane="310929483#1-AddedOnRampEdge_0"  			 endPos="50"    triggered="true" 	/>
+    </vehicle>
+
+   	<vehicle id="rsu5"  			type="rsu" 	 route="route-rsu4"  depart="0" 	departPos ="60">
+            <stop lane="310929483#1_0"  		 endPos="60"         triggered="true" 					/>
+    </vehicle>
+	<vehicle id="rsu6"  			type="rsu" 	 route="route-rsu4"  depart="0" 	departPos ="160">
+             <stop lane="310929483#1_0"  		 endPos="160"        triggered="true" 					/>
+    </vehicle>
+	<vehicle id="rsu7"  			type="rsu" 	 route="route-rsu4"  depart="0"  	departPos ="260">
+            <stop lane="310929483#1_0"  		 endPos="260"        triggered="true" 					/>
+    </vehicle>
+	<vehicle id="rsu8"  			type="rsu"   route="route-rsu4"  depart="0" 	departPos ="360">
+            <stop lane="310929483#1_0"  		 endPos="360"        triggered="true" 					/>
+    </vehicle>
+	<vehicle id="rsu9"  			type="rsu"   route="route-rsu4"  depart="0" 	departPos ="460">
+            <stop lane="310929483#1_0"  		 endPos="460"        triggered="true" 					/>
+    </vehicle>
+	<vehicle id="rsu10"  			type="rsu"   route="route-rsu4"  depart="0"  	departPos ="560">
+            <stop lane="310929483#1_0"   		 endPos="560"        triggered="true" 					/>
+    </vehicle>
+	<vehicle id="rsu11" 			type="rsu"   route="route-rsu4"  depart="0"  	departPos ="660">
+            <stop lane="310929483#1_0"   		 endPos="660"        triggered="true" 					/>
+    </vehicle>
+	<vehicle id="rsu12"				type="rsu"   route="route-rsu4"  depart="0"  	departPos ="760">
+            <stop lane="310929483#1_0"   		 endPos="760"        triggered="true" 					/>
+    </vehicle>
+
+	<vehicle id="rsu13"  			type="rsu"   route="route-rsu5"  depart="0"  	departPos ="50">
+            <stop lane="310929483#1-AddedOffRampEdge_0"  	 		 endPos="50"    triggered="true" 	/>
+    </vehicle>
+
+	<vehicle id="rsu14"  			type="rsu"   route="route-rsu6"  depart="0"  	departPos ="30">
+            <stop lane="18524608#1.0_0"  		 endPos="30"         triggered="true" 					/>
+    </vehicle>
+	<vehicle id="rsu15"  			type="rsu"   route="route-rsu6"  depart="0"  	departPos ="130">
+            <stop lane="18524608#1.0_0"  		 endPos="130"        triggered="true" 					/>
+    </vehicle>
+	<vehicle id="rsu16"  			type="rsu"   route="route-rsu6"  depart="0"  	departPos ="230">
+            <stop lane="18524608#1.0_0"  		 endPos="230"        triggered="true" 					/>
+    </vehicle>
+	<vehicle id="rsu17"  			type="rsu"   route="route-rsu6"  depart="0"  	departPos ="330">
+            <stop lane="18524608#1.0_0"  		 endPos="330"        triggered="true" 					/>
+    </vehicle>
+    	<vehicle id="rsu18"  		type="rsu"   route="route-rsu6"  depart="0"  	departPos ="430">
+            <stop lane="18524608#1.0_0"  		 endPos="430"        triggered="true" 					/>
+    </vehicle>
+
+	<vehicle id="rsu19"  			type="rsu"   route="route-rsu7"  depart="0"  	departPos ="30">
+            <stop lane="18524630#1_0"  	 		 endPos="30"         triggered="true" 					/>
+    </vehicle>
+	<vehicle id="rsu20"  			type="rsu"   route="route-rsu7"  depart="0"  	departPos ="130">
+            <stop lane="18524630#1_0"  	 		 endPos="130"        triggered="true" 					/>
+    </vehicle>
+	<vehicle id="rsu21"  			type="rsu"   route="route-rsu7"  depart="0"  	departPos ="230">
+            <stop lane="18524630#1_0"  	 		 endPos="230"        triggered="true" 					/>
+    </vehicle>
+	<vehicle id="rsu22"  			type="rsu"   route="route-rsu7"  depart="0"  	departPos ="330">
+            <stop lane="18524630#1_0"  	 		 endPos="330"        triggered="true" 					/>
+    </vehicle> 
+	<vehicle id="rsu23"  			type="rsu"   route="route-rsu7"  depart="0"  	departPos ="430">
+            <stop lane="18524630#1_0"  	 		 endPos="430"        triggered="true" 					/>
+    </vehicle>
+	<vehicle id="rsu24"  			type="rsu"   route="route-rsu7"  depart="0"  	departPos ="530">
+            <stop lane="18524630#1_0"  	 		 endPos="530"        triggered="true" 					/>
+    </vehicle>
+	<vehicle id="rsu25"  			type="rsu"   route="route-rsu7"  depart="0"  	departPos ="630">
+            <stop lane="18524630#1_0"  	 		 endPos="630"        triggered="true" 					/>
+    </vehicle>
+	<vehicle id="rsu26"  			type="rsu"   route="route-rsu7"  depart="0"  	departPos ="730">
+            <stop lane="18524630#1_0"  	 		 endPos="730"        triggered="true" 					/>
+    </vehicle>
+
+
+
+
+	<!--................-->
+	<!-- ROUTES for CAR -->
+	<!--................-->
+	<route id="route_ambu" edges="440369933#4 22689530#1 22689530#2 237657752#0 
+                                  237657752#1 31267167 310929483#1-AddedOnRampEdge 310929483#1
+                                  310929483#1-AddedOffRampEdge  
+                                  18524608#1.0 gneE9 18524630#1 gneE2 32465830#0 
+                                  32465830#1 32465830#2"												/>
+
+	<route id="route_oth" edges=" gneE10 31267167 310929483#1-AddedOnRampEdge 310929483#1 
+                                  310929483#1-AddedOffRampEdge  
+                                  18524608#1.0 gneE9 18524630#1 gneE2 32465830#0 
+                                  32465830#1 32465830#2"												/>
+
+	<route id="route_jam" edges=" 310929483#1-AddedOnRampEdge 310929483#1 
+                                  310929483#1-AddedOffRampEdge  
+                                  18524608#1.0 gneE9 18524630#1 gneE2 32465830#0 
+                                  32465830#1 32465830#2"												/>
+
+
+
+	<!--...............................-->
+	<!-- CAR VEHICLES nodes[26 to x] ..-->
+	<!--...............................-->	
+	<flow	id="0"		type="speedy1"  
+			begin="0"	end="10" 
+			period="1"	    
+			departLane="0"	route="route_oth" 
+	/>
+	<flow	id="1"		type="speedy1"  
+			begin="0"	end="10" 
+			period="1"	    
+			departLane="1"	route="route_oth" 
+	/>
+	<flow	id="2"		type="speedy1"  
+			begin="100"	end="110" 
+			period="1"	    
+			departLane="0"	route="route_oth" 
+	/>
+	<flow	id="3"		type="speedy1"  
+			begin="100"	end="110" 
+			period="1"	    
+			departLane="1"	route="route_oth" 
+	/>
+	<flow	id="4"		type="speedy1"  
+			begin="200"	end="210" 
+			period="1"	    
+			departLane="0"	route="route_oth" 
+	/>
+	<flow	id="5"		type="speedy1"  
+			begin="200"	end="210" 
+			period="1"	    
+			departLane="1"	route="route_oth" 
+	/>
+	<flow	id="6"		type="speedy1"  
+			begin="300"	end="310" 
+			period="1"	    
+			departLane="0"	route="route_oth" 
+	/>
+	<flow	id="7"		type="speedy1"  
+			begin="300"	end="310" 
+			period="1"	    
+			departLane="1"	route="route_oth" 
+	/>
+	<flow	id="8"		type="speedy1"  
+			begin="400"	end="410" 
+			period="1"	    
+			departLane="0"	route="route_oth" 
+	/>
+	<flow	id="8bis"	type="speedy1"  
+			begin="400"	end="410" 
+			period="1"	    
+			departLane="1"	route="route_oth" 
+	/>
+	<flow	id="9"		type="speedy1"  
+			begin="500"	end="510" 
+			period="1"	    
+			departLane="0"	route="route_oth" 
+	/>
+	<flow	id="9bis"	type="speedy1"  
+			begin="500"	end="510" 
+			period="1"	    
+			departLane="1"	route="route_oth" 
+	/>
+	<flow	id="10"		type="speedy1"  
+			begin="600"	end="610" 
+			period="1"	    
+			departLane="0"	route="route_oth" 
+	/>
+	<flow	id="11"		type="speedy1"  
+			begin="600"	end="610" 
+			period="1"	    
+			departLane="1"	route="route_oth" 
+	/>
+	<flow	id="12"		type="speedy1"  
+			begin="700"	end="710" 
+			period="1"	    
+			departLane="0"	route="route_oth" 
+	/>
+	<flow	id="13"		type="speedy1"  
+			begin="700"	end="710" 
+			period="1"	    
+			departLane="1"	route="route_oth" 
+	/>	
+	<flow	id="14"		type="speedy1"  
+			begin="800"	end="810" 
+			period="1"	    
+			departLane="0"	route="route_oth" 
+	/>
+	<flow	id="15"		type="speedy1"  
+			begin="800"	end="810" 
+			period="1"	    
+			departLane="1"	route="route_oth" 
+	/>
+	<flow	id="16"		type="speedy1"  
+			begin="900"	end="910" 
+			period="1"	    
+			departLane="0"	route="route_oth" 
+	/>
+	<flow	id="17"		type="speedy1"  
+			begin="900"	end="910" 
+			period="1"	    
+			departLane="1"	route="route_oth" 
+	/>
+	<flow	id="18"		 type="speedy1"  
+			begin="1000" end="1010" 
+			period="1"	    
+			departLane="0"	route="route_oth" 
+	/>
+	<flow	id="19"		 type="speedy1"  
+			begin="1000" end="1010" 
+			period="1"	    
+			departLane="1"	route="route_oth" 
+	/>	
+</routes>
+

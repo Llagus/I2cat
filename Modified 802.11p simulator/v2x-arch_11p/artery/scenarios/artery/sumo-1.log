@@ -1,0 +1,15 @@
+***Starting server on port 48431 ***
+Loading net-file from 'my_roads/grid_traffic_dense/my_grid.net.xml'... done (24ms).
+Loading done.
+Simulation started with time: 0.00
+Simulation ended at time: 500.10
+Reason: TraCI requested termination.
+Performance: 
+ Duration: 219563503ms
+ Real time factor: 0.0022777
+ UPS: 13.668752
+Vehicles: 
+ Inserted: 2143 (Loaded: 2688)
+ Running: 700
+ Waiting: 545
+

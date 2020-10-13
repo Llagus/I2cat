@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scave:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:scave="http://www.omnetpp.org/omnetpp/scave">
+  <inputs>
+    <inputs name="/artery/scenarios/artery/results/grid-traffic_dense-period-buildings-limited/dense-$period=1000-0.sca"/>
+    <inputs name="/artery/scenarios/artery/results/grid-traffic_dense-period-buildings-limited/dense-$period=1000-0.vec"/>
+  </inputs>
+  <datasets>
+    <datasets name="CHANNEL">
+      <items xsi:type="scave:Group" name="channelLoad, node 5, linechart">
+        <items xsi:type="scave:Group" name="speed 0, winavg">
+          <items xsi:type="scave:Add" filterPattern="module(*.node[5].*) AND name(vec_channel_load) AND run(*)" type="VECTOR"/>
+          <items xsi:type="scave:Apply" operation="winavg">
+            <params name="windowSize" value="10"/>
+          </items>
+          <items xsi:type="scave:LineChart" name="" lineNameFormat="${iterationvars}">
+            <properties name="Graph.Title" value=" "/>
+            <properties name="X.Axis.Title" value="simulation time (s)"/>
+            <properties name="Y.Axis.Title" value="channel load"/>
+            <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+            <properties name="Label.Font" value="Sans-regular-10"/>
+            <properties name="Legend.Display" value="true"/>
+            <properties name="Legend.Border" value="true"/>
+            <properties name="Legend.Position" value="Below"/>
+            <properties name="Line.Name/grid_traffic_all-1-20171010-15:04:47-15783 1 $0=&quot;my_roads/grid_traffic_dense/my_grid.sumo.cfg&quot;" value="dense"/>
+            <properties name="Line.Name/grid_traffic_all-0-20171010-15:01:28-15783 0 $0=&quot;my_roads/grid_traffic_fluid/my_grid.sumo.cfg&quot;" value="fluid"/>
+            <properties name="Line.Name/grid_traffic_all-0-20171011-10:53:28-8168 0 $0=&quot;my_roads/grid_traffic_fluid/my_grid.sumo.cfg&quot;" value="fluid traffic"/>
+            <properties name="Line.Name/grid_traffic_all-1-20171011-10:56:25-8168 1 $0=&quot;my_roads/grid_traffic_dense/my_grid.sumo.cfg&quot;" value="dense traffic"/>
+            <properties name="Line.Name/grid_traffic_dense-0-20171028-20:54:38-8494 dense" value="dense"/>
+            <properties name="Line.Name/grid_traffic_fluid-0-20171028-20:50:08-8217 fluid" value="fluid"/>
+            <properties name="Line.Name/$period=1" value="100 ms"/>
+            <properties name="Line.Name/$period=3" value="300 ms"/>
+            <properties name="Line.Name/$period=5" value="500 ms"/>
+            <properties name="Line.Name/$period=10" value="1000 ms"/>
+          </items>
+        </items>
+      </items>
+    </datasets>
+    <datasets name="NUM OF VEHICLES">
+      <items xsi:type="scave:Add" filterPattern="module(World.globalMapper)" type="VECTOR"/>
+      <items xsi:type="scave:LineChart" name="" lineNameFormat="">
+        <properties name="X.Axis.Min" value="300.0"/>
+      </items>
+    </datasets>
+  </datasets>
+  <chartSheets>
+    <chartSheets name="default" charts="//@datasets/@datasets.0/@items.0/@items.0/@items.2 //@datasets/@datasets.1/@items.1"/>
+    <chartSheets name="CHANNEL" charts="//@datasets/@datasets.0/@items.0/@items.0/@items.2"/>
+    <chartSheets name="PER"/>
+    <chartSheets name="LATENCY"/>
+    <chartSheets name="LOSTINAROW"/>
+  </chartSheets>
+</scave:Analysis>

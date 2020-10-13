@@ -1,0 +1,12 @@
+\BOOKMARK [1][-]{section.1}{Connecting\040CARLA\040and\040Artery\040to\040a\040shared\040SUMO\040instance}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Introduction}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Modifying\040source\040code}{section.1}% 3
+\BOOKMARK [3][-]{subsubsection.1.2.1}{Artery}{subsection.1.2}% 4
+\BOOKMARK [3][-]{subsubsection.1.2.2}{CARLA}{subsection.1.2}% 5
+\BOOKMARK [2][-]{subsection.1.3}{Spawning\040a\040SUMO\040instance}{section.1}% 6
+\BOOKMARK [2][-]{subsection.1.4}{Connecting\040Artery\040to\040SUMO}{section.1}% 7
+\BOOKMARK [2][-]{subsection.1.5}{Connecting\040CARLA\040to\040SUMO}{section.1}% 8
+\BOOKMARK [2][-]{subsection.1.6}{Troubleshooting}{section.1}% 9
+\BOOKMARK [3][-]{subsubsection.1.6.1}{Unaligned\040PER\040encoding}{subsection.1.6}% 10
+\BOOKMARK [3][-]{subsubsection.1.6.2}{Unable\040to\040use\040SimpleObstacleShadowing:\040No\040obstacles\040have\040been\040added}{subsection.1.6}% 11
+\BOOKMARK [2][-]{subsection.1.7}{References}{section.1}% 12

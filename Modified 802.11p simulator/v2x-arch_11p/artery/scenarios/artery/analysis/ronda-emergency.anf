@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scave:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:scave="http://www.omnetpp.org/omnetpp/scave">
+  <inputs>
+    <inputs name="/artery/scenarios/artery/results/ronda-emergency/*.sca"/>
+    <inputs name="/artery/scenarios/artery/results/ronda-emergency/*.vec"/>
+  </inputs>
+  <datasets>
+    <datasets name="AMBULANCE_TIME">
+      <items xsi:type="scave:Add" filterPattern="name(myservice_ambu_whole_time)"/>
+      <items xsi:type="scave:BarChart"/>
+    </datasets>
+    <datasets name="CARS_TIME">
+      <items xsi:type="scave:Add" filterPattern="name(myservice_ambu_whole_time)"/>
+      <items xsi:type="scave:Add" filterPattern="name(myservice_cars_whole_time) AND module(*.node[32].*) "/>
+      <items xsi:type="scave:BarChart" name="">
+        <properties name="X.Axis.Title" value="regular car / emergency vehicle"/>
+        <properties name="Y.Axis.Title" value="time (s)"/>
+        <properties name="Axis.Title.Font" value="Sans-bold-12"/>
+        <properties name="Label.Font" value="Sans-regular-10"/>
+        <properties name="Legend.Display" value="true"/>
+        <properties name="Legend.Border" value="true"/>
+        <properties name="Legend.Position" value="Below"/>
+        <barFields>module</barFields>
+      </items>
+    </datasets>
+  </datasets>
+  <chartSheets>
+    <chartSheets name="default" charts="//@datasets/@datasets.0/@items.1 //@datasets/@datasets.1/@items.2"/>
+  </chartSheets>
+</scave:Analysis>

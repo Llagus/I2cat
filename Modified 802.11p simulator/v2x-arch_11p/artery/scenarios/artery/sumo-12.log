@@ -1,0 +1,15 @@
+***Starting server on port 36881 ***
+Loading net-file from 'my_roads/ronda-speed-30/ronda.net.xml'... done (67ms).
+Loading done.
+Simulation started with time: 0.00
+Simulation ended at time: 10.10
+Reason: TraCI requested termination.
+Performance: 
+ Duration: 117ms
+ Real time factor: 86.3248
+ UPS: 863.247863
+Vehicles: 
+ Inserted: 1
+ Running: 1
+ Waiting: 0
+
