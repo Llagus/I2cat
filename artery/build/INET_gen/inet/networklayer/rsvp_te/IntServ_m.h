@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/rsvp_te/IntServ.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/rsvp_te/IntServ.msg.
 //
 
 #ifndef __INET_INTSERV_M_H
@@ -30,7 +30,7 @@ typedef std::vector<struct FlowDescriptor_t> FlowDescriptorVector;
 // }}
 
 /**
- * Struct generated from /home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/rsvp_te/IntServ.msg:44 by nedtool.
+ * Struct generated from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/rsvp_te/IntServ.msg:44 by nedtool.
  */
 struct SessionObj_t
 {
@@ -50,7 +50,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const SessionObj_t& obj) { 
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, SessionObj_t& obj) { __doUnpacking(b, obj); }
 
 /**
- * Struct generated from /home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/rsvp_te/IntServ.msg:56 by nedtool.
+ * Struct generated from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/rsvp_te/IntServ.msg:56 by nedtool.
  */
 struct RsvpHopObj_t
 {
@@ -67,7 +67,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const RsvpHopObj_t& obj) { 
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, RsvpHopObj_t& obj) { __doUnpacking(b, obj); }
 
 /**
- * Struct generated from /home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/rsvp_te/IntServ.msg:65 by nedtool.
+ * Struct generated from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/rsvp_te/IntServ.msg:65 by nedtool.
  */
 struct SenderTemplateObj_t
 {
@@ -84,7 +84,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const SenderTemplateObj_t& 
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, SenderTemplateObj_t& obj) { __doUnpacking(b, obj); }
 
 /**
- * Struct generated from /home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/rsvp_te/IntServ.msg:75 by nedtool.
+ * Struct generated from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/rsvp_te/IntServ.msg:75 by nedtool.
  */
 struct SenderTspecObj_t
 {
@@ -100,7 +100,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const SenderTspecObj_t& obj
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, SenderTspecObj_t& obj) { __doUnpacking(b, obj); }
 
 /**
- * Struct generated from /home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/rsvp_te/IntServ.msg:83 by nedtool.
+ * Struct generated from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/rsvp_te/IntServ.msg:83 by nedtool.
  */
 struct FlowSpecObj_t : public ::inet::SenderTspecObj_t
 {
@@ -115,7 +115,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const FlowSpecObj_t& obj) {
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, FlowSpecObj_t& obj) { __doUnpacking(b, obj); }
 
 /**
- * Struct generated from /home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/rsvp_te/IntServ.msg:90 by nedtool.
+ * Struct generated from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/rsvp_te/IntServ.msg:90 by nedtool.
  */
 struct FilterSpecObj_t : public ::inet::SenderTemplateObj_t
 {
@@ -130,7 +130,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const FilterSpecObj_t& obj)
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, FilterSpecObj_t& obj) { __doUnpacking(b, obj); }
 
 /**
- * Struct generated from /home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/rsvp_te/IntServ.msg:97 by nedtool.
+ * Struct generated from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/rsvp_te/IntServ.msg:97 by nedtool.
  */
 struct LabelRequestObj_t
 {
@@ -146,7 +146,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const LabelRequestObj_t& ob
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, LabelRequestObj_t& obj) { __doUnpacking(b, obj); }
 
 /**
- * Struct generated from /home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/rsvp_te/IntServ.msg:106 by nedtool.
+ * Struct generated from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/rsvp_te/IntServ.msg:106 by nedtool.
  */
 struct SenderDescriptor_t
 {
@@ -163,7 +163,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const SenderDescriptor_t& o
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, SenderDescriptor_t& obj) { __doUnpacking(b, obj); }
 
 /**
- * Struct generated from /home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/rsvp_te/IntServ.msg:115 by nedtool.
+ * Struct generated from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/rsvp_te/IntServ.msg:115 by nedtool.
  */
 struct EroObj_t
 {
@@ -180,7 +180,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const EroObj_t& obj) { __do
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, EroObj_t& obj) { __doUnpacking(b, obj); }
 
 /**
- * Struct generated from /home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/rsvp_te/IntServ.msg:124 by nedtool.
+ * Struct generated from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/rsvp_te/IntServ.msg:124 by nedtool.
  */
 struct FlowDescriptor_t
 {

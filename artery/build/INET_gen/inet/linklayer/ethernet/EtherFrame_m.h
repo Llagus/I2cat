@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ethernet/EtherFrame.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ethernet/EtherFrame.msg.
 //
 
 #ifndef __INET_ETHERFRAME_M_H
@@ -26,7 +26,7 @@
 namespace inet {
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ethernet/EtherFrame.msg:40</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ethernet/EtherFrame.msg:40</tt> by nedtool.
  * <pre>
  * //
  * // Abstract base class for various Ethernet traffic types:
@@ -64,7 +64,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const EtherTraffic& obj) {o
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, EtherTraffic& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ethernet/EtherFrame.msg:47</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ethernet/EtherFrame.msg:47</tt> by nedtool.
  * <pre>
  * //
  * // Represents jam on the Ethernet.
@@ -105,7 +105,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const EtherJam& obj) {obj.p
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, EtherJam& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ethernet/EtherFrame.msg:56</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ethernet/EtherFrame.msg:56</tt> by nedtool.
  * <pre>
  * //
  * // Represents a filled inter-frame gap in burst mode.
@@ -144,7 +144,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const EtherFilledIFG& obj) 
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, EtherFilledIFG& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ethernet/EtherFrame.msg:69</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ethernet/EtherFrame.msg:69</tt> by nedtool.
  * <pre>
  * //
  * // Represents an Ethernet PHY frame.
@@ -215,7 +215,7 @@ class EtherPhyFrame_Base : public ::inet::EtherTraffic
 };
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ethernet/EtherFrame.msg:87</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ethernet/EtherFrame.msg:87</tt> by nedtool.
  * <pre>
  * //
  * // Common base class for classes representing Ethernet II and 802.3 frame types,
@@ -270,7 +270,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const EtherFrame& obj) {obj
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, EtherFrame& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ethernet/EtherFrame.msg:100</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ethernet/EtherFrame.msg:100</tt> by nedtool.
  * <pre>
  * //
  * // Ethernet II headers contain a 16-bit ~EtherType to identify
@@ -315,7 +315,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const EthernetIIFrame& obj)
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, EthernetIIFrame& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ethernet/EtherFrame.msg:112</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ethernet/EtherFrame.msg:112</tt> by nedtool.
  * <pre>
  * //
  * // Ethernet frame with 802.3 LLC header.
@@ -367,7 +367,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const EtherFrameWithLLC& ob
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, EtherFrameWithLLC& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ethernet/EtherFrame.msg:130</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ethernet/EtherFrame.msg:130</tt> by nedtool.
  * <pre>
  * //
  * // Ethernet frame with 802.3 LLC and SNAP headers.
@@ -422,7 +422,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const EtherFrameWithSNAP& o
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, EtherFrameWithSNAP& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ethernet/EtherFrame.msg:144</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ethernet/EtherFrame.msg:144</tt> by nedtool.
  * <pre>
  * //
  * // Ethernet frame used by the PAUSE protocol
@@ -463,7 +463,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const EtherPauseFrame& obj)
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, EtherPauseFrame& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ethernet/EtherFrame.msg:152</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ethernet/EtherFrame.msg:152</tt> by nedtool.
  * <pre>
  * //
  * // Ethernet 802.1Q Tag.
@@ -517,7 +517,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ethernet1QTag& obj) {
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ethernet1QTag& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ethernet/EtherFrame.msg:168</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ethernet/EtherFrame.msg:168</tt> by nedtool.
  * <pre>
  * //
  * // Ethernet 802.1ah header.

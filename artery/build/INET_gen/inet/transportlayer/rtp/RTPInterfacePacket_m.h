@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/RTPInterfacePacket.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/RTPInterfacePacket.msg.
 //
 
 #ifndef __INET__RTP_RTPINTERFACEPACKET_M_H
@@ -28,7 +28,7 @@ namespace inet {
 namespace rtp {
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/RTPInterfacePacket.msg:40</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/RTPInterfacePacket.msg:40</tt> by nedtool.
  * <pre>
  * //
  * // An enumeration to distinguish the different functions of the
@@ -69,7 +69,7 @@ enum RTP_IFP_TYPE {
 };
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/RTPInterfacePacket.msg:60</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/RTPInterfacePacket.msg:60</tt> by nedtool.
  * <pre>
  * message RTPControlMsg
  * {
@@ -103,7 +103,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const RTPControlMsg& obj) {
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, RTPControlMsg& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/RTPInterfacePacket.msg:65</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/RTPInterfacePacket.msg:65</tt> by nedtool.
  * <pre>
  * // base class
  * class RTPControlInfo
@@ -142,7 +142,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const RTPControlInfo& obj) 
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, RTPControlInfo& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/RTPInterfacePacket.msg:71</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/RTPInterfacePacket.msg:71</tt> by nedtool.
  * <pre>
  * // base class
  * class RTPSessionControlInfo extends RTPControlInfo
@@ -181,7 +181,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const RTPSessionControlInfo
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, RTPSessionControlInfo& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/RTPInterfacePacket.msg:78</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/RTPInterfacePacket.msg:78</tt> by nedtool.
  * <pre>
  * // App to ~RTP
  * class RTPCIEnterSession extends RTPControlInfo
@@ -238,7 +238,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const RTPCIEnterSession& ob
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, RTPCIEnterSession& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/RTPInterfacePacket.msg:89</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/RTPInterfacePacket.msg:89</tt> by nedtool.
  * <pre>
  * // ~RTP to App
  * class RTPCISessionEntered extends RTPSessionControlInfo
@@ -274,7 +274,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const RTPCISessionEntered& 
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, RTPCISessionEntered& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/RTPInterfacePacket.msg:95</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/RTPInterfacePacket.msg:95</tt> by nedtool.
  * <pre>
  * // App to ~RTP
  * class RTPCISenderControl extends RTPSessionControlInfo
@@ -323,7 +323,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const RTPCISenderControl& o
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, RTPCISenderControl& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/RTPInterfacePacket.msg:105</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/RTPInterfacePacket.msg:105</tt> by nedtool.
  * <pre>
  * // ~RTP to App
  * class RTPCISenderStatus extends RTPSessionControlInfo
@@ -368,7 +368,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const RTPCISenderStatus& ob
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, RTPCISenderStatus& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/RTPInterfacePacket.msg:114</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/RTPInterfacePacket.msg:114</tt> by nedtool.
  * <pre>
  * // App to ~RTP
  * class RTPCILeaveSession extends RTPControlInfo
@@ -405,7 +405,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const RTPCILeaveSession& ob
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, RTPCILeaveSession& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/RTPInterfacePacket.msg:121</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/RTPInterfacePacket.msg:121</tt> by nedtool.
  * <pre>
  * // ~RTP to App
  * class RTPCISessionLeft extends RTPControlInfo
@@ -442,7 +442,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const RTPCISessionLeft& obj
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, RTPCISessionLeft& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/RTPInterfacePacket.msg:128</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/RTPInterfacePacket.msg:128</tt> by nedtool.
  * <pre>
  * // App to ~RTP
  * class RTPCICreateSenderModule extends RTPSessionControlInfo
@@ -486,7 +486,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const RTPCICreateSenderModu
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, RTPCICreateSenderModule& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/RTPInterfacePacket.msg:136</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/RTPInterfacePacket.msg:136</tt> by nedtool.
  * <pre>
  * // ~RTP to App
  * class RTPCISenderModuleCreated extends RTPSessionControlInfo
@@ -522,7 +522,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const RTPCISenderModuleCrea
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, RTPCISenderModuleCreated& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/RTPInterfacePacket.msg:142</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/RTPInterfacePacket.msg:142</tt> by nedtool.
  * <pre>
  * // App to ~RTP
  * class RTPCIDeleteSenderModule extends RTPSessionControlInfo
@@ -558,7 +558,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const RTPCIDeleteSenderModu
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, RTPCIDeleteSenderModule& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/RTPInterfacePacket.msg:148</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/RTPInterfacePacket.msg:148</tt> by nedtool.
  * <pre>
  * // ~RTP to App
  * class RTPCISenderModuleDeleted extends RTPSessionControlInfo

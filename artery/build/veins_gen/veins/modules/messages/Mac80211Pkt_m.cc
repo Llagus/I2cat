@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/veins/src/veins/modules/messages/Mac80211Pkt.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/veins/src/veins/modules/messages/Mac80211Pkt.msg.
 //
 
 // Disable warnings about unused variables, empty switch stmts, etc:

@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/physicallayer/ieee80211/bitlevel/Ieee80211PLCPFrame.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/physicallayer/ieee80211/bitlevel/Ieee80211PLCPFrame.msg.
 //
 
 #ifndef __INET__PHYSICALLAYER_IEEE80211PLCPFRAME_M_H
@@ -21,7 +21,7 @@ namespace inet {
 namespace physicallayer {
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/physicallayer/ieee80211/bitlevel/Ieee80211PLCPFrame.msg:21</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/physicallayer/ieee80211/bitlevel/Ieee80211PLCPFrame.msg:21</tt> by nedtool.
  * <pre>
  * enum Ieee80211PLCPType
  * {
@@ -46,7 +46,7 @@ enum Ieee80211PLCPType {
 };
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/physicallayer/ieee80211/bitlevel/Ieee80211PLCPFrame.msg:32</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/physicallayer/ieee80211/bitlevel/Ieee80211PLCPFrame.msg:32</tt> by nedtool.
  * <pre>
  * packet Ieee80211PLCPFrame
  * {

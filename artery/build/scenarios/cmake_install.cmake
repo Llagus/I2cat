@@ -1,4 +1,4 @@
-# Install script for directory: /home/aniol/Downloads/artery/scenarios
+# Install script for directory: /home/aniol/Documents/I2cat/artery/scenarios
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,11 +39,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/aniol/Downloads/artery/build/scenarios/artery/cmake_install.cmake")
-  include("/home/aniol/Downloads/artery/build/scenarios/gemv2/cmake_install.cmake")
-  include("/home/aniol/Downloads/artery/build/scenarios/highway-police/cmake_install.cmake")
-  include("/home/aniol/Downloads/artery/build/scenarios/rsu_grid/cmake_install.cmake")
-  include("/home/aniol/Downloads/artery/build/scenarios/storyboard/cmake_install.cmake")
+  include("/home/aniol/Documents/I2cat/artery/build/scenarios/artery/cmake_install.cmake")
+  include("/home/aniol/Documents/I2cat/artery/build/scenarios/gemv2/cmake_install.cmake")
+  include("/home/aniol/Documents/I2cat/artery/build/scenarios/highway-police/cmake_install.cmake")
+  include("/home/aniol/Documents/I2cat/artery/build/scenarios/rsu_grid/cmake_install.cmake")
+  include("/home/aniol/Documents/I2cat/artery/build/scenarios/storyboard/cmake_install.cmake")
 
 endif()
 

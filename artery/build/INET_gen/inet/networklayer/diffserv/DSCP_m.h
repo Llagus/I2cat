@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/diffserv/DSCP.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/diffserv/DSCP.msg.
 //
 
 #ifndef __INET_DSCP_M_H
@@ -24,7 +24,7 @@
 namespace inet {
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/diffserv/DSCP.msg:30</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/diffserv/DSCP.msg:30</tt> by nedtool.
  * <pre>
  * //
  * // DiffServ code points.

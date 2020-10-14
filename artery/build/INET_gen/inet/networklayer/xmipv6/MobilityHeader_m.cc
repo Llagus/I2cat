@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/xmipv6/MobilityHeader.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/xmipv6/MobilityHeader.msg.
 //
 
 // Disable warnings about unused variables, empty switch stmts, etc:

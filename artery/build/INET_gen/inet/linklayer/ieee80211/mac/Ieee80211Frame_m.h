@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg.
 //
 
 #ifndef __INET__IEEE80211_IEEE80211FRAME_M_H
@@ -41,7 +41,7 @@ const unsigned int LENGTH_A_MSDU_SUBFRAME_HEADER = 14 * 8; //48 + 48 + 16 bits
 // }}
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:53</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:53</tt> by nedtool.
  * <pre>
  * //
  * // 802.11 frame type constants (type+subtype), for the "type" field of
@@ -108,7 +108,7 @@ enum Ieee80211FrameType {
 };
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:89</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:89</tt> by nedtool.
  * <pre>
  * //
  * // Ack policy values for the 802.11 QoS control field
@@ -130,7 +130,7 @@ enum AckPolicy {
 };
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:105</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:105</tt> by nedtool.
  * <pre>
  * //
  * // The common part of 802.11 frames.
@@ -211,7 +211,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211Frame& obj) 
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211Frame& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:123</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:123</tt> by nedtool.
  * <pre>
  * //
  * // Format of a 802.11 frame with address1 present, like ACK and CTS
@@ -248,7 +248,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211OneAddressFr
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211OneAddressFrame& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:130</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:130</tt> by nedtool.
  * <pre>
  * //
  * // Format of the 802.11 ACK frame
@@ -287,7 +287,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211ACKFrame& ob
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211ACKFrame& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:139</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:139</tt> by nedtool.
  * <pre>
  * //
  * // Format of a 802.11 frame with address1 and address2 present
@@ -330,7 +330,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211TwoAddressFr
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211TwoAddressFrame& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:148</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:148</tt> by nedtool.
  * <pre>
  * //
  * // Format of the 802.11 RTS frame
@@ -369,7 +369,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211RTSFrame& ob
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211RTSFrame& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:157</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:157</tt> by nedtool.
  * <pre>
  * //
  * // Format of the 802.11 CTS frame
@@ -408,7 +408,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211CTSFrame& ob
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211CTSFrame& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:166</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:166</tt> by nedtool.
  * <pre>
  * //
  * // Common base class for 802.11 data and management frames
@@ -459,7 +459,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211DataOrMgmtFr
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211DataOrMgmtFrame& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:177</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:177</tt> by nedtool.
  * <pre>
  * //
  * // Format of the 802.11 data frame
@@ -536,7 +536,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211DataFrame& o
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211DataFrame& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:208</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:208</tt> by nedtool.
  * <pre>
  * //
  * // 802.11 data frame with the 8-byte SNAP header (AA AA 03, 00 00 00, <2-byte ~EtherType>)
@@ -578,7 +578,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211DataFrameWit
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211DataFrameWithSNAP& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:217</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:217</tt> by nedtool.
  * <pre>
  * //
  * // Base class for 802.11 management frames (subclasses will add frame body contents)
@@ -615,7 +615,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211ManagementFr
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211ManagementFrame& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:222</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:222</tt> by nedtool.
  * <pre>
  * // 8.3.3.13 Action frame format -- mgmt frame with subtype action
  * packet Ieee80211ActionFrame extends Ieee80211ManagementFrame
@@ -657,7 +657,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211ActionFrame&
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211ActionFrame& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:230</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:230</tt> by nedtool.
  * <pre>
  * packet Ieee80211MsduSubframe
  * {
@@ -710,7 +710,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211MsduSubframe
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211MsduSubframe& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:239</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:239</tt> by nedtool.
  * <pre>
  * packet Ieee80211AMsdu
  * {
@@ -752,7 +752,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211AMsdu& obj) 
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211AMsdu& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:247</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:247</tt> by nedtool.
  * <pre>
  * //
  * // Table 8-203—ADDBA Request frame Action field format -- 736p.
@@ -839,7 +839,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211AddbaRequest
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211AddbaRequest& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:274</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:274</tt> by nedtool.
  * <pre>
  * packet Ieee80211AddbaResponse extends Ieee80211ActionFrame
  * {
@@ -914,7 +914,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211AddbaRespons
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211AddbaResponse& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:298</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:298</tt> by nedtool.
  * <pre>
  * //
  * // 8.5.5.4 DELBA frame format
@@ -979,7 +979,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211Delba& obj) 
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211Delba& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:323</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:323</tt> by nedtool.
  * <pre>
  * //
  * // 8.3.1.8 BlockAckReq frame format
@@ -1033,7 +1033,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211BlockAckReq&
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211BlockAckReq& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:335</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:335</tt> by nedtool.
  * <pre>
  * packet Ieee80211BasicBlockAckReq extends Ieee80211BlockAckReq
  * {
@@ -1087,7 +1087,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211BasicBlockAc
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211BasicBlockAckReq& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:353</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:353</tt> by nedtool.
  * <pre>
  * packet Ieee80211CompressedBlockAckReq extends Ieee80211BlockAckReq
  * {
@@ -1146,7 +1146,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211CompressedBl
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211CompressedBlockAckReq& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:375</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:375</tt> by nedtool.
  * <pre>
  * packet Ieee80211MultiTidBlockAckReq extends Ieee80211BlockAckReq
  * {
@@ -1194,7 +1194,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211MultiTidBloc
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211MultiTidBlockAckReq& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:397</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:397</tt> by nedtool.
  * <pre>
  * //
  * // 8.3.1.9 BlockAck frame format -- 410p.
@@ -1251,7 +1251,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211BlockAck& ob
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211BlockAck& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:415</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:415</tt> by nedtool.
  * <pre>
  * //
  * // 8.3.1.9.2 Basic BlockAck variant -- 411p.
@@ -1323,7 +1323,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211BasicBlockAc
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211BasicBlockAck& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:443</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:443</tt> by nedtool.
  * <pre>
  * //
  * // 8.3.1.9.3 Compressed BlockAck variant
@@ -1387,7 +1387,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211CompressedBl
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211CompressedBlockAck& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:464</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mac/Ieee80211Frame.msg:464</tt> by nedtool.
  * <pre>
  * //
  * // 8.3.1.9.4 Multi-TID BlockAck variant

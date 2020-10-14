@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/RTCPPacket1.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/RTCPPacket1.msg.
 //
 
 #ifndef __INET__RTP_RTCPPACKET1_M_H
@@ -25,7 +25,7 @@ namespace inet {
 namespace rtp {
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/RTCPPacket1.msg:25</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/RTCPPacket1.msg:25</tt> by nedtool.
  * <pre>
  * enum RTCPPacketType
  * {
@@ -46,7 +46,7 @@ enum RTCPPacketType {
 };
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/RTCPPacket1.msg:34</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/RTCPPacket1.msg:34</tt> by nedtool.
  * <pre>
  * packet RTCPPacket
  * {
@@ -124,7 +124,7 @@ class RTCPPacket_Base : public ::omnetpp::cPacket
 };
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/RTCPPacket1.msg:45</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/RTCPPacket1.msg:45</tt> by nedtool.
  * <pre>
  * packet RTCPCompoundPacket
  * {

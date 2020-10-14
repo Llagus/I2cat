@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/udp/UDPPacket.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/udp/UDPPacket.msg.
 //
 
 #ifndef __INET_UDPPACKET_M_H
@@ -24,7 +24,7 @@
 namespace inet {
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/udp/UDPPacket.msg:26</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/udp/UDPPacket.msg:26</tt> by nedtool.
  * <pre>
  * enum UdpConstants
  * {
@@ -37,7 +37,7 @@ enum UdpConstants {
 };
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/udp/UDPPacket.msg:33</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/udp/UDPPacket.msg:33</tt> by nedtool.
  * <pre>
  * //
  * // Represents an UDP packet, to be used with the ~UDP module.

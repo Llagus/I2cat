@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/xmac/XMacFrame.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/xmac/XMacFrame.msg.
 //
 
 #ifndef __INET_XMACFRAME_M_H
@@ -25,7 +25,7 @@
 namespace inet {
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/xmac/XMacFrame.msg:32</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/xmac/XMacFrame.msg:32</tt> by nedtool.
  * <pre>
  * //
  * // Frame for ~XMac. Frame size is configurable

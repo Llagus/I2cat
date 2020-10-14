@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -std=gnu++11
 
 CXX_DEFINES = -Dtraci_EXPORTS
 
-CXX_INCLUDES = -I/home/aniol/Downloads/artery/build/opp_messages -I/home/aniol/Downloads/artery/src -I/home/aniol/artery/omnetpp-5.6.2/include -I/home/aniol/Downloads/artery/src/traci/sumo -I/home/aniol/Downloads/artery/extern/vanetza -I/home/aniol/Downloads/artery/extern/vanetza/vanetza/asn1/support -I/home/aniol/Downloads/artery/build/veins_gen -I/home/aniol/Downloads/artery/extern/veins/src -I/home/aniol/Downloads/artery/build/INET_gen -I/home/aniol/Downloads/artery/extern/inet/src 
+CXX_INCLUDES = -I/home/aniol/Documents/I2cat/artery/build/opp_messages -I/home/aniol/Documents/I2cat/artery/src -I/home/aniol/artery/omnetpp-5.6.2/include -I/home/aniol/Documents/I2cat/artery/src/traci/sumo -I/home/aniol/Documents/I2cat/artery/extern/vanetza -I/home/aniol/Documents/I2cat/artery/extern/vanetza/vanetza/asn1/support -I/home/aniol/Documents/I2cat/artery/build/veins_gen -I/home/aniol/Documents/I2cat/artery/extern/veins/src -I/home/aniol/Documents/I2cat/artery/build/INET_gen -I/home/aniol/Documents/I2cat/artery/extern/inet/src 
 

@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -std=gnu++11
 
 CXX_DEFINES = -DINET_EXPORTS
 
-CXX_INCLUDES = -I/home/aniol/Downloads/artery/build/INET_gen -I/home/aniol/Downloads/artery/extern/inet/src -I/home/aniol/artery/omnetpp-5.6.2/include 
+CXX_INCLUDES = -I/home/aniol/Documents/I2cat/artery/build/INET_gen -I/home/aniol/Documents/I2cat/artery/extern/inet/src -I/home/aniol/artery/omnetpp-5.6.2/include 
 

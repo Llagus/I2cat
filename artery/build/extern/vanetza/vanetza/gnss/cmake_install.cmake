@@ -1,4 +1,4 @@
-# Install script for directory: /home/aniol/Downloads/artery/extern/vanetza/vanetza/gnss
+# Install script for directory: /home/aniol/Documents/I2cat/artery/extern/vanetza/vanetza/gnss
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvanetza_gnss.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/aniol/Downloads/artery/build/extern/vanetza/lib/libvanetza_gnss.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/aniol/Documents/I2cat/artery/build/extern/vanetza/lib/libvanetza_gnss.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvanetza_gnss.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvanetza_gnss.so")
     if(CMAKE_INSTALL_DO_STRIP)

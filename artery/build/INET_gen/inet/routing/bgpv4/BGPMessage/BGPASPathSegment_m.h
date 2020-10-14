@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPASPathSegment.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPASPathSegment.msg.
 //
 
 #ifndef __INET__BGP_BGPASPATHSEGMENT_M_H
@@ -25,7 +25,7 @@ namespace inet {
 namespace bgp {
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPASPathSegment.msg:30</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPASPathSegment.msg:30</tt> by nedtool.
  * <pre>
  * //
  * // Represents a BGPv4 AS_PATH path attribute (RFC 4271 Section 4.3)

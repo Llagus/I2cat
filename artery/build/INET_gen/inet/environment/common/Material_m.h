@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/environment/common/Material.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/environment/common/Material.msg.
 //
 
 #ifndef __INET__PHYSICALENVIRONMENT_MATERIAL_M_H

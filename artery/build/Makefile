@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aniol/Downloads/artery
+CMAKE_SOURCE_DIR = /home/aniol/Documents/I2cat/artery
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aniol/Downloads/artery/build
+CMAKE_BINARY_DIR = /home/aniol/Documents/I2cat/artery/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aniol/Downloads/artery/build/CMakeFiles /home/aniol/Downloads/artery/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aniol/Documents/I2cat/artery/build/CMakeFiles /home/aniol/Documents/I2cat/artery/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aniol/Downloads/artery/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aniol/Documents/I2cat/artery/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

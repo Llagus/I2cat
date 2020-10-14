@@ -1,5 +1,5 @@
 # Temporarily extend module path for bundled find package scripts
-list(APPEND CMAKE_MODULE_PATH "/home/aniol/Downloads/artery/extern/vanetza/cmake")
+list(APPEND CMAKE_MODULE_PATH "/home/aniol/Documents/I2cat/artery/extern/vanetza/cmake")
 
 include(CMakeFindDependencyMacro)
 include(MacroFindDependencyComponents)

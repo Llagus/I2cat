@@ -18,7 +18,7 @@
 Artery_BINARY_DIR:STATIC=/home/aniol/Documents/I2cat/artery/build
 
 //Value Computed by CMake
-Artery_SOURCE_DIR:STATIC=/home/aniol/Documents/I2cat/artery/build
+Artery_SOURCE_DIR:STATIC=/home/aniol/Documents/I2cat/artery
 
 //Build benchmark application
 BUILD_BENCHMARK:BOOL=OFF
@@ -327,7 +327,7 @@ GeographicLib_LIBRARY_DEBUG:FILEPATH=GeographicLib_LIBRARY_DEBUG-NOTFOUND
 GeographicLib_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libGeographic.so
 
 //INET root directory
-INET_DIR:PATH=/home/aniol/Downloads/artery/extern/inet
+INET_DIR:PATH=/home/aniol/Documents/I2cat/artery/extern/inet
 
 //Dependencies for the target
 INET_LIB_DEPENDS:STATIC=general;OmnetPP::envir;
@@ -420,7 +420,7 @@ PYTHON_LIBRARY_DEBUG:FILEPATH=PYTHON_LIBRARY_DEBUG-NOTFOUND
 RUN_FLAGS:STRING=
 
 //SimuLTE root directory
-SimuLTE_DIR:PATH=/home/aniol/Downloads/artery/extern/simulte
+SimuLTE_DIR:PATH=/home/aniol/Documents/I2cat/artery/extern/simulte
 
 //Valgrind executable
 VALGRIND_COMMAND:FILEPATH=VALGRIND_COMMAND-NOTFOUND
@@ -444,13 +444,13 @@ VANETZA_NET_WITH_POSIX:BOOL=ON
 VANETZA_WITH_OPENSSL:BOOL=OFF
 
 //Value Computed by CMake
-Vanetza_BINARY_DIR:STATIC=/home/aniol/Downloads/artery/build/extern/vanetza
+Vanetza_BINARY_DIR:STATIC=/home/aniol/Documents/I2cat/artery/build/extern/vanetza
 
 //Value Computed by CMake
-Vanetza_SOURCE_DIR:STATIC=/home/aniol/Downloads/artery/extern/vanetza
+Vanetza_SOURCE_DIR:STATIC=/home/aniol/Documents/I2cat/artery/extern/vanetza
 
 //Veins root directory
-Veins_DIR:PATH=/home/aniol/Downloads/artery/extern/veins
+Veins_DIR:PATH=/home/aniol/Documents/I2cat/artery/extern/veins
 
 //Build Artery with environment model feature
 WITH_ENVMOD:BOOL=ON
@@ -548,7 +548,7 @@ CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
 //This is the directory where this CMakeCache.txt was created
-CMAKE_CACHEFILE_DIR:INTERNAL=/home/aniol/Downloads/artery/build
+CMAKE_CACHEFILE_DIR:INTERNAL=/home/aniol/Documents/I2cat/artery/build
 //Major version of cmake used to create the current loaded cache
 CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
@@ -627,7 +627,7 @@ CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=
 CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/aniol/Downloads/artery
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/aniol/Documents/I2cat/artery
 //ADVANCED property for variable: CMAKE_INSTALL_BINDIR
 CMAKE_INSTALL_BINDIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_INSTALL_DATADIR
@@ -737,7 +737,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_GeographicLib:INTERNAL=[/usr/include][/usr/lib/x86_
 //Details about finding OmnetPP
 FIND_PACKAGE_MESSAGE_DETAILS_OmnetPP:INTERNAL=[/home/aniol/artery/omnetpp-5.6.2/include][OmnetPP::cmdenv;OmnetPP::common;OmnetPP::envir;OmnetPP::eventlog;OmnetPP::layout;OmnetPP::main;OmnetPP::nedxml;OmnetPP::scave;OmnetPP::sim;OmnetPP::tkenv][/home/aniol/artery/omnetpp-5.6.2/bin/opp_msgc][/home/aniol/artery/omnetpp-5.6.2][v5.6.2(5.4)]
 //Details about finding PythonLibs
-FIND_PACKAGE_MESSAGE_DETAILS_PythonLibs:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpython3.8.so][/usr/include/python3.8][v3.8.2()]
+FIND_PACKAGE_MESSAGE_DETAILS_PythonLibs:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpython3.8.so][/usr/include/python3.8][v3.8.5()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: GDB_COMMAND

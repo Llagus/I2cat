@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/applications/voip/SimpleVoIPPacket.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/applications/voip/SimpleVoIPPacket.msg.
 //
 
 #ifndef __INET_SIMPLEVOIPPACKET_M_H
@@ -20,7 +20,7 @@
 namespace inet {
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/applications/voip/SimpleVoIPPacket.msg:25</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/applications/voip/SimpleVoIPPacket.msg:25</tt> by nedtool.
  * <pre>
  * //
  * // Represents a voice packet used by SimpleVoIPSender / SimpleVoIPReceiver 

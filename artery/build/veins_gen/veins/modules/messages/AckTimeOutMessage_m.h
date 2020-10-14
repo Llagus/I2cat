@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/veins/src/veins/modules/messages/AckTimeOutMessage.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/veins/src/veins/modules/messages/AckTimeOutMessage.msg.
 //
 
 #ifndef __VEINS_ACKTIMEOUTMESSAGE_M_H
@@ -20,7 +20,7 @@
 namespace veins {
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/veins/src/veins/modules/messages/AckTimeOutMessage.msg:25</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/veins/src/veins/modules/messages/AckTimeOutMessage.msg:25</tt> by nedtool.
  * <pre>
  * message AckTimeOutMessage
  * {

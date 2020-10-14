@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/applications/tcpapp/GenericAppMsg.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/applications/tcpapp/GenericAppMsg.msg.
 //
 
 #ifndef __INET_GENERICAPPMSG_M_H
@@ -24,7 +24,7 @@
 namespace inet {
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/applications/tcpapp/GenericAppMsg.msg:37</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/applications/tcpapp/GenericAppMsg.msg:37</tt> by nedtool.
  * <pre>
  * //
  * // Message class for generic request-reply style applications.

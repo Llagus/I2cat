@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/applications/ethernet/EtherApp.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/applications/ethernet/EtherApp.msg.
 //
 
 #ifndef __INET_ETHERAPP_M_H
@@ -27,7 +27,7 @@
 namespace inet {
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/applications/ethernet/EtherApp.msg:33</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/applications/ethernet/EtherApp.msg:33</tt> by nedtool.
  * <pre>
  * //
  * // Request packet sent by ~EtherAppCli. Contains the number of bytes to be
@@ -74,7 +74,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const EtherAppReq& obj) {ob
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, EtherAppReq& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/applications/ethernet/EtherApp.msg:42</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/applications/ethernet/EtherApp.msg:42</tt> by nedtool.
  * <pre>
  * //
  * // Packet sent back by ~EtherAppSrv in response to an ~EtherAppReq.

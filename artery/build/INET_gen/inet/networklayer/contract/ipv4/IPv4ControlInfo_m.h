@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/contract/ipv4/IPv4ControlInfo.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/contract/ipv4/IPv4ControlInfo.msg.
 //
 
 #ifndef __INET_IPV4CONTROLINFO_M_H
@@ -26,7 +26,7 @@
 namespace inet {
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/contract/ipv4/IPv4ControlInfo.msg:63</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/contract/ipv4/IPv4ControlInfo.msg:63</tt> by nedtool.
  * <pre>
  * //
  * // Control information for sending/receiving packets over IPv4.

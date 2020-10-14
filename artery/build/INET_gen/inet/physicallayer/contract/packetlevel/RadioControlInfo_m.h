@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/physicallayer/contract/packetlevel/RadioControlInfo.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/physicallayer/contract/packetlevel/RadioControlInfo.msg.
 //
 
 #ifndef __INET__PHYSICALLAYER_RADIOCONTROLINFO_M_H
@@ -29,7 +29,7 @@ typedef IModulation * IModulationPtr;
 // }}
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/physicallayer/contract/packetlevel/RadioControlInfo.msg:37</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/physicallayer/contract/packetlevel/RadioControlInfo.msg:37</tt> by nedtool.
  * <pre>
  * //
  * // Message kinds for sending commands to the radio.
@@ -45,7 +45,7 @@ enum RadioCommandCode {
 };
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/physicallayer/contract/packetlevel/RadioControlInfo.msg:45</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/physicallayer/contract/packetlevel/RadioControlInfo.msg:45</tt> by nedtool.
  * <pre>
  * //
  * // Control info attached to a configure command that is sent to the ~Radio.
@@ -111,7 +111,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const ConfigureRadioCommand
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, ConfigureRadioCommand& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/physicallayer/contract/packetlevel/RadioControlInfo.msg:58</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/physicallayer/contract/packetlevel/RadioControlInfo.msg:58</tt> by nedtool.
  * <pre>
  * //
  * // Control info attached to a mac frame that is sent down to the ~Radio.
@@ -168,7 +168,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const TransmissionRequest& 
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, TransmissionRequest& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/physicallayer/contract/packetlevel/RadioControlInfo.msg:69</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/physicallayer/contract/packetlevel/RadioControlInfo.msg:69</tt> by nedtool.
  * <pre>
  * //
  * // Control info attached to a mac frame that is sent up from the ~Radio.

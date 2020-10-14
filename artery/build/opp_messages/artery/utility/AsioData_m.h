@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/src/artery/utility/AsioData.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/src/artery/utility/AsioData.msg.
 //
 
 #ifndef __ASIODATA_M_H
@@ -26,7 +26,7 @@ typedef std::size_t AsioLength;
 // }}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/src/artery/utility/AsioData.msg:24</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/src/artery/utility/AsioData.msg:24</tt> by nedtool.
  * <pre>
  * message AsioData
  * {

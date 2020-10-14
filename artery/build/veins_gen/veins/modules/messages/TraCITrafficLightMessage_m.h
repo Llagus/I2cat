@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/veins/src/veins/modules/messages/TraCITrafficLightMessage.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/veins/src/veins/modules/messages/TraCITrafficLightMessage.msg.
 //
 
 #ifndef __VEINS_TRACITRAFFICLIGHTMESSAGE_M_H
@@ -20,7 +20,7 @@
 namespace veins {
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/veins/src/veins/modules/messages/TraCITrafficLightMessage.msg:26</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/veins/src/veins/modules/messages/TraCITrafficLightMessage.msg:26</tt> by nedtool.
  * <pre>
  * enum TrafficLightAtrributeType
  * {
@@ -41,7 +41,7 @@ enum TrafficLightAtrributeType {
 };
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/veins/src/veins/modules/messages/TraCITrafficLightMessage.msg:34</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/veins/src/veins/modules/messages/TraCITrafficLightMessage.msg:34</tt> by nedtool.
  * <pre>
  * enum TrafficLightChangeSource
  * {
@@ -60,7 +60,7 @@ enum TrafficLightChangeSource {
 };
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/veins/src/veins/modules/messages/TraCITrafficLightMessage.msg:42</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/veins/src/veins/modules/messages/TraCITrafficLightMessage.msg:42</tt> by nedtool.
  * <pre>
  * // NOTE: Currently only supports changes of the IDs (due to variation in field types)
  * message TraCITrafficLightMessage

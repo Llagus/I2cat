@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/rsvp_te/RSVPPathMsg.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/rsvp_te/RSVPPathMsg.msg.
 //
 
 #ifndef __INET_RSVPPATHMSG_M_H
@@ -25,7 +25,7 @@
 namespace inet {
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/rsvp_te/RSVPPathMsg.msg:44</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/rsvp_te/RSVPPathMsg.msg:44</tt> by nedtool.
  * <pre>
  * //
  * // FIXME missing documentation
@@ -112,7 +112,7 @@ class RSVPPathMsg_Base : public ::inet::RSVPPacket
 };
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/rsvp_te/RSVPPathMsg.msg:59</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/rsvp_te/RSVPPathMsg.msg:59</tt> by nedtool.
  * <pre>
  * //
  * // FIXME missing documentation
@@ -188,7 +188,7 @@ class RSVPPathTear_Base : public ::inet::RSVPPacket
 };
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/rsvp_te/RSVPPathMsg.msg:72</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/rsvp_te/RSVPPathMsg.msg:72</tt> by nedtool.
  * <pre>
  * //
  * // FIXME missing documentation

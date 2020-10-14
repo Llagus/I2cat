@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/ipv4/ICMPMessage.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/ipv4/ICMPMessage.msg.
 //
 
 #ifndef __INET_ICMPMESSAGE_M_H
@@ -24,7 +24,7 @@
 namespace inet {
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/ipv4/ICMPMessage.msg:30</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/ipv4/ICMPMessage.msg:30</tt> by nedtool.
  * <pre>
  * //
  * // The real ICMP codes
@@ -69,7 +69,7 @@ enum ICMPType {
 };
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/ipv4/ICMPMessage.msg:51</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/ipv4/ICMPMessage.msg:51</tt> by nedtool.
  * <pre>
  * enum ICMPRedirectSubcodes
  * {
@@ -88,7 +88,7 @@ enum ICMPRedirectSubcodes {
 };
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/ipv4/ICMPMessage.msg:59</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/ipv4/ICMPMessage.msg:59</tt> by nedtool.
  * <pre>
  * enum ICMPTimeExceededSubcodes
  * {
@@ -103,7 +103,7 @@ enum ICMPTimeExceededSubcodes {
 };
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/ipv4/ICMPMessage.msg:65</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/ipv4/ICMPMessage.msg:65</tt> by nedtool.
  * <pre>
  * enum ICMPParameterProblemSubcodes
  * {
@@ -120,7 +120,7 @@ enum ICMPParameterProblemSubcodes {
 };
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/ipv4/ICMPMessage.msg:75</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/ipv4/ICMPMessage.msg:75</tt> by nedtool.
  * <pre>
  * //
  * // Codes for type ICMP_DESTINATION_UNREACHABLE
@@ -186,7 +186,7 @@ inline bool isIcmpInfoType(int type)
 // }}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/ipv4/ICMPMessage.msg:123</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/ipv4/ICMPMessage.msg:123</tt> by nedtool.
  * <pre>
  * //
  * // ICMP message class

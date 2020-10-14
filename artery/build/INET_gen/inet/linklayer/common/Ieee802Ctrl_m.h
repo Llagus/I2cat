@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/common/Ieee802Ctrl.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/common/Ieee802Ctrl.msg.
 //
 
 #ifndef __INET_IEEE802CTRL_M_H
@@ -24,7 +24,7 @@
 namespace inet {
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/common/Ieee802Ctrl.msg:31</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/common/Ieee802Ctrl.msg:31</tt> by nedtool.
  * <pre>
  * //
  * // Message kind values used with in communication between L3 and IEEE 802 L2
@@ -46,7 +46,7 @@ enum Ieee802MessageKind {
 };
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/common/Ieee802Ctrl.msg:43</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/common/Ieee802Ctrl.msg:43</tt> by nedtool.
  * <pre>
  * //
  * // Some 8-bit SAP values for IEEE 802.x LLC headers.
@@ -78,7 +78,7 @@ enum SAPCode {
 };
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/common/Ieee802Ctrl.msg:60</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/common/Ieee802Ctrl.msg:60</tt> by nedtool.
  * <pre>
  * //
  * // Some EtherType values (Ethernet II).
@@ -110,7 +110,7 @@ enum EtherType {
 };
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/common/Ieee802Ctrl.msg:77</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/common/Ieee802Ctrl.msg:77</tt> by nedtool.
  * <pre>
  * //
  * // Control structure for communication between LLC and higher layers

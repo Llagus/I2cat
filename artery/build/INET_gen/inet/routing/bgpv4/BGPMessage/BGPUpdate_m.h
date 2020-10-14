@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdate.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdate.msg.
 //
 
 #ifndef __INET__BGP_BGPUPDATE_M_H
@@ -31,7 +31,7 @@ namespace inet {
 namespace bgp {
 
 /**
- * Struct generated from /home/aniol/Downloads/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdate.msg:42 by nedtool.
+ * Struct generated from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdate.msg:42 by nedtool.
  */
 struct BGPUpdateWithdrawnRoutes
 {
@@ -48,7 +48,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const BGPUpdateWithdrawnRou
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, BGPUpdateWithdrawnRoutes& obj) { __doUnpacking(b, obj); }
 
 /**
- * Struct generated from /home/aniol/Downloads/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdate.msg:48 by nedtool.
+ * Struct generated from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdate.msg:48 by nedtool.
  */
 struct BGPUpdateNLRI
 {
@@ -65,7 +65,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const BGPUpdateNLRI& obj) {
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, BGPUpdateNLRI& obj) { __doUnpacking(b, obj); }
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdate.msg:58</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdate.msg:58</tt> by nedtool.
  * <pre>
  * //
  * // Represents the list of path attributes in a BGPv4 UPDATE message.
@@ -137,7 +137,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const BGPUpdatePathAttribut
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, BGPUpdatePathAttributeList& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdate.msg:82</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdate.msg:82</tt> by nedtool.
  * <pre>
  * //
  * // Represents a BGPv4 UPDATE message.

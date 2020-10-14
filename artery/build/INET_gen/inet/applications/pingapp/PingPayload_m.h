@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/applications/pingapp/PingPayload.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/applications/pingapp/PingPayload.msg.
 //
 
 #ifndef __INET_PINGPAYLOAD_M_H
@@ -24,7 +24,7 @@
 namespace inet {
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/applications/pingapp/PingPayload.msg:30</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/applications/pingapp/PingPayload.msg:30</tt> by nedtool.
  * <pre>
  * //
  * // Represents payload in an ICMP/ICMPv6 Echo Request/Reply.

@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/veins/src/veins/modules/messages/Mac80211Pkt.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/veins/src/veins/modules/messages/Mac80211Pkt.msg.
 //
 
 #ifndef __VEINS_MAC80211PKT_M_H
@@ -24,7 +24,7 @@
 namespace veins {
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/veins/src/veins/modules/messages/Mac80211Pkt.msg:39</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/veins/src/veins/modules/messages/Mac80211Pkt.msg:39</tt> by nedtool.
  * <pre>
  * //
  * // Defines all fields of an 802.11 MAC frame

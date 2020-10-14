@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/RTPSenderStatusMessage.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/RTPSenderStatusMessage.msg.
 //
 
 #ifndef __INET__RTP_RTPSENDERSTATUSMESSAGE_M_H
@@ -25,7 +25,7 @@ namespace inet {
 namespace rtp {
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/RTPSenderStatusMessage.msg:35</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/RTPSenderStatusMessage.msg:35</tt> by nedtool.
  * <pre>
  * //
  * // Messages of type ~RTPSenderStatusMessage are used to send information
@@ -52,7 +52,7 @@ enum RTPSenderStatus {
 };
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/RTPSenderStatusMessage.msg:43</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/RTPSenderStatusMessage.msg:43</tt> by nedtool.
  * <pre>
  * packet RTPSenderStatusMessage
  * {

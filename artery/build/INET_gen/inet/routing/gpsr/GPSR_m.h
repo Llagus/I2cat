@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/routing/gpsr/GPSR.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/gpsr/GPSR.msg.
 //
 
 #ifndef __INET_GPSR_M_H
@@ -27,7 +27,7 @@
 namespace inet {
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/routing/gpsr/GPSR.msg:41</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/gpsr/GPSR.msg:41</tt> by nedtool.
  * <pre>
  * //
  * // The GPSR beacon packet is sent periodically by all GPSR routers to notify
@@ -75,7 +75,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const GPSRBeacon& obj) {obj
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, GPSRBeacon& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/routing/gpsr/GPSR.msg:52</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/gpsr/GPSR.msg:52</tt> by nedtool.
  * <pre>
  * //
  * // The GPSROption is used to add extra routing information for network datagrams.

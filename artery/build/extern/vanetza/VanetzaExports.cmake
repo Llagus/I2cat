@@ -49,7 +49,7 @@ unset(_expectedTargets)
 add_library(Vanetza::access SHARED IMPORTED)
 
 set_target_properties(Vanetza::access PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/home/aniol/Downloads/artery/extern/vanetza"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/aniol/Documents/I2cat/artery/extern/vanetza"
   INTERFACE_LINK_LIBRARIES "Vanetza::net"
 )
 
@@ -57,7 +57,7 @@ set_target_properties(Vanetza::access PROPERTIES
 add_library(Vanetza::asn1 SHARED IMPORTED)
 
 set_target_properties(Vanetza::asn1 PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/home/aniol/Downloads/artery/extern/vanetza;/home/aniol/Downloads/artery/extern/vanetza/vanetza/asn1/support"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/aniol/Documents/I2cat/artery/extern/vanetza;/home/aniol/Documents/I2cat/artery/extern/vanetza/vanetza/asn1/support"
   INTERFACE_LINK_LIBRARIES "Boost::boost"
 )
 
@@ -65,7 +65,7 @@ set_target_properties(Vanetza::asn1 PROPERTIES
 add_library(Vanetza::btp SHARED IMPORTED)
 
 set_target_properties(Vanetza::btp PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/home/aniol/Downloads/artery/extern/vanetza"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/aniol/Documents/I2cat/artery/extern/vanetza"
   INTERFACE_LINK_LIBRARIES "Boost::boost;Vanetza::geonet"
 )
 
@@ -73,7 +73,7 @@ set_target_properties(Vanetza::btp PROPERTIES
 add_library(Vanetza::common SHARED IMPORTED)
 
 set_target_properties(Vanetza::common PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/home/aniol/Downloads/artery/extern/vanetza"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/aniol/Documents/I2cat/artery/extern/vanetza"
   INTERFACE_LINK_LIBRARIES "Boost::date_time;Threads::Threads"
 )
 
@@ -81,7 +81,7 @@ set_target_properties(Vanetza::common PROPERTIES
 add_library(Vanetza::dcc SHARED IMPORTED)
 
 set_target_properties(Vanetza::dcc PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/home/aniol/Downloads/artery/extern/vanetza"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/aniol/Documents/I2cat/artery/extern/vanetza"
   INTERFACE_LINK_LIBRARIES "Vanetza::access;Vanetza::net"
 )
 
@@ -89,7 +89,7 @@ set_target_properties(Vanetza::dcc PROPERTIES
 add_library(Vanetza::facilities SHARED IMPORTED)
 
 set_target_properties(Vanetza::facilities PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/home/aniol/Downloads/artery/extern/vanetza"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/aniol/Documents/I2cat/artery/extern/vanetza"
   INTERFACE_LINK_LIBRARIES "Boost::date_time;Vanetza::asn1;Vanetza::security"
 )
 
@@ -97,7 +97,7 @@ set_target_properties(Vanetza::facilities PROPERTIES
 add_library(Vanetza::geonet SHARED IMPORTED)
 
 set_target_properties(Vanetza::geonet PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/home/aniol/Downloads/artery/extern/vanetza"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/aniol/Documents/I2cat/artery/extern/vanetza"
   INTERFACE_LINK_LIBRARIES "Boost::date_time;Vanetza::dcc;Vanetza::net;Vanetza::security"
 )
 
@@ -105,7 +105,7 @@ set_target_properties(Vanetza::geonet PROPERTIES
 add_library(Vanetza::gnss SHARED IMPORTED)
 
 set_target_properties(Vanetza::gnss PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/home/aniol/Downloads/artery/extern/vanetza"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/aniol/Documents/I2cat/artery/extern/vanetza"
   INTERFACE_LINK_LIBRARIES "Boost::date_time"
 )
 
@@ -113,7 +113,7 @@ set_target_properties(Vanetza::gnss PROPERTIES
 add_library(Vanetza::net SHARED IMPORTED)
 
 set_target_properties(Vanetza::net PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/home/aniol/Downloads/artery/extern/vanetza"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/aniol/Documents/I2cat/artery/extern/vanetza"
   INTERFACE_LINK_LIBRARIES "Vanetza::common"
 )
 
@@ -122,7 +122,7 @@ add_library(Vanetza::security SHARED IMPORTED)
 
 set_target_properties(Vanetza::security PROPERTIES
   INTERFACE_COMPILE_DEFINITIONS "VANETZA_WITH_CRYPTOPP"
-  INTERFACE_INCLUDE_DIRECTORIES "/home/aniol/Downloads/artery/extern/vanetza"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/aniol/Documents/I2cat/artery/extern/vanetza"
   INTERFACE_LINK_LIBRARIES "Vanetza::common;Vanetza::net;CryptoPP::CryptoPP"
 )
 
@@ -136,35 +136,35 @@ set_target_properties(Vanetza::vanetza PROPERTIES
 # Import target "Vanetza::access" for configuration ""
 set_property(TARGET Vanetza::access APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(Vanetza::access PROPERTIES
-  IMPORTED_LOCATION_NOCONFIG "/home/aniol/Downloads/artery/build/extern/vanetza/lib/libvanetza_access.so"
+  IMPORTED_LOCATION_NOCONFIG "/home/aniol/Documents/I2cat/artery/build/extern/vanetza/lib/libvanetza_access.so"
   IMPORTED_SONAME_NOCONFIG "libvanetza_access.so"
   )
 
 # Import target "Vanetza::asn1" for configuration ""
 set_property(TARGET Vanetza::asn1 APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(Vanetza::asn1 PROPERTIES
-  IMPORTED_LOCATION_NOCONFIG "/home/aniol/Downloads/artery/build/extern/vanetza/lib/libvanetza_asn1.so"
+  IMPORTED_LOCATION_NOCONFIG "/home/aniol/Documents/I2cat/artery/build/extern/vanetza/lib/libvanetza_asn1.so"
   IMPORTED_SONAME_NOCONFIG "libvanetza_asn1.so"
   )
 
 # Import target "Vanetza::btp" for configuration ""
 set_property(TARGET Vanetza::btp APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(Vanetza::btp PROPERTIES
-  IMPORTED_LOCATION_NOCONFIG "/home/aniol/Downloads/artery/build/extern/vanetza/lib/libvanetza_btp.so"
+  IMPORTED_LOCATION_NOCONFIG "/home/aniol/Documents/I2cat/artery/build/extern/vanetza/lib/libvanetza_btp.so"
   IMPORTED_SONAME_NOCONFIG "libvanetza_btp.so"
   )
 
 # Import target "Vanetza::common" for configuration ""
 set_property(TARGET Vanetza::common APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(Vanetza::common PROPERTIES
-  IMPORTED_LOCATION_NOCONFIG "/home/aniol/Downloads/artery/build/extern/vanetza/lib/libvanetza_common.so"
+  IMPORTED_LOCATION_NOCONFIG "/home/aniol/Documents/I2cat/artery/build/extern/vanetza/lib/libvanetza_common.so"
   IMPORTED_SONAME_NOCONFIG "libvanetza_common.so"
   )
 
 # Import target "Vanetza::dcc" for configuration ""
 set_property(TARGET Vanetza::dcc APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(Vanetza::dcc PROPERTIES
-  IMPORTED_LOCATION_NOCONFIG "/home/aniol/Downloads/artery/build/extern/vanetza/lib/libvanetza_dcc.so"
+  IMPORTED_LOCATION_NOCONFIG "/home/aniol/Documents/I2cat/artery/build/extern/vanetza/lib/libvanetza_dcc.so"
   IMPORTED_SONAME_NOCONFIG "libvanetza_dcc.so"
   )
 
@@ -172,35 +172,35 @@ set_target_properties(Vanetza::dcc PROPERTIES
 set_property(TARGET Vanetza::facilities APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(Vanetza::facilities PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_NOCONFIG "Vanetza::geonet"
-  IMPORTED_LOCATION_NOCONFIG "/home/aniol/Downloads/artery/build/extern/vanetza/lib/libvanetza_facilities.so"
+  IMPORTED_LOCATION_NOCONFIG "/home/aniol/Documents/I2cat/artery/build/extern/vanetza/lib/libvanetza_facilities.so"
   IMPORTED_SONAME_NOCONFIG "libvanetza_facilities.so"
   )
 
 # Import target "Vanetza::geonet" for configuration ""
 set_property(TARGET Vanetza::geonet APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(Vanetza::geonet PROPERTIES
-  IMPORTED_LOCATION_NOCONFIG "/home/aniol/Downloads/artery/build/extern/vanetza/lib/libvanetza_geonet.so"
+  IMPORTED_LOCATION_NOCONFIG "/home/aniol/Documents/I2cat/artery/build/extern/vanetza/lib/libvanetza_geonet.so"
   IMPORTED_SONAME_NOCONFIG "libvanetza_geonet.so"
   )
 
 # Import target "Vanetza::gnss" for configuration ""
 set_property(TARGET Vanetza::gnss APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(Vanetza::gnss PROPERTIES
-  IMPORTED_LOCATION_NOCONFIG "/home/aniol/Downloads/artery/build/extern/vanetza/lib/libvanetza_gnss.so"
+  IMPORTED_LOCATION_NOCONFIG "/home/aniol/Documents/I2cat/artery/build/extern/vanetza/lib/libvanetza_gnss.so"
   IMPORTED_SONAME_NOCONFIG "libvanetza_gnss.so"
   )
 
 # Import target "Vanetza::net" for configuration ""
 set_property(TARGET Vanetza::net APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(Vanetza::net PROPERTIES
-  IMPORTED_LOCATION_NOCONFIG "/home/aniol/Downloads/artery/build/extern/vanetza/lib/libvanetza_net.so"
+  IMPORTED_LOCATION_NOCONFIG "/home/aniol/Documents/I2cat/artery/build/extern/vanetza/lib/libvanetza_net.so"
   IMPORTED_SONAME_NOCONFIG "libvanetza_net.so"
   )
 
 # Import target "Vanetza::security" for configuration ""
 set_property(TARGET Vanetza::security APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(Vanetza::security PROPERTIES
-  IMPORTED_LOCATION_NOCONFIG "/home/aniol/Downloads/artery/build/extern/vanetza/lib/libvanetza_security.so"
+  IMPORTED_LOCATION_NOCONFIG "/home/aniol/Documents/I2cat/artery/build/extern/vanetza/lib/libvanetza_security.so"
   IMPORTED_SONAME_NOCONFIG "libvanetza_security.so"
   )
 

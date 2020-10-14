@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/RTPInnerPacket.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/RTPInnerPacket.msg.
 //
 
 #ifndef __INET__RTP_RTPINNERPACKET_M_H
@@ -29,7 +29,7 @@ namespace inet {
 namespace rtp {
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/RTPInnerPacket.msg:37</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/RTPInnerPacket.msg:37</tt> by nedtool.
  * <pre>
  * //
  * // This enumeration is a list of all possibly types of
@@ -78,7 +78,7 @@ enum RTP_INP_TYPE {
 };
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/RTPInnerPacket.msg:61</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/RTPInnerPacket.msg:61</tt> by nedtool.
  * <pre>
  * //
  * // This class is used for communication between submodules of the RTP layer module.

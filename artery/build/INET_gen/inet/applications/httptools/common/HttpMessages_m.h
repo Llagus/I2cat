@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/applications/httptools/common/HttpMessages.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/applications/httptools/common/HttpMessages.msg.
 //
 
 #ifndef __INET__HTTPTOOLS_HTTPMESSAGES_M_H
@@ -21,7 +21,7 @@ namespace inet {
 namespace httptools {
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/applications/httptools/common/HttpMessages.msg:72</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/applications/httptools/common/HttpMessages.msg:72</tt> by nedtool.
  * <pre>
  * //
  * // Base class for HTTP messages
@@ -88,7 +88,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const HttpBaseMessage& obj)
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, HttpBaseMessage& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/applications/httptools/common/HttpMessages.msg:88</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/applications/httptools/common/HttpMessages.msg:88</tt> by nedtool.
  * <pre>
  * //
  * // Message class for HTTP requests
@@ -131,7 +131,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const HttpRequestMessage& o
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, HttpRequestMessage& obj) {obj.parsimUnpack(b);}
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/applications/httptools/common/HttpMessages.msg:99</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/applications/httptools/common/HttpMessages.msg:99</tt> by nedtool.
  * <pre>
  * //
  * // Content type of HTTP responses.
@@ -153,7 +153,7 @@ enum HttpContentType {
 };
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/applications/httptools/common/HttpMessages.msg:111</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/applications/httptools/common/HttpMessages.msg:111</tt> by nedtool.
  * <pre>
  * //
  * // Message class for HTTP replies

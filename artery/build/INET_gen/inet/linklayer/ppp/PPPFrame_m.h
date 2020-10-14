@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ppp/PPPFrame.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ppp/PPPFrame.msg.
 //
 
 #ifndef __INET_PPPFRAME_M_H
@@ -28,7 +28,7 @@ const int PPP_OVERHEAD_BYTES = 7;
 // }}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ppp/PPPFrame.msg:49</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ppp/PPPFrame.msg:49</tt> by nedtool.
  * <pre>
  * //
  * // PPP frame.

@@ -1,4 +1,4 @@
-# Install script for directory: /home/aniol/Downloads/artery/scenarios/artery
+# Install script for directory: /home/aniol/Documents/I2cat/artery/scenarios/artery
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg.
 //
 
 #ifndef __INET__IEEE80211_IEEE80211MGMTFRAMES_M_H
@@ -31,7 +31,7 @@ namespace ieee80211 {
 // }}
 
 /**
- * Struct generated from /home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:45 by nedtool.
+ * Struct generated from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:45 by nedtool.
  */
 struct Ieee80211CapabilityInformation
 {
@@ -53,7 +53,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211CapabilityIn
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211CapabilityInformation& obj) { __doUnpacking(b, obj); }
 
 /**
- * Struct generated from /home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:60 by nedtool.
+ * Struct generated from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:60 by nedtool.
  */
 struct Ieee80211HandoverParameters
 {
@@ -72,7 +72,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211HandoverPara
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211HandoverParameters& obj) { __doUnpacking(b, obj); }
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:71</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:71</tt> by nedtool.
  * <pre>
  * //
  * // 802.11 reason code; values correspond to the standard.
@@ -134,7 +134,7 @@ enum Ieee80211ReasonCode {
 };
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:103</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:103</tt> by nedtool.
  * <pre>
  * //
  * // 802.11 status code; values correspond to the standard.
@@ -176,7 +176,7 @@ enum Ieee80211StatusCode {
 };
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:122</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:122</tt> by nedtool.
  * <pre>
  * enum Ieee80211HWMPCode
  * {
@@ -197,7 +197,7 @@ enum Ieee80211HWMPCode {
 };
 
 /**
- * Struct generated from /home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:134 by nedtool.
+ * Struct generated from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:134 by nedtool.
  */
 struct Ieee80211SupportedRatesElement
 {
@@ -214,7 +214,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211SupportedRat
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211SupportedRatesElement& obj) { __doUnpacking(b, obj); }
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:143</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:143</tt> by nedtool.
  * <pre>
  * //
  * // Frame body base class used to hide various frame body types
@@ -255,7 +255,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211FrameBody& o
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211FrameBody& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:158</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:158</tt> by nedtool.
  * <pre>
  * //
  * // Authentication frame body format.
@@ -312,7 +312,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211Authenticati
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211AuthenticationFrameBody& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:169</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:169</tt> by nedtool.
  * <pre>
  * //
  * // De-authentication frame body format
@@ -354,7 +354,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211Deauthentica
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211DeauthenticationFrameBody& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:178</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:178</tt> by nedtool.
  * <pre>
  * //
  * // Dis-association frame body format (same as De-authentication)
@@ -396,7 +396,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211Disassociati
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211DisassociationFrameBody& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:187</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:187</tt> by nedtool.
  * <pre>
  * //
  * // Probe request frame body format
@@ -443,7 +443,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211ProbeRequest
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211ProbeRequestFrameBody& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:197</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:197</tt> by nedtool.
  * <pre>
  * //
  * // Association request frame body format
@@ -490,7 +490,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211AssociationR
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211AssociationRequestFrameBody& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:207</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:207</tt> by nedtool.
  * <pre>
  * //
  * // Re-association request frame body format (same as association)
@@ -533,7 +533,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211Reassociatio
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211ReassociationRequestFrameBody& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:216</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:216</tt> by nedtool.
  * <pre>
  * //
  * // Association response frame body format
@@ -584,7 +584,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211AssociationR
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211AssociationResponseFrameBody& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:227</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:227</tt> by nedtool.
  * <pre>
  * //
  * // Re-association response frame body format (same as AssociationResponse)
@@ -621,7 +621,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211Reassociatio
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211ReassociationResponseFrameBody& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:234</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:234</tt> by nedtool.
  * <pre>
  * //
  * // Beacon frame body format.
@@ -681,7 +681,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211BeaconFrameB
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211BeaconFrameBody& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:247</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:247</tt> by nedtool.
  * <pre>
  * //
  * // Probe response frame body format (same as Beacon)
@@ -718,7 +718,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211ProbeRespons
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211ProbeResponseFrameBody& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:251</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:251</tt> by nedtool.
  * <pre>
  * class Ieee80211ActionFrameBody extends Ieee80211FrameBody
  * {
@@ -752,7 +752,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211ActionFrameB
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211ActionFrameBody& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:258</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:258</tt> by nedtool.
  * <pre>
  * //
  * // Authentication frame format (management frame + body)
@@ -796,7 +796,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211Authenticati
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211AuthenticationFrame& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:268</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:268</tt> by nedtool.
  * <pre>
  * //
  * // De-authentication frame format (management frame + body)
@@ -840,7 +840,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211Deauthentica
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211DeauthenticationFrame& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:278</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:278</tt> by nedtool.
  * <pre>
  * //
  * // Dis-association frame format (management frame + body) (same as De-authentication)
@@ -884,7 +884,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211Disassociati
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211DisassociationFrame& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:288</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:288</tt> by nedtool.
  * <pre>
  * //
  * // Probe request frame format (management frame + body)
@@ -928,7 +928,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211ProbeRequest
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211ProbeRequestFrame& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:298</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:298</tt> by nedtool.
  * <pre>
  * //
  * // Association request frame format (management frame + body)
@@ -972,7 +972,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211AssociationR
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211AssociationRequestFrame& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:308</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:308</tt> by nedtool.
  * <pre>
  * //
  * // Re-association request frame format (management frame + body) (same as association)
@@ -1016,7 +1016,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211Reassociatio
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211ReassociationRequestFrame& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:318</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:318</tt> by nedtool.
  * <pre>
  * //
  * // Association response frame format (management frame + body)
@@ -1060,7 +1060,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211AssociationR
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211AssociationResponseFrame& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:328</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:328</tt> by nedtool.
  * <pre>
  * //
  * // Re-association response frame format (management frame + body)
@@ -1104,7 +1104,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211Reassociatio
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211ReassociationResponseFrame& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:338</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:338</tt> by nedtool.
  * <pre>
  * //
  * // Beacon frame format (management frame + body)
@@ -1148,7 +1148,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211BeaconFrame&
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211BeaconFrame& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:348</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg:348</tt> by nedtool.
  * <pre>
  * //
  * // Probe response frame format (management frame + body); same as Beacon

@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -pthread -std=gnu++11
 
 CXX_DEFINES = -DBOOST_ALL_NO_LIB -DBOOST_DATE_TIME_DYN_LINK -DVANETZA_WITH_CRYPTOPP -Dbtp_EXPORTS
 
-CXX_INCLUDES = -I/home/aniol/Downloads/artery/extern/vanetza 
+CXX_INCLUDES = -I/home/aniol/Documents/I2cat/artery/extern/vanetza 
 

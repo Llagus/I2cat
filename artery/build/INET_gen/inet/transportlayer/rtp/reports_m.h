@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/reports.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/reports.msg.
 //
 
 #ifndef __INET__RTP_REPORTS_M_H
@@ -21,7 +21,7 @@ namespace inet {
 namespace rtp {
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/reports.msg:17</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/reports.msg:17</tt> by nedtool.
  * <pre>
  * //
  * // Represents an RTP sender report as contained
@@ -107,7 +107,7 @@ class SenderReport_Base : public ::omnetpp::cObject
 };
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/reports.msg:38</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/reports.msg:38</tt> by nedtool.
  * <pre>
  * //
  * // Rrepresents an RTP receiver report stored

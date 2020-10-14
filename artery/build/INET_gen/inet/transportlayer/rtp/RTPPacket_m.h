@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/RTPPacket.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/RTPPacket.msg.
 //
 
 #ifndef __INET__RTP_RTPPACKET_M_H
@@ -25,7 +25,7 @@ namespace inet {
 namespace rtp {
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/RTPPacket.msg:27</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/RTPPacket.msg:27</tt> by nedtool.
  * <pre>
  * enum RTPPacketEnums
  * {
@@ -38,7 +38,7 @@ enum RTPPacketEnums {
 };
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/RTPPacket.msg:40</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/RTPPacket.msg:40</tt> by nedtool.
  * <pre>
  * //
  * // This class represents an RTP data packet. Real data can either

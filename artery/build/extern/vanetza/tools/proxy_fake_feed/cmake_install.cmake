@@ -1,4 +1,4 @@
-# Install script for directory: /home/aniol/Downloads/artery/extern/vanetza/tools/proxy_fake_feed
+# Install script for directory: /home/aniol/Documents/I2cat/artery/extern/vanetza/tools/proxy_fake_feed
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

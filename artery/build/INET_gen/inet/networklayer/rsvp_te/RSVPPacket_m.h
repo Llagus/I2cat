@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/rsvp_te/RSVPPacket.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/rsvp_te/RSVPPacket.msg.
 //
 
 #ifndef __INET_RSVPPACKET_M_H
@@ -32,7 +32,7 @@
 namespace inet {
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/rsvp_te/RSVPPacket.msg:57</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/rsvp_te/RSVPPacket.msg:57</tt> by nedtool.
  * <pre>
  * //
  * // RSVP message common part
@@ -73,7 +73,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const RSVPMessage& obj) {ob
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, RSVPMessage& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/rsvp_te/RSVPPacket.msg:65</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/rsvp_te/RSVPPacket.msg:65</tt> by nedtool.
  * <pre>
  * //
  * // FIXME missing documentation

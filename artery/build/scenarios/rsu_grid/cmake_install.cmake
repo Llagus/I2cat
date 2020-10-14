@@ -1,4 +1,4 @@
-# Install script for directory: /home/aniol/Downloads/artery/scenarios/rsu_grid
+# Install script for directory: /home/aniol/Documents/I2cat/artery/scenarios/rsu_grid
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

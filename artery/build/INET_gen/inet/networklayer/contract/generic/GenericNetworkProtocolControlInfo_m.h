@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/contract/generic/GenericNetworkProtocolControlInfo.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/contract/generic/GenericNetworkProtocolControlInfo.msg.
 //
 
 #ifndef __INET_GENERICNETWORKPROTOCOLCONTROLINFO_M_H
@@ -25,7 +25,7 @@
 namespace inet {
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/contract/generic/GenericNetworkProtocolControlInfo.msg:33</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/contract/generic/GenericNetworkProtocolControlInfo.msg:33</tt> by nedtool.
  * <pre>
  * //
  * // Control information for sending/receiving packets over the generic network protocol.
@@ -109,7 +109,7 @@ class GenericNetworkProtocolControlInfo_Base : public ::omnetpp::cObject
 };
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/contract/generic/GenericNetworkProtocolControlInfo.msg:52</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/contract/generic/GenericNetworkProtocolControlInfo.msg:52</tt> by nedtool.
  * <pre>
  * //
  * // Control info attached to packets sent from ~GenericNetworkProtocol to ~GenericARP.

@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/arp/ipv4/ARPPacket.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/arp/ipv4/ARPPacket.msg.
 //
 
 #ifndef __INET_ARPPACKET_M_H
@@ -30,7 +30,7 @@ namespace inet {
 // }}
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/arp/ipv4/ARPPacket.msg:42</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/arp/ipv4/ARPPacket.msg:42</tt> by nedtool.
  * <pre>
  * //
  * // The list of practically important ARP opcodes
@@ -52,7 +52,7 @@ enum ARPOpcode {
 };
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/arp/ipv4/ARPPacket.msg:62</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/arp/ipv4/ARPPacket.msg:62</tt> by nedtool.
  * <pre>
  * //
  * // ARP packet. This is a specialized version: prepared for IEEE 802 hardware

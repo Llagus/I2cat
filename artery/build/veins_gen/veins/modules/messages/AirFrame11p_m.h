@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/veins/src/veins/modules/messages/AirFrame11p.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/veins/src/veins/modules/messages/AirFrame11p.msg.
 //
 
 #ifndef __VEINS_AIRFRAME11P_M_H
@@ -25,7 +25,7 @@ using veins::AirFrame;
 namespace veins {
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/veins/src/veins/modules/messages/AirFrame11p.msg:35</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/veins/src/veins/modules/messages/AirFrame11p.msg:35</tt> by nedtool.
  * <pre>
  * //
  * // Extension of base AirFrame message to have the underMinPowerLevel field

@@ -6,5 +6,5 @@ C_FLAGS = -fPIC   -std=gnu11
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/aniol/Downloads/artery/extern/vanetza/vanetza/asn1/support 
+C_INCLUDES = -I/home/aniol/Documents/I2cat/artery/extern/vanetza/vanetza/asn1/support 
 

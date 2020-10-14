@@ -1,4 +1,4 @@
-# Install script for directory: /home/aniol/Downloads/artery/extern/vanetza/vanetza/asn1
+# Install script for directory: /home/aniol/Documents/I2cat/artery/extern/vanetza/vanetza/asn1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvanetza_asn1.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/aniol/Downloads/artery/build/extern/vanetza/lib/libvanetza_asn1.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/aniol/Documents/I2cat/artery/build/extern/vanetza/lib/libvanetza_asn1.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvanetza_asn1.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvanetza_asn1.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -58,9 +58,9 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vanetza/asn1" TYPE DIRECTORY FILES
-    "/home/aniol/Downloads/artery/extern/vanetza/vanetza/asn1/support"
-    "/home/aniol/Downloads/artery/extern/vanetza/vanetza/asn1/its"
-    "/home/aniol/Downloads/artery/extern/vanetza/vanetza/asn1/security"
+    "/home/aniol/Documents/I2cat/artery/extern/vanetza/vanetza/asn1/support"
+    "/home/aniol/Documents/I2cat/artery/extern/vanetza/vanetza/asn1/its"
+    "/home/aniol/Documents/I2cat/artery/extern/vanetza/vanetza/asn1/security"
     FILES_MATCHING REGEX "/[^/]*\\.h$")
 endif()
 

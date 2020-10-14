@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/veins/src/veins/base/messages/AirFrame.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/veins/src/veins/base/messages/AirFrame.msg.
 //
 
 #ifndef __VEINS_AIRFRAME_M_H
@@ -25,7 +25,7 @@
 namespace veins {
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/veins/src/veins/base/messages/AirFrame.msg:56</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/veins/src/veins/base/messages/AirFrame.msg:56</tt> by nedtool.
  * <pre>
  * //
  * // Format of the packets that are sent to the channel

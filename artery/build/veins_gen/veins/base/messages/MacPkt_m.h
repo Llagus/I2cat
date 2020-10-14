@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/veins/src/veins/base/messages/MacPkt.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/veins/src/veins/base/messages/MacPkt.msg.
 //
 
 #ifndef __VEINS_MACPKT_M_H
@@ -24,7 +24,7 @@
 namespace veins {
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/veins/src/veins/base/messages/MacPkt.msg:44</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/veins/src/veins/base/messages/MacPkt.msg:44</tt> by nedtool.
  * <pre>
  * // A basic MAC (Media Access Control) packet format definition
  * // 

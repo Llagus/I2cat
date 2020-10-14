@@ -1,4 +1,4 @@
-# Install script for directory: /home/aniol/Downloads/artery/extern/vanetza/vanetza/units
+# Install script for directory: /home/aniol/Documents/I2cat/artery/extern/vanetza/vanetza/units
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/physicallayer/ieee80211/packetlevel/Ieee80211ControlInfo.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/physicallayer/ieee80211/packetlevel/Ieee80211ControlInfo.msg.
 //
 
 #ifndef __INET__PHYSICALLAYER_IEEE80211CONTROLINFO_M_H
@@ -41,7 +41,7 @@ typedef const IIeee80211DataMode* IIeee80211DataModePtr;
 // }}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/physicallayer/ieee80211/packetlevel/Ieee80211ControlInfo.msg:132</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/physicallayer/ieee80211/packetlevel/Ieee80211ControlInfo.msg:132</tt> by nedtool.
  * <pre>
  * //
  * // Control info attached to a configure command that is sent to the ~Radio.
@@ -107,7 +107,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211ConfigureRad
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211ConfigureRadioCommand& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/physicallayer/ieee80211/packetlevel/Ieee80211ControlInfo.msg:146</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/physicallayer/ieee80211/packetlevel/Ieee80211ControlInfo.msg:146</tt> by nedtool.
  * <pre>
  * //
  * // Control info attached to a mac frame that is sent down to the ~Ieee80211Radio.
@@ -159,7 +159,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ieee80211Transmission
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ieee80211TransmissionRequest& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/physicallayer/ieee80211/packetlevel/Ieee80211ControlInfo.msg:157</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/physicallayer/ieee80211/packetlevel/Ieee80211ControlInfo.msg:157</tt> by nedtool.
  * <pre>
  * //
  * // Control info attached to a mac frame that is sent up from the ~Ieee80211Radio.

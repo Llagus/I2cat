@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/routing/bgpv4/BGPCommon.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/bgpv4/BGPCommon.msg.
 //
 
 #ifndef __INET__BGP_BGPCOMMON_M_H
@@ -21,7 +21,7 @@ namespace inet {
 namespace bgp {
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/routing/bgpv4/BGPCommon.msg:22</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/bgpv4/BGPCommon.msg:22</tt> by nedtool.
  * <pre>
  * enum BGPSessionType
  * {
@@ -38,7 +38,7 @@ enum BGPSessionType {
 };
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/routing/bgpv4/BGPCommon.msg:29</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/bgpv4/BGPCommon.msg:29</tt> by nedtool.
  * <pre>
  * enum BGPPathSegmentType
  * {

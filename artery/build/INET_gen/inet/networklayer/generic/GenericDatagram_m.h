@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/generic/GenericDatagram.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/generic/GenericDatagram.msg.
 //
 
 #ifndef __INET_GENERICDATAGRAM_M_H
@@ -26,7 +26,7 @@
 namespace inet {
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/generic/GenericDatagram.msg:35</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/generic/GenericDatagram.msg:35</tt> by nedtool.
  * <pre>
  * //
  * // Generic protocol TLV option types
@@ -46,7 +46,7 @@ enum GenericTLVOptionTypes {
 };
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/generic/GenericDatagram.msg:47</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/generic/GenericDatagram.msg:47</tt> by nedtool.
  * <pre>
  * //
  * // Represents a generic network datagram with generic network addresses. 

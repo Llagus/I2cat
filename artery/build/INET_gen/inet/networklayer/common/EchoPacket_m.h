@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/common/EchoPacket.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/common/EchoPacket.msg.
 //
 
 #ifndef __INET_ECHOPACKET_M_H
@@ -24,7 +24,7 @@
 namespace inet {
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/common/EchoPacket.msg:28</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/common/EchoPacket.msg:28</tt> by nedtool.
  * <pre>
  * //
  * // Determines the packet type.
@@ -42,7 +42,7 @@ enum EchoProtocolType {
 };
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/common/EchoPacket.msg:37</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/common/EchoPacket.msg:37</tt> by nedtool.
  * <pre>
  * //
  * // Generic network protocol packet for testing network connectivity.

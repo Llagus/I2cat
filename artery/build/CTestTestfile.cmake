@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/aniol/Downloads/artery
-# Build directory: /home/aniol/Downloads/artery/build
+# Source directory: /home/aniol/Documents/I2cat/artery
+# Build directory: /home/aniol/Documents/I2cat/artery/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

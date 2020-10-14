@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPOpen.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPOpen.msg.
 //
 
 #ifndef __INET__BGP_BGPOPEN_M_H
@@ -28,7 +28,7 @@ namespace inet {
 namespace bgp {
 
 /**
- * Struct generated from /home/aniol/Downloads/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPOpen.msg:34 by nedtool.
+ * Struct generated from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPOpen.msg:34 by nedtool.
  */
 struct BGPParameterValues
 {
@@ -45,7 +45,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const BGPParameterValues& o
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, BGPParameterValues& obj) { __doUnpacking(b, obj); }
 
 /**
- * Struct generated from /home/aniol/Downloads/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPOpen.msg:40 by nedtool.
+ * Struct generated from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPOpen.msg:40 by nedtool.
  */
 struct BGPOptionalParameters
 {
@@ -63,7 +63,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const BGPOptionalParameters
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, BGPOptionalParameters& obj) { __doUnpacking(b, obj); }
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPOpen.msg:64</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPOpen.msg:64</tt> by nedtool.
  * <pre>
  * //
  * // Represents a BGPv4 OPEN message.

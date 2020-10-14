@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/routing/rip/RIPPacket.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/rip/RIPPacket.msg.
 //
 
 #ifndef __INET_RIPPACKET_M_H
@@ -29,7 +29,7 @@ const int RIP_RTE_SIZE = 20;
 // }}
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/routing/rip/RIPPacket.msg:35</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/rip/RIPPacket.msg:35</tt> by nedtool.
  * <pre>
  * //
  * // RIP commands
@@ -47,7 +47,7 @@ enum RIPCommand {
 };
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/routing/rip/RIPPacket.msg:43</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/rip/RIPPacket.msg:43</tt> by nedtool.
  * <pre>
  * //
  * // Address Family constants
@@ -66,7 +66,7 @@ enum RIP_AF {
 };
 
 /**
- * Struct generated from /home/aniol/Downloads/artery/extern/inet/src/inet/routing/rip/RIPPacket.msg:55 by nedtool.
+ * Struct generated from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/rip/RIPPacket.msg:55 by nedtool.
  */
 struct RIPEntry
 {
@@ -87,7 +87,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const RIPEntry& obj) { __do
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, RIPEntry& obj) { __doUnpacking(b, obj); }
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/routing/rip/RIPPacket.msg:69</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/rip/RIPPacket.msg:69</tt> by nedtool.
  * <pre>
  * //
  * // RIPv2 packet

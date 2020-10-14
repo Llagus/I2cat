@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdatePathAttributes.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdatePathAttributes.msg.
 //
 
 #ifndef __INET__BGP_BGPUPDATEPATHATTRIBUTES_M_H
@@ -27,7 +27,7 @@ namespace inet {
 namespace bgp {
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdatePathAttributes.msg:33</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdatePathAttributes.msg:33</tt> by nedtool.
  * <pre>
  * enum BGPUpdateAttributeTypeCode
  * {
@@ -48,7 +48,7 @@ enum BGPUpdateAttributeTypeCode {
 };
 
 /**
- * Struct generated from /home/aniol/Downloads/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdatePathAttributes.msg:42 by nedtool.
+ * Struct generated from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdatePathAttributes.msg:42 by nedtool.
  */
 struct BGPUpdateAttributeFlags
 {
@@ -67,7 +67,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const BGPUpdateAttributeFla
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, BGPUpdateAttributeFlags& obj) { __doUnpacking(b, obj); }
 
 /**
- * Struct generated from /home/aniol/Downloads/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdatePathAttributes.msg:50 by nedtool.
+ * Struct generated from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdatePathAttributes.msg:50 by nedtool.
  */
 struct BGPUpdateAttributeType
 {
@@ -84,7 +84,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const BGPUpdateAttributeTyp
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, BGPUpdateAttributeType& obj) { __doUnpacking(b, obj); }
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdatePathAttributes.msg:56</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdatePathAttributes.msg:56</tt> by nedtool.
  * <pre>
  * class BGPUpdatePathAttributes
  * {
@@ -127,7 +127,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const BGPUpdatePathAttribut
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, BGPUpdatePathAttributes& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdatePathAttributes.msg:63</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdatePathAttributes.msg:63</tt> by nedtool.
  * <pre>
  * // ORIGIN (RFC4271 Section 4.3, Type code 1):
  * class BGPUpdatePathAttributesOrigin extends BGPUpdatePathAttributes
@@ -166,7 +166,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const BGPUpdatePathAttribut
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, BGPUpdatePathAttributesOrigin& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdatePathAttributes.msg:69</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdatePathAttributes.msg:69</tt> by nedtool.
  * <pre>
  * // AS_PATH (RFC4271 Section 4.3, Type code 2):
  * class BGPUpdatePathAttributesASPath extends BGPUpdatePathAttributes
@@ -209,7 +209,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const BGPUpdatePathAttribut
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, BGPUpdatePathAttributesASPath& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdatePathAttributes.msg:75</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdatePathAttributes.msg:75</tt> by nedtool.
  * <pre>
  * //NEXT_HOP (RFC4271 Section 4.3, Type code 3):
  * class BGPUpdatePathAttributesNextHop extends BGPUpdatePathAttributes
@@ -249,7 +249,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const BGPUpdatePathAttribut
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, BGPUpdatePathAttributesNextHop& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdatePathAttributes.msg:81</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdatePathAttributes.msg:81</tt> by nedtool.
  * <pre>
  * //LOCAL_PREF (RFC4271 Section 4.3, Type code 5):
  * class BGPUpdatePathAttributesLocalPref extends BGPUpdatePathAttributes
@@ -288,7 +288,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const BGPUpdatePathAttribut
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, BGPUpdatePathAttributesLocalPref& obj) {obj.parsimUnpack(b);}
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdatePathAttributes.msg:87</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdatePathAttributes.msg:87</tt> by nedtool.
  * <pre>
  * //ATOMIC_AGGREGATE (RFC4271 Section 4.3, Type code 6):
  * enum BGPUpdateAtomicAggregateValues
@@ -304,7 +304,7 @@ enum BGPUpdateAtomicAggregateValues {
 };
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdatePathAttributes.msg:93</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPUpdatePathAttributes.msg:93</tt> by nedtool.
  * <pre>
  * class BGPUpdatePathAttributesAtomicAggregate extends BGPUpdatePathAttributes
  * {

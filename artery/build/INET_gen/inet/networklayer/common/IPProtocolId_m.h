@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/common/IPProtocolId.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/common/IPProtocolId.msg.
 //
 
 #ifndef __INET_IPPROTOCOLID_M_H
@@ -24,7 +24,7 @@
 namespace inet {
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/common/IPProtocolId.msg:31</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/common/IPProtocolId.msg:31</tt> by nedtool.
  * <pre>
  * //
  * // Protocol field: taken from RFC 1700.
@@ -89,7 +89,7 @@ enum IPProtocolId {
 };
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/networklayer/common/IPProtocolId.msg:62</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/networklayer/common/IPProtocolId.msg:62</tt> by nedtool.
  * <pre>
  * class IPRegisterProtocolCommand
  * {

@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPHeader.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPHeader.msg.
 //
 
 #ifndef __INET__BGP_BGPHEADER_M_H
@@ -27,7 +27,7 @@ namespace inet {
 namespace bgp {
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPHeader.msg:33</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPHeader.msg:33</tt> by nedtool.
  * <pre>
  * //
  * // BGPv4 message types
@@ -49,7 +49,7 @@ enum BGPType {
 };
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPHeader.msg:49</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/routing/bgpv4/BGPMessage/BGPHeader.msg:49</tt> by nedtool.
  * <pre>
  * //
  * // Represents a BGPv4 message header.

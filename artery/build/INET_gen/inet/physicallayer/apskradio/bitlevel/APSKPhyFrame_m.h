@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/physicallayer/apskradio/bitlevel/APSKPhyFrame.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/physicallayer/apskradio/bitlevel/APSKPhyFrame.msg.
 //
 
 #ifndef __INET__PHYSICALLAYER_APSKPHYFRAME_M_H
@@ -21,7 +21,7 @@ namespace inet {
 namespace physicallayer {
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/physicallayer/apskradio/bitlevel/APSKPhyFrame.msg:21</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/physicallayer/apskradio/bitlevel/APSKPhyFrame.msg:21</tt> by nedtool.
  * <pre>
  * packet APSKPhyFrame
  * {

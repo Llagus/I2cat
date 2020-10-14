@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/physicallayer/analogmodel/packetlevel/ScalarTransmission.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/physicallayer/analogmodel/packetlevel/ScalarTransmission.msg.
 //
 
 #ifndef __INET__PHYSICALLAYER_SCALARTRANSMISSION_M_H

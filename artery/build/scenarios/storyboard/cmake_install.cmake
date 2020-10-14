@@ -1,4 +1,4 @@
-# Install script for directory: /home/aniol/Downloads/artery/scenarios/storyboard
+# Install script for directory: /home/aniol/Documents/I2cat/artery/scenarios/storyboard
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

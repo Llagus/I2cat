@@ -7,11 +7,11 @@ C_FLAGS = -fPIC   -std=gnu11
 
 C_DEFINES = -DBOOST_ALL_NO_LIB -Dasn1_EXPORTS
 
-C_INCLUDES = -I/home/aniol/Downloads/artery/extern/vanetza -I/home/aniol/Downloads/artery/extern/vanetza/vanetza/asn1/support 
+C_INCLUDES = -I/home/aniol/Documents/I2cat/artery/extern/vanetza -I/home/aniol/Documents/I2cat/artery/extern/vanetza/vanetza/asn1/support 
 
 CXX_FLAGS = -fPIC   -std=gnu++11
 
 CXX_DEFINES = -DBOOST_ALL_NO_LIB -Dasn1_EXPORTS
 
-CXX_INCLUDES = -I/home/aniol/Downloads/artery/extern/vanetza -I/home/aniol/Downloads/artery/extern/vanetza/vanetza/asn1/support 
+CXX_INCLUDES = -I/home/aniol/Documents/I2cat/artery/extern/vanetza -I/home/aniol/Documents/I2cat/artery/extern/vanetza/vanetza/asn1/support 
 

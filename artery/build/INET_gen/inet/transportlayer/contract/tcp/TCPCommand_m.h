@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/contract/tcp/TCPCommand.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/contract/tcp/TCPCommand.msg.
 //
 
 #ifndef __INET_TCPCOMMAND_M_H
@@ -24,7 +24,7 @@
 namespace inet {
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/contract/tcp/TCPCommand.msg:34</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/contract/tcp/TCPCommand.msg:34</tt> by nedtool.
  * <pre>
  * //
  * // TCP command codes, sent by the application to TCP. These constants
@@ -57,7 +57,7 @@ enum TcpCommandCode {
 };
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/contract/tcp/TCPCommand.msg:53</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/contract/tcp/TCPCommand.msg:53</tt> by nedtool.
  * <pre>
  * //
  * // TCP indications, sent by TCP to the application. TCP will set these
@@ -96,7 +96,7 @@ enum TcpStatusInd {
 };
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/contract/tcp/TCPCommand.msg:72</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/contract/tcp/TCPCommand.msg:72</tt> by nedtool.
  * <pre>
  * //
  * // Currently not in use.
@@ -110,7 +110,7 @@ enum TCPErrorCode {
 };
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/contract/tcp/TCPCommand.msg:91</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/contract/tcp/TCPCommand.msg:91</tt> by nedtool.
  * <pre>
  * //
  * // Control info for TCP connections. This class is to be set as control info
@@ -166,7 +166,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const TCPCommand& obj) {obj
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, TCPCommand& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/contract/tcp/TCPCommand.msg:101</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/contract/tcp/TCPCommand.msg:101</tt> by nedtool.
  * <pre>
  * //
  * // Currently not in use.
@@ -211,7 +211,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const TCPErrorInfo& obj) {o
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, TCPErrorInfo& obj) {obj.parsimUnpack(b);}
 
 /**
- * Enum generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/contract/tcp/TCPCommand.msg:120</tt> by nedtool.
+ * Enum generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/contract/tcp/TCPCommand.msg:120</tt> by nedtool.
  * <pre>
  * //
  * // Defines what to transmit as payload in TCP segments
@@ -243,7 +243,7 @@ enum TCPDataTransferMode {
 };
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/contract/tcp/TCPCommand.msg:154</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/contract/tcp/TCPCommand.msg:154</tt> by nedtool.
  * <pre>
  * //
  * // Control info to be used for active or passive TCP open.
@@ -333,7 +333,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const TCPOpenCommand& obj) 
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, TCPOpenCommand& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/contract/tcp/TCPCommand.msg:171</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/contract/tcp/TCPCommand.msg:171</tt> by nedtool.
  * <pre>
  * //
  * // Control info to be used with the SEND command.
@@ -372,7 +372,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const TCPSendCommand& obj) 
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, TCPSendCommand& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/contract/tcp/TCPCommand.msg:182</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/contract/tcp/TCPCommand.msg:182</tt> by nedtool.
  * <pre>
  * //
  * // Sent with message kind TCP_I_ESTABLISHED, to let the app know
@@ -430,7 +430,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const TCPConnectInfo& obj) 
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, TCPConnectInfo& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/contract/tcp/TCPCommand.msg:198</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/contract/tcp/TCPCommand.msg:198</tt> by nedtool.
  * <pre>
  * //
  * // Sent with message kind TCP_I_STATUS, in response to command TCP_C_STATUS.

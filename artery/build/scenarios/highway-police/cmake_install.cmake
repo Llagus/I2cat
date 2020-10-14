@@ -1,4 +1,4 @@
-# Install script for directory: /home/aniol/Downloads/artery/scenarios/highway-police
+# Install script for directory: /home/aniol/Documents/I2cat/artery/scenarios/highway-police
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,12 +44,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libartery_police.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/aniol/Downloads/artery/build/scenarios/highway-police/libartery_police.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/aniol/Documents/I2cat/artery/build/scenarios/highway-police/libartery_police.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libartery_police.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libartery_police.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libartery_police.so"
-         OLD_RPATH "/home/aniol/Downloads/artery/build/src/artery/envmod:/home/aniol/Downloads/artery/build/src/artery:/home/aniol/Downloads/artery/build/src/traci:/home/aniol/Downloads/artery/build/extern/vanetza/lib:/home/aniol/Downloads/artery/build/extern:/home/aniol/artery/omnetpp-5.6.2/lib:"
+         OLD_RPATH "/home/aniol/Documents/I2cat/artery/build/src/artery/envmod:/home/aniol/Documents/I2cat/artery/build/src/artery:/home/aniol/Documents/I2cat/artery/build/src/traci:/home/aniol/Documents/I2cat/artery/build/extern/vanetza/lib:/home/aniol/Documents/I2cat/artery/build/extern:/home/aniol/artery/omnetpp-5.6.2/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libartery_police.so")

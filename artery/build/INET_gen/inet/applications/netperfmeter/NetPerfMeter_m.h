@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/applications/netperfmeter/NetPerfMeter.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/applications/netperfmeter/NetPerfMeter.msg.
 //
 
 #ifndef __INET_NETPERFMETER_M_H
@@ -24,7 +24,7 @@
 namespace inet {
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/applications/netperfmeter/NetPerfMeter.msg:38</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/applications/netperfmeter/NetPerfMeter.msg:38</tt> by nedtool.
  * <pre>
  * message NetPerfMeterTransmitTimer
  * {
@@ -62,7 +62,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const NetPerfMeterTransmitT
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, NetPerfMeterTransmitTimer& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/applications/netperfmeter/NetPerfMeter.msg:44</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/applications/netperfmeter/NetPerfMeter.msg:44</tt> by nedtool.
  * <pre>
  * message NetPerfMeterDataMessage extends SCTPSimpleMessage
  * {

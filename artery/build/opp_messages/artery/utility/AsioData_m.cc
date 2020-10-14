@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/src/artery/utility/AsioData.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/src/artery/utility/AsioData.msg.
 //
 
 // Disable warnings about unused variables, empty switch stmts, etc:

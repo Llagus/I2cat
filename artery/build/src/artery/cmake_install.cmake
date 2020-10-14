@@ -1,4 +1,4 @@
-# Install script for directory: /home/aniol/Downloads/artery/src/artery
+# Install script for directory: /home/aniol/Documents/I2cat/artery/src/artery
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,12 +44,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libartery_core.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/aniol/Downloads/artery/build/src/artery/libartery_core.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/aniol/Documents/I2cat/artery/build/src/artery/libartery_core.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libartery_core.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libartery_core.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libartery_core.so"
-         OLD_RPATH "/home/aniol/Downloads/artery/build/src/traci:/home/aniol/Downloads/artery/build/extern:/home/aniol/Downloads/artery/build/extern/vanetza/lib:/home/aniol/artery/omnetpp-5.6.2/lib:"
+         OLD_RPATH "/home/aniol/Documents/I2cat/artery/build/src/traci:/home/aniol/Documents/I2cat/artery/build/extern:/home/aniol/Documents/I2cat/artery/build/extern/vanetza/lib:/home/aniol/artery/omnetpp-5.6.2/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libartery_core.so")
@@ -61,17 +61,17 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ned/artery" TYPE DIRECTORY FILES "/home/aniol/Downloads/artery/src/artery/" FILES_MATCHING REGEX "/[^/]*\\.ned$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ned/artery" TYPE DIRECTORY FILES "/home/aniol/Documents/I2cat/artery/src/artery/" FILES_MATCHING REGEX "/[^/]*\\.ned$")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "run_artery.sh" FILES "/home/aniol/Downloads/artery/build/run_artery.sh.install")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "run_artery.sh" FILES "/home/aniol/Documents/I2cat/artery/build/run_artery.sh.install")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/aniol/Downloads/artery/build/src/artery/storyboard/cmake_install.cmake")
-  include("/home/aniol/Downloads/artery/build/src/artery/envmod/cmake_install.cmake")
+  include("/home/aniol/Documents/I2cat/artery/build/src/artery/storyboard/cmake_install.cmake")
+  include("/home/aniol/Documents/I2cat/artery/build/src/artery/envmod/cmake_install.cmake")
 
 endif()
 

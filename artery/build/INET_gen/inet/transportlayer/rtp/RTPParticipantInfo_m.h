@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/RTPParticipantInfo.msg.
+// Generated file, do not edit! Created by nedtool 5.6 from /home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/RTPParticipantInfo.msg.
 //
 
 #ifndef __INET__RTP_RTPPARTICIPANTINFO_M_H
@@ -25,7 +25,7 @@ namespace inet {
 namespace rtp {
 
 /**
- * Class generated from <tt>/home/aniol/Downloads/artery/extern/inet/src/inet/transportlayer/rtp/RTPParticipantInfo.msg:40</tt> by nedtool.
+ * Class generated from <tt>/home/aniol/Documents/I2cat/artery/extern/inet/src/inet/transportlayer/rtp/RTPParticipantInfo.msg:40</tt> by nedtool.
  * <pre>
  * //
  * // This class is a super class for classes intended for storing information
