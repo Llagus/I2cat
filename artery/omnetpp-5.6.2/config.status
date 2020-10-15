@@ -427,7 +427,7 @@ Copyright (C) 2012 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/home/aniol/Downloads/artery/omnetpp-5.6.2'
+ac_pwd='/home/aniol/Documents/I2cat/artery/omnetpp-5.6.2'
 srcdir='.'
 test -n "$AWK" || AWK=awk
 # The default lists apply if the user does not specify any file.
@@ -671,7 +671,7 @@ S["RCC"]="/usr/bin/rcc"
 S["UIC"]="/usr/bin/uic"
 S["MOC"]="/usr/bin/moc"
 S["QMAKE"]="/usr/bin/qmake"
-S["SWIG"]="not found"
+S["SWIG"]="swig"
 S["PERL"]="perl"
 S["MAKE"]="make"
 S["LEXLIB"]=""
