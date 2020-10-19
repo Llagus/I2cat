@@ -4,7 +4,7 @@
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
 
     <output>
-        <output-file value="/home/aniol/Documents/I2cat/SUMO_Tutorials/helloWorld.net.xml"/>
+        <output-file value="/home/aniol/Documents/I2cat/SUMO_Tutorials/helloWorld/helloWorld.net.xml"/>
     </output>
 
     <processing>
@@ -16,7 +16,7 @@
     </junctions>
 
     <netedit>
-        <route-files value="/home/aniol/Documents/I2cat/SUMO_Tutorials/helloWorld.rou.xml"/>
+        <route-files value="/home/aniol/Documents/I2cat/SUMO_Tutorials/helloWorld/helloWorld.rou.xml"/>
     </netedit>
 
     <report>
