@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on mar 20 oct 2020 13:23:07 by Eclipse SUMO netedit Version 1.7.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="quickstart.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="quickstart.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <netedit>
+        <route-files value="/home/aniol/Documents/I2cat/SUMO_Tutorials/quickStart/quickstart.rou.xml"/>
+    </netedit>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="CarA" length="5.00" minGap="2.50" maxSpeed="50.00" accel="3.0" decel="6.0" sigma="0.5"/>
+    <vType id="CarB" length="7.50" minGap="2.50" maxSpeed="50.00" accel="2.0" decel="6.0" sigma="0.5"/>
+    <vType id="CarC" length="5.00" minGap="2.50" maxSpeed="40.00" accel="1.0" decel="5.0" sigma="0.5"/>
+    <vType id="CarD" length="7.50" minGap="2.50" maxSpeed="30.00" accel="1.0" decel="5.0" sigma="0.5"/>
+    <route edges="D2 L2 L12 L10 L7 D7" color="yellow" id="route01"/>
+    <route edges="D2 L2 L12 L15 L18 L5 D5" color="yellow" id="route02"/>
+    <route edges="D2 L2 L12 L15 L13 L3 D3" color="yellow" id="route03"/>
+    <route edges="D4 L4 L14 L18 L5 D5" color="yellow" id="route04"/>
+    <route edges="D4 L4 L14 L16 L10 L7 D7" color="yellow" id="route05"/>
+    <route edges="D4 L4 L14 L16 L11 L1 D1" color="yellow" id="route06"/>
+    <route edges="D6 L6 L17 L13 L3 D3" color="yellow" id="route07"/>
+    <route edges="D6 L6 L17 L16 L11 L1 D1" color="yellow" id="route08"/>
+    <route edges="D6 L6 L17 L16 L10 L7 D7" color="yellow" id="route09"/>
+    <route edges="D8 L8 L9 L11 L1 D1" color="yellow" id="route10"/>
+    <route edges="D8 L8 L9 L15 L13 L3 D3" color="yellow" id="route11"/>
+    <route edges="D8 L8 L9 L15 L18 L5 D5" color="yellow" id="route12"/>
+    <vehicle id="veh0" type="CarA" depart="54000.00" color="red" route="route01"/>
+    <vehicle id="veh1" type="CarA" depart="54000.00" route="route02"/>
+    <vehicle id="veh10" type="CarA" depart="54000.00" route="route11"/>
+    <vehicle id="veh11" type="CarA" depart="54000.00" route="route12"/>
+    <vehicle id="veh12" type="CarB" depart="54000.00" color="red" route="route01"/>
+    <vehicle id="veh13" type="CarB" depart="54000.00" route="route02"/>
+    <vehicle id="veh14" type="CarB" depart="54000.00" route="route03"/>
+    <vehicle id="veh15" type="CarB" depart="54000.00" route="route04"/>
+    <vehicle id="veh16" type="CarB" depart="54000.00" route="route05"/>
+    <vehicle id="veh17" type="CarB" depart="54000.00" route="route06"/>
+    <vehicle id="veh18" type="CarB" depart="54000.00" route="route07"/>
+    <vehicle id="veh2" type="CarA" depart="54000.00" route="route03"/>
+    <vehicle id="veh3" type="CarA" depart="54000.00" route="route04"/>
+    <vehicle id="veh4" type="CarA" depart="54000.00" route="route05"/>
+    <vehicle id="veh5" type="CarA" depart="54000.00" route="route06"/>
+    <vehicle id="veh6" type="CarA" depart="54000.00" route="route07"/>
+    <vehicle id="veh7" type="CarA" depart="54000.00" route="route08"/>
+    <vehicle id="veh8" type="CarA" depart="54000.00" route="route09"/>
+    <vehicle id="veh9" type="CarA" depart="54000.00" route="route10"/>
+</routes>
