@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on jue 22 oct 2020 15:52:44 by Eclipse SUMO netedit Version 1.7.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <output>
+        <output-file value="/home/aniol/Documents/I2cat/SUMO_Tutorials/SUMOlympics/sumolympics.net.xml"/>
+    </output>
+
+    <processing>
+        <offset.disable-normalization value="true"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+    </junctions>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<net version="1.6" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="0.00,0.00,1000.00,0.00" origBoundary="10000000000.00,10000000000.00,-10000000000.00,-10000000000.00" projParameter="!"/>
+
+    <edge id=":node2_0" function="internal">
+        <lane id=":node2_0_0" index="0" disallow="all" speed="13.89" length="0.10" shape="900.00,-15.20 900.00,-15.20"/>
+        <lane id=":node2_0_1" index="1" allow="pedestrian" speed="13.89" length="0.10" width="2.00" shape="900.00,-12.60 900.00,-12.60"/>
+        <lane id=":node2_0_2" index="2" allow="bicycle" speed="13.89" length="0.10" width="2.00" shape="900.00,-10.60 900.00,-10.60"/>
+        <lane id=":node2_0_3" index="3" allow="bus" speed="13.89" length="0.10" shape="900.00,-8.00 900.00,-8.00"/>
+        <lane id=":node2_0_4" index="4" allow="passenger" speed="13.89" length="0.10" shape="900.00,-4.80 900.00,-4.80"/>
+        <lane id=":node2_0_5" index="5" allow="rail_urban" speed="13.89" length="0.10" shape="900.00,-1.60 900.00,-1.60"/>
+    </edge>
+
+    <edge id="beg" from="node1" to="node2" priority="-1">
+        <lane id="beg_0" index="0" disallow="all" speed="13.89" length="900.00" shape="0.00,-15.20 900.00,-15.20"/>
+        <lane id="beg_1" index="1" allow="pedestrian" speed="13.89" length="900.00" width="2.00" shape="0.00,-12.60 900.00,-12.60"/>
+        <lane id="beg_2" index="2" allow="bicycle" speed="13.89" length="900.00" width="2.00" shape="0.00,-10.60 900.00,-10.60"/>
+        <lane id="beg_3" index="3" allow="bus" speed="13.89" length="900.00" shape="0.00,-8.00 900.00,-8.00"/>
+        <lane id="beg_4" index="4" allow="passenger" speed="13.89" length="900.00" shape="0.00,-4.80 900.00,-4.80"/>
+        <lane id="beg_5" index="5" allow="rail_urban" speed="13.89" length="900.00" shape="0.00,-1.60 900.00,-1.60"/>
+    </edge>
+    <edge id="end" from="node2" to="node3" priority="-1">
+        <lane id="end_0" index="0" disallow="all" speed="13.89" length="100.00" shape="900.00,-15.20 1000.00,-15.20"/>
+        <lane id="end_1" index="1" allow="pedestrian" speed="13.89" length="100.00" width="2.00" shape="900.00,-12.60 1000.00,-12.60"/>
+        <lane id="end_2" index="2" allow="bicycle" speed="13.89" length="100.00" width="2.00" shape="900.00,-10.60 1000.00,-10.60"/>
+        <lane id="end_3" index="3" allow="bus" speed="13.89" length="100.00" shape="900.00,-8.00 1000.00,-8.00"/>
+        <lane id="end_4" index="4" allow="passenger" speed="13.89" length="100.00" shape="900.00,-4.80 1000.00,-4.80"/>
+        <lane id="end_5" index="5" allow="rail_urban" speed="13.89" length="100.00" shape="900.00,-1.60 1000.00,-1.60"/>
+    </edge>
+
+    <junction id="node1" type="dead_end" x="0.00" y="0.00" incLanes="" intLanes="" shape="0.00,0.00 0.00,-13.60"/>
+    <junction id="node2" type="priority" x="900.00" y="0.00" incLanes="beg_0 beg_1 beg_2 beg_3 beg_4 beg_5" intLanes=":node2_0_0 :node2_0_1 :node2_0_2 :node2_0_3 :node2_0_4 :node2_0_5" shape="900.00,0.00 900.00,-13.60 900.00,0.00">
+        <request index="0" response="000000" foes="000000" cont="0"/>
+        <request index="1" response="000000" foes="000000" cont="0"/>
+        <request index="2" response="000000" foes="000000" cont="0"/>
+        <request index="3" response="000000" foes="000000" cont="0"/>
+        <request index="4" response="000000" foes="000000" cont="0"/>
+        <request index="5" response="000000" foes="000000" cont="0"/>
+    </junction>
+    <junction id="node3" type="dead_end" x="1000.00" y="0.00" incLanes="end_0 end_1 end_2 end_3 end_4 end_5" intLanes="" shape="1000.00,-13.60 1000.00,0.00"/>
+
+    <connection from="beg" to="end" fromLane="0" toLane="0" via=":node2_0_0" dir="s" state="M"/>
+    <connection from="beg" to="end" fromLane="1" toLane="1" via=":node2_0_1" dir="s" state="M"/>
+    <connection from="beg" to="end" fromLane="2" toLane="2" via=":node2_0_2" dir="s" state="M"/>
+    <connection from="beg" to="end" fromLane="3" toLane="3" via=":node2_0_3" dir="s" state="M"/>
+    <connection from="beg" to="end" fromLane="4" toLane="4" via=":node2_0_4" dir="s" state="M"/>
+    <connection from="beg" to="end" fromLane="5" toLane="5" via=":node2_0_5" dir="s" state="M"/>
+
+    <connection from=":node2_0" to="end" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":node2_0" to="end" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":node2_0" to="end" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":node2_0" to="end" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":node2_0" to="end" fromLane="4" toLane="4" dir="s" state="M"/>
+    <connection from=":node2_0" to="end" fromLane="5" toLane="5" dir="s" state="M"/>
+
+</net>
