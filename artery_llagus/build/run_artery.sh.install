@@ -1,0 +1,6 @@
+#!/bin/bash
+OPP_RUN=/home/llagus/artery/omnetpp-5.6.2/bin/opp_run_dbg
+NED_FOLDERS="/usr/local/share/ned/artery:/usr/local/share/ned/traci:/usr/local/share/ned/veins/examples/veins:/usr/local/share/ned/veins/src/veins:/usr/local/share/ned/INET/src:/usr/local/share/ned/INET/examples:/usr/local/share/ned/INET/tutorials:/usr/local/share/ned/INET/showcases"
+LIBRARIES="-l/usr/local/lib/libartery_core.so -l/usr/local/lib/libtraci.so -l/usr/local/lib/libveins.so -l/usr/local/lib/libINET.so -l/usr/local/lib/libartery_storyboard.so -l/usr/local/lib/libartery_envmod.so"
+
+$OPP_RUN -n $NED_FOLDERS $LIBRARIES $@

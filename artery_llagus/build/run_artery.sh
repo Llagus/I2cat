@@ -1,0 +1,6 @@
+#!/bin/bash
+OPP_RUN=/home/llagus/artery/omnetpp-5.6.2/bin/opp_run_dbg
+NED_FOLDERS="/home/llagus/Documents/TELECOS/Pràctiques/I2cat/artery_llagus/src/artery:/home/llagus/Documents/TELECOS/Pràctiques/I2cat/artery_llagus/src/traci:/home/llagus/Documents/TELECOS/Pràctiques/I2cat/artery_llagus/extern/veins/examples/veins:/home/llagus/Documents/TELECOS/Pràctiques/I2cat/artery_llagus/extern/veins/src/veins:/home/llagus/Documents/TELECOS/Pràctiques/I2cat/artery_llagus/extern/inet/src:/home/llagus/Documents/TELECOS/Pràctiques/I2cat/artery_llagus/extern/inet/examples:/home/llagus/Documents/TELECOS/Pràctiques/I2cat/artery_llagus/extern/inet/tutorials:/home/llagus/Documents/TELECOS/Pràctiques/I2cat/artery_llagus/extern/inet/showcases"
+LIBRARIES="-l/home/llagus/Documents/TELECOS/Pràctiques/I2cat/artery_llagus/build/src/artery/libartery_core.so -l/home/llagus/Documents/TELECOS/Pràctiques/I2cat/artery_llagus/build/src/traci/libtraci.so -l/home/llagus/Documents/TELECOS/Pràctiques/I2cat/artery_llagus/build/extern/libveins.so -l/home/llagus/Documents/TELECOS/Pràctiques/I2cat/artery_llagus/build/extern/libINET.so -l/home/llagus/Documents/TELECOS/Pràctiques/I2cat/artery_llagus/build/src/artery/storyboard/libartery_storyboard.so -l/home/llagus/Documents/TELECOS/Pràctiques/I2cat/artery_llagus/build/src/artery/envmod/libartery_envmod.so"
+
+$OPP_RUN -n $NED_FOLDERS $LIBRARIES $@
